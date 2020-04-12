@@ -24,11 +24,60 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Site Title -->
+    <title>MNML - Minimal Portfolio Theme</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <title>React App</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#nav-scroll">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Core JavaScript -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- / Core JavaScript -->
+
+      <!-- preloader -->
+      <script src="js/preloader.js"></script>
+      <!-- / preloader -->
+
+      <!-- LightBox -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script>
+        // This will create a single gallery from all elements that have class "lightbox"
+        $('.lightbox').each(function() {
+          $(this).magnificPopup({
+            delegate: 'a.image-lightbox', // the selector for gallery item
+            type: 'image',
+            removalDelay: 500,
+            mainClass: 'mfp-fade',
+            gallery: {
+              enabled:true
+            }
+          });
+        });
+      </script>
+      <!-- / LightBox -->
+
+      <!-- LightBox -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script>
+        // This will create a single gallery from all elements that have class "lightbox"
+        $('.lightbox').each(function() {
+          $(this).magnificPopup({
+            delegate: 'a.image-lightbox', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+          });
+        });
+      </script>
+      <!-- / LightBox -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

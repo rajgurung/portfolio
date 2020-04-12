@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styelsheets/bootstrap.min.css';
+// import './styelsheets/App.css';
+import './styelsheets/style.css'
+import './styelsheets/animate.css';
+import './styelsheets/magnific-popup.css';
+// Custom Styles
+import './styelsheets/linear-icons.css';
+import './styelsheets/fontawesome-all.min.css';
+
+// import './images/slide1.jpg'
+
+// import About from './components/About';
+import Navbar from './components/Navbar';
+import Header from "./components/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className="App" style={{ whiteSpace: "pre-line" }}>
+      <div id="preloader">
+        <div className="preloader">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="top"></div>
+      <Navbar></Navbar>
+      <Header></Header>
     </div>
   );
 }
