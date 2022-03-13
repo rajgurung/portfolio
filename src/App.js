@@ -8,11 +8,15 @@ import './styelsheets/magnific-popup.css';
 import './styelsheets/linear-icons.css';
 import './styelsheets/fontawesome-all.min.css';
 
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 // import './images/slide1.jpg'
 
 // import About from './components/About';
 import Navbar from './components/Navbar';
-import Header from "./components/Header";
+// import Header from "./components/Header";
+// import Home from "./components/Home";
+// import About from "./components/About";
 
 function App() {
   return(
@@ -25,7 +29,7 @@ function App() {
       </div>
       <div id="top"></div>
       <Navbar></Navbar>
-      <Header></Header>
+      {/*<Header></Header>*/}
     </div>
   );
 }
