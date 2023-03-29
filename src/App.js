@@ -1,6 +1,7 @@
 import React from 'react';
 import './styelsheets/bootstrap.min.css';
 // import './styelsheets/App.css';
+import './styelsheets/custom.css'
 import './styelsheets/style.css'
 import './styelsheets/animate.css';
 import './styelsheets/magnific-popup.css';

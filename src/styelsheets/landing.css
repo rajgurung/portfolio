@@ -1,0 +1,88 @@
+/*https://stackoverflow.com/questions/14436800/two-divs-next-to-each-other-that-then-stack-with-responsive-change/14437365#14437365*/
+
+/*.wrapper {*/
+/*    border : 2px solid #fff;*/
+/*    overflow:hidden;*/
+/*    !*background: darkorange;*!*/
+/*    display: block;*/
+/*}*/
+
+/*.wrapper div {*/
+/*    min-height: 200px;*/
+/*    padding: 10px;*/
+/*}*/
+/*#one {*/
+/*    !*background-color: gray;*!*/
+/*    !*float:left;*!*/
+/*    !*margin-right:20px;*!*/
+/*    !*width:140px;*!*/
+/*    !*border-right:2px solid #000;*!*/
+
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    background-color: white;*/
+/*    overflow:hidden;*/
+/*    margin:10px;*/
+/*    border:2px dashed #ccc;*/
+/*    min-height:170px;*/
+/*    width:30%;*/
+/*    !*position:absolute;*!*/
+/*}*/
+/*#two {*/
+/*    display: inline-block;*/
+/*    !*float: left;*!*/
+/*    background-color: white;*/
+/*    overflow:hidden;*/
+/*    margin:10px;*/
+/*    border:2px dashed #ccc;*/
+/*    min-height:170px;*/
+/*    width:30%;*/
+/*    !*position:absolute;*!*/
+/*}*/
+/*#three {*/
+/*    display: inline-block;*/
+/*    !*float: left;*!*/
+/*    background-color: white;*/
+/*    overflow:hidden;*/
+/*    margin:10px;*/
+/*    border:2px dashed #ccc;*/
+/*    min-height:170px;*/
+/*    width:30%;*/
+/*    !*position:absolute;*!*/
+/*}*/
+
+/*@media screen and (max-width: 400px) {*/
+/*    #one {*/
+/*        float: none;*/
+/*        margin-right:0;*/
+/*        width:auto;*/
+/*        border:0;*/
+/*        border-bottom:2px solid #000;*/
+/*    }*/
+/*}*/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+}
+
+.wrapper > div {
+    min-height:280px;
+    /*width: 100%;*/
+    width: 31%;
+    margin: 10px;
+    padding:10px;
+    /*text-align: center;*/
+    border:2px none #ccc;
+    background-color:#f7f7f7!important;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+    .wrapper > div  {
+        min-height:170px;
+        margin: 10px;
+        text-align: center;
+        border:2px dashed #ccc;
+    }
+}
