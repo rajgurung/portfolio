@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import data from '../data/about.js';
+// import data from '../data/about.js';
 
 class About extends Component {
   render() {
