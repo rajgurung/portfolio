@@ -4,9 +4,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Landing from './Landing';
 import Home from './Home';
 import About from './About';
 import Project from './Project';
+import Experience from "./Experience";
 
 class Navbar extends Component {
   render() {
@@ -16,7 +18,7 @@ class Navbar extends Component {
             <div className="container">
               <a className="navbar-brand navbar-size" href="/">
                 {/*<img src={Logo} alt=""/>*/}
-                <b>RG</b>
+                {/*<b>RG</b>*/}
               </a>
 
               <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-toggle"
@@ -32,9 +34,11 @@ class Navbar extends Component {
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                     {/*<a className="nav-link active" href="/">HOME</a>*/}
+                      <a className="nav-link active" href="/landing">LANDING</a>
                       <a className="nav-link active" href="/home">HOME</a>
                       <a className="nav-link active" href="/about">ABOUT</a>
                       <a className="nav-link active" href="/projects">PROJECTS</a>
+                      <a className="nav-link active" href="/experience">EXPERIENCE</a>
                   </li>
                 </ul>
                 {/*navbar-nav*/}
@@ -48,9 +52,11 @@ class Navbar extends Component {
           <BrowserRouter>
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/landing" component={Landing} />
               <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />} />
-              <Route path="/projects" component={Project} />} />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Project} />
+              <Route path="" component={Experience} />
             </Switch>
           </BrowserRouter>
         </div>

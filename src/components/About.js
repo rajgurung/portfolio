@@ -16,7 +16,7 @@ class About extends Component {
             <section id="about" className="big-section">
                 <div className="container">
                     <div className="row vcenter">
-                        <div className="col-md-12 left-section">
+                        <div className="col-md-6 left-section">
                             <h4 className="section-title mb-3">Hi, I am Raj Gurung.</h4>
                             <p>
                                 I have been working as a Software Engineer for a decade.
@@ -26,6 +26,8 @@ class About extends Component {
                                 I like to keep my code by design; modular, maintainable and scalable.
                                 Data Driven engineer to help you drive your product accelerate above and beyond.
                             </p>
+                        </div>
+                        <div className="col-md-6 right-section">
                         </div>
                     </div>
                 </div>
