@@ -70,19 +70,21 @@
 .wrapper > div {
     min-height:280px;
     /*width: 100%;*/
-    width: 31%;
-    margin: 10px;
+    min-width: 31%;
+    margin: 10px auto 10px auto;
     padding:10px;
     /*text-align: center;*/
     border:2px none #ccc;
-    background-color:#f7f7f7!important;
+    background-color: #f7f7f7!important;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+@media screen and (max-width: 800px), screen and (max-height: 300px) {
     .wrapper > div  {
         min-height:170px;
-        margin: 10px;
+        /*min-width: auto;*/
+        max-width: 500px;
+        margin: 10px auto 10px auto;
         text-align: center;
-        border:2px dashed #ccc;
+        border:2px none #ccc;
     }
 }
