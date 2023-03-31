@@ -13,6 +13,7 @@
     "serve": "^14.2.0"
   },
   "scripts": {
+    "build:digitalocean": "yarn install --production=false && yarn run build && rm -rf node_modules && yarn install --production --frozen-lockfile",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
