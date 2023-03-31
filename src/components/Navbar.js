@@ -35,10 +35,10 @@ class Navbar extends Component {
                   <li className="nav-item">
                     {/*<a className="nav-link active" href="/">HOME</a>*/}
                       <a className="nav-link active" href="/landing">LANDING</a>
-                      <a className="nav-link active" href="/home">HOME</a>
-                      <a className="nav-link active" href="/about">ABOUT</a>
-                      <a className="nav-link active" href="/projects">PROJECTS</a>
-                      <a className="nav-link active" href="/experience">EXPERIENCE</a>
+                      <a className="nav-link active" href="/home">ABOUT</a>
+                      {/*<a className="nav-link active" href="/about">ABOUT</a>*/}
+                      {/*<a className="nav-link active" href="/projects">PROJECTS</a>*/}
+                      {/*<a className="nav-link active" href="/experience">EXPERIENCE</a>*/}
                   </li>
                 </ul>
                 {/*navbar-nav*/}
@@ -51,7 +51,7 @@ class Navbar extends Component {
 
           <BrowserRouter>
             <Switch>
-              <Route path="/" exact component={Home} />
+              <Route path="/" exact component={Landing} />
               <Route path="/landing" component={Landing} />
               <Route path="/home" component={Home} />
               <Route path="/about" component={About} />
