@@ -43,8 +43,12 @@ export default function Landing() {
             </div>
 
             {/* Blog Section */}
-            <section className="mt-5 pt-5 border-top">
-                <BlogList />
+            <section className="mt-5 pt-5 border-top w-100">
+                <div className="d-flex justify-content-center">
+                    <div className="text-center" style={{ margin: '30px 0' }} >
+                        <BlogList />
+                    </div>
+                </div>
             </section>
         </div>
     );
