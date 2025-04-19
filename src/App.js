@@ -1,4 +1,3 @@
-import React from 'react';
 import './styelsheets/bootstrap.min.css';
 // import './styelsheets/App.css';
 import './styelsheets/custom.css'
@@ -9,30 +8,33 @@ import './styelsheets/magnific-popup.css';
 import './styelsheets/linear-icons.css';
 import './styelsheets/fontawesome-all.min.css';
 
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// import './images/slide1.jpg'
-
-// import About from './components/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Header from "./components/Header";
-// import Home from "./components/Home";
-// import About from "./components/About";
+
+import Blogs from './pages/Blogs';
+import BlogDetail from './pages/BlogDetail';
+
+// import Landing from './pages/Landing';
+import Landing from './pages/Landing';
+import About from './components/About';
+
+import Project from './components/Project';
+import Experience from './components/Experience';
 
 function App() {
-  return(
-    <div className="App" style={{ whiteSpace: "pre-line" }}>
-      <div id="preloader">
-        <div className="preloader">
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="top"></div>
-      <Navbar></Navbar>
-      {/*<Header></Header>*/}
-    </div>
-  );
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Blogs />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/blogs/:slug" element={<BlogDetail />} />
+                <Route path="/landing" element={<Landing />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
