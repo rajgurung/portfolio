@@ -5,7 +5,7 @@ export default function Blogs() {
         <div style={{
             display: 'flex',
             justifyContent: 'center',
-            padding: '10rem 1rem 4rem', // ⬅️ more top padding (was 4rem)
+            padding: '6rem 1rem 4rem', // ⬅️ more top padding (was 4rem)
             minHeight: '100vh',
             boxSizing: 'border-box',
         }}>
