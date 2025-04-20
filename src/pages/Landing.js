@@ -18,9 +18,9 @@ export default function Landing() {
             {/* Name and Title */}
             <div className="text-center" style={{ margin: '30px 0' }}>
                 <h1 className="section-title">Raj Gurung</h1>
-                <h4 className="section-title" style={{ marginTop: '50px' }}>Backend Engineer</h4>
+                <h4 className="section-title" style={{ marginTop: '50px' }}></h4>
                 <p className="section-title" style={{ marginTop: '2px' }}>
-                    Ruby, Rails, PG SQL, Sidekiq, CI/CD, Observability, Performance, Scalability, Heroku, Team Lead/Player
+                    Hey, I’m Raj — Husband, Dad to Kaizen, Developer, and a proud Nepalese 🇳🇵 from the beautiful city of Pokhara. I’ve been living in the UK 🇬🇧 since 2005. Welcome to my little corner of the internet — a digital home where I build, reflect, and just try to be myself. It’s a quiet place where I share what I’m working on, what I’m learning, and sometimes, just random thoughts along the way.
                 </p>
             </div>
 

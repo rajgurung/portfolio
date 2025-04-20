@@ -2,10 +2,27 @@
 
 _April 2025_
 
-So, a while ago, I started carving out my own little space in the digital universe. But somewhere along the way, I stalled — trying to learn ReactJS *and* be productive at the same time was just... overwhelming.
+For a while, I felt stuck.
 
-Fast forward a few years, and here we are — with ChatGPT, a tool that has become the **legendary mentor** I always wished I had.
+Every time I sat down to start a side project, I hit a wall of choices:  
+What should I build?  
+Should I use Ruby on Rails? Or Go? Or maybe Node.js?  
+Frontend with React? Or just stick to Hotwire?
 
-Here's how I finally got past the decision paralysis and committed to building again.
+Too many options. Not enough momentum.
 
-Writing this blog at 02:39 as I am plough through building, overcoming obstacle ChatGPT.
+I’d jump between ideas — a local app for Nepal, a Rails gem, a chat app, a dashboard — but never commit. I was waiting for the “perfect” thing to build. It never came.
+
+What helped was lowering the bar. I asked myself: *What’s small, useful, and close to what I already know?*
+
+That led me to **MVP Pulse** — a simple heartbeat monitoring gem for MVPs. Just send a ping from your app and get notified if it stops.
+
+I'm building it in Ruby. I’ll probably use Rails for the dashboard, maybe add a Node.js Kafka producer later. But now the stack isn’t the focus — the *finish line* is.
+
+---
+
+If you’re feeling paralysed by choice, start smaller. Pick one tool. One idea. One step.
+
+Clarity often comes *after* action — not before it.
+
+---
