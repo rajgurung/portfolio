@@ -16,7 +16,14 @@ export default function BlogDetail() {
     return (
         <div className="blog-detail-page">
             <div className="blog-detail-container">
-                <ReactMarkdown>{markdown}</ReactMarkdown>
+                <ReactMarkdown
+                    components={{
+                        h1: ({ node, ...props }) => <h1 className="markdown-heading" {...props} />,
+                        h2: ({ node, ...props }) => <h2 className="markdown-heading" {...props} />,
+                    }}
+                >
+                    {markdown}
+                </ReactMarkdown>
 
 
                 <Link
