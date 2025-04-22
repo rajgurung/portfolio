@@ -9,7 +9,7 @@ const blogPosts = [
     },
     {
         slug: "building-my-site",
-        title: "1... 2... 3... and we are live",
+        title: "React + Vibes = This Site",
         date: "2025-04-18",
         excerpt: "I'm getting things done in React, but I can't shake the feeling that I'm winging it.",
         content: `
