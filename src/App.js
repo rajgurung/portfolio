@@ -19,6 +19,8 @@ import BlogDetail from './pages/BlogDetail';
 import Landing from './pages/Landing';
 import About from './components/About';
 
+import CvPage from './pages/CvPage';
+
 import Project from './components/Project';
 import Experience from './components/Experience';
 
@@ -32,6 +34,7 @@ function App() {
                 <Route path="/blogs/:slug" element={<BlogDetail />} />
                 <Route path="/landing" element={<Landing />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/cv" element={<CvPage />} />
             </Routes>
         </Router>
     );
