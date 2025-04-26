@@ -36,10 +36,14 @@
     color: #333;
     font-family: 'Lora', Georgia, serif;
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 2;
     padding: 4rem 1.5rem;
     max-width: 700px;
     margin: 0 auto;
+}
+
+.blog-detail-container p {
+    font-size: 1.16rem;
 }
 
 .blog-detail-container a {
