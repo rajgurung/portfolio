@@ -19,7 +19,7 @@ export default function BlogDetail() {
                 <ReactMarkdown
                     components={{
                         h1: ({ node, ...props }) => <h1 className="markdown-heading" {...props} />,
-                        h2: ({ node, ...props }) => <h2 className="markdown-heading" {...props} />,
+                        p: ({ node, ...props }) => <p {...props} />,
                     }}
                 >
                     {markdown}
