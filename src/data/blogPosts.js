@@ -1,16 +1,23 @@
 // This is a mock database — an array of blog post objects
 const blogPosts = [
     {
+        slug: "you-have-been-impacted", // URL path identifier (used in the route)
+        title: "You’ve Been Impacted, Layoffs", // Post title
+        date: "2025-06-13 — June", // Published date
+        excerpt: "The room feels quieter with every goodbye. Their absence echoes louder than silence.", // Short preview shown on homepage
+        content: `Each time, I’d steel myself. Muster a quiet moment of 'whatever comes, comes,' then open my inbox. I felt quiet relief—followed by guilt for being spared....`, // Full content for the post page
+    },
+    {
         slug: "decision-paralysis", // URL path identifier (used in the route)
         title: "Overcoming Decision Paralysis", // Post title
-        date: "2025-04-20", // Published date
+        date: "2025-04-20 — April", // Published date
         excerpt: "With knowledge comes clarity — or so you'd think.", // Short preview shown on homepage
         content: `Choosing a project is so hard. You want to work on a project thats going to be the best, the most impactful and the best...`, // Full content for the post page
     },
     {
         slug: "building-my-site",
         title: "React + Vibes = This Site",
-        date: "2025-04-18",
+        date: "2025-04-18 — April",
         excerpt: "I'm getting things done in React, but I can't shake the feeling that I'm winging it.",
         content: `
 So, a while ago, I started carving out my own little space in the digital universe. But somewhere along the way, I stalled — trying to learn ReactJS *and* be productive at the same time was just... overwhelming.
