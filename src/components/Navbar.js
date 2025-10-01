@@ -66,9 +66,9 @@ class Navbar extends Component {
                 <li className="nav-item">
                   <Link className="nav-link active" to="/landing" onClick={this.closeNavbar}>ABOUT</Link>
                   <Link className="nav-link active" to="/blogs" onClick={this.closeNavbar}>BLOG</Link>
+                  <Link className="nav-link active" to="/projects" onClick={this.closeNavbar}>PROJECTS</Link>
                   {/*<Link className="nav-link active" to="/cv" onClick={this.closeNavbar}>CV</Link>*/}
                   {/*<Link className="nav-link active" to="/about" onClick={this.closeNavbar}>ABOUT</Link>*/}
-                  {/*<Link className="nav-link active" to="/projects" onClick={this.closeNavbar}>PROJECTS</Link>*/}
                   {/*<Link className="nav-link active" to="/experience" onClick={this.closeNavbar}>EXPERIENCE</Link>*/}
                 </li>
               </ul>
