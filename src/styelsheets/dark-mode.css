@@ -1,0 +1,204 @@
+/* Dark Mode Styles - Improved Color Palette */
+body.dark-mode {
+    background-color: #1e1e1e !important;
+    color: #e4e4e4;
+}
+
+/* Ensure all page wrappers inherit dark background */
+body.dark-mode #root,
+body.dark-mode #root > div {
+    background-color: #1e1e1e;
+}
+
+/* Blog List Page */
+body.dark-mode .blogs-page {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .blog-card {
+    border-color: #3a3a3a;
+}
+
+body.dark-mode .blog-title-link {
+    color: #e8e8e8;
+}
+
+body.dark-mode .blog-title-link:hover {
+    color: #d4a574;
+}
+
+body.dark-mode .blog-date {
+    color: #a0a0a0;
+}
+
+body.dark-mode .blog-excerpt {
+    color: #c8c8c8;
+}
+
+/* Blog Detail Page */
+body.dark-mode .blog-detail-page {
+    background: #1e1e1e;
+}
+
+body.dark-mode .blog-detail-container {
+    color: #d4d4d4;
+}
+
+body.dark-mode .blog-detail-container p {
+    color: #d4d4d4;
+}
+
+body.dark-mode .blog-detail-container h1,
+body.dark-mode .blog-detail-container h2,
+body.dark-mode .blog-detail-container h3 {
+    color: #ececec;
+}
+
+body.dark-mode .blog-detail-container a {
+    color: #e4e4e4;
+    border-bottom-color: #4a4a4a;
+}
+
+body.dark-mode .blog-detail-container a:hover {
+    color: #d4a574;
+    border-bottom-color: #d4a574;
+}
+
+body.dark-mode .back-link {
+    color: #a0a0a0;
+}
+
+body.dark-mode .back-link:hover {
+    color: #d4a574;
+}
+
+body.dark-mode .markdown-heading {
+    color: #ececec;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: none !important;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: none !important;
+}
+
+body.dark-mode .nav-link {
+    color: #e4e4e4 !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #d4a574 !important;
+}
+
+body.dark-mode .navbar-brand {
+    color: #e4e4e4 !important;
+}
+
+/* Dark Mode Toggle Button - Floating on Right Side */
+.dark-mode-toggle-floating {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dark-mode-toggle-floating:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .dark-mode-toggle-floating {
+    background: rgba(60, 60, 60, 0.95);
+    border-color: #4a4a4a;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .dark-mode-toggle-floating:hover {
+    box-shadow: 0 4px 20px rgba(212, 165, 116, 0.3);
+}
+
+/* Hamburger menu icon in dark mode - make it visible */
+body.dark-mode .navbar-toggler .icon-bar {
+    background-color: #f5f5f5 !important;
+}
+
+body.dark-mode .navbar-light.hamburger-nav .navbar-toggler .icon-bar {
+    background-color: #f5f5f5 !important;
+}
+
+body.dark-mode .hamburger-nav .navbar-toggler .icon-bar {
+    background-color: #f5f5f5 !important;
+}
+
+/* Ensure hamburger icon is visible when menu is open (X icon) */
+body.dark-mode .navbar-toggler:not(.collapsed) .icon-bar {
+    background-color: #f5f5f5 !important;
+}
+
+/* Mobile menu dropdown background */
+body.dark-mode .navbar-collapse {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar-collapse.show {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar-nav {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-item {
+    background-color: #1e1e1e;
+}
+
+/* Landing/About Page */
+body.dark-mode .landing-page {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .landing-page h1,
+body.dark-mode .landing-page h4,
+body.dark-mode .landing-page p {
+    color: #e4e4e4;
+}
+
+body.dark-mode .section-title {
+    color: #ececec;
+}
+
+/* Social icons on Landing page */
+body.dark-mode .landing-page svg path {
+    fill: #e4e4e4;
+}
+
+body.dark-mode .landing-page a:hover svg path {
+    fill: #d4a574;
+}
+
+/* Wrapper divs on Landing page */
+body.dark-mode .wrapper > div {
+    background-color: #2a2a2a !important;
+    border-color: #3a3a3a !important;
+}
+
+body.dark-mode .border-top {
+    border-color: #3a3a3a !important;
+}

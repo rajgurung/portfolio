@@ -6,7 +6,7 @@ import BlogList from '../components/BlogList'; // Adjust path if needed
 
 export default function Landing() {
     return (
-        <div style={{ margin: 'auto', width: '80%', minHeight: '100px', overflow: 'hidden', border: '3px solid none', padding: '20px' }}>
+        <div className="landing-page" style={{ margin: 'auto', width: '80%', minHeight: '100px', overflow: 'hidden', border: '3px solid none', padding: '20px', paddingTop: '6rem' }}>
 
             {/* Profile Picture */}
             <img

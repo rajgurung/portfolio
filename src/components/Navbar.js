@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../context/ThemeContext';
 
 class Navbar extends Component {
+  static contextType = ThemeContext;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +22,7 @@ class Navbar extends Component {
 
   render() {
     const { isCollapsed } = this.state;
+    const { isDarkMode, toggleDarkMode } = this.context;
     const collapseClass = isCollapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
 
     return (
@@ -70,6 +74,16 @@ class Navbar extends Component {
               </ul>
             </div>
           </div>
+
+          {/* Floating dark mode toggle button */}
+          <button
+              className="dark-mode-toggle-floating"
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+              title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
         </nav>
     );
   }
