@@ -1,11 +1,18 @@
 // This is a mock database — an array of blog post objects
 const blogPosts = [
     {
+        slug: "big-bang-update", // URL path identifier (used in the route)
+        title: "A Big Bang Update!! A Lot Has Happened Since the Last Blog", // Post title
+        date: "2025-10-01 — October", // Published date
+        excerpt: "After my last post about colleagues being laid off, I did not expect to be writing this one so soon. But here I am, redundant.", // Short preview shown on homepage
+        content: `Eight years in the same company, and then suddenly, right in the middle of thinking about technical excellence, an email lands: "Your role is at risk." I panicked....`, // Full content for the post page
+    },
+    {
         slug: "you-have-been-impacted", // URL path identifier (used in the route)
-        title: "You’ve Been Impacted, Layoffs", // Post title
+        title: "You've Been Impacted, Layoffs", // Post title
         date: "2025-06-13 — June", // Published date
         excerpt: "The room feels quieter with every goodbye. Their absence echoes louder than silence.", // Short preview shown on homepage
-        content: `Each time, I’d steel myself. Muster a quiet moment of 'whatever comes, comes,' then open my inbox. I felt quiet relief—followed by guilt for being spared....`, // Full content for the post page
+        content: `Each time, I'd steel myself. Muster a quiet moment of 'whatever comes, comes,' then open my inbox. I felt quiet relief—followed by guilt for being spared....`, // Full content for the post page
     },
     {
         slug: "decision-paralysis", // URL path identifier (used in the route)
