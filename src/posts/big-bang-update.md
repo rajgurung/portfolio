@@ -14,6 +14,6 @@ At first I was blown away. Using Claude Code felt like magic: fast, cheap, and c
 
 Still, the frustration taught me something important. AI is not superhuman. It is a tool, a reflection of us. It works best when we bring clarity, critical thinking, and patience. And sometimes the best fix is not pushing harder, but stepping away, taking a break, and coming back fresh. That is not AI magic. That is human mechanics.
 
-So here I am, jobless but building, frustrated yet hopeful. I am learning to see myself not just as an engineer, but as the architect, the orchestrator, the human at the centre of it all.
+So here I am, jobless but building, frustrated yet hopeful. I am learning to value what I have always done: architecting solutions, orchestrating tools and people, making the judgment calls about what to build and how. The code is just the output. The thinking, the decisions, the direction - that's where the real work lives.
 
 And maybe that is enough for now.
