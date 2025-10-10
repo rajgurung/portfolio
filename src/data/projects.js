@@ -1,27 +1,5 @@
 const projects = [
     {
-        id: 1,
-        title: "Football API",
-        description: "Premier League data API serving hundreds of clients with real-time match data, statistics, and team information. Built to handle high-volume requests efficiently.",
-        tech: ["Phoenix", "Elixir", "PostgreSQL", "Redis"],
-        github: null, // Add your GitHub link if public
-        demo: null,   // Add live demo link if available
-        featured: true,
-        impact: ["500+ daily users", "50k API calls/day"],
-        image: "/images/projects/football-api.png" // You can add actual images later
-    },
-    {
-        id: 2,
-        title: "Personal Portfolio",
-        description: "This website! A minimal, clean portfolio built with React featuring a blog system, dark mode toggle, and responsive design. Focused on readability and user experience.",
-        tech: ["React", "JavaScript", "React Router", "CSS"],
-        github: "https://github.com/rajgurung/portfolio",
-        demo: "https://rajgurung.me",
-        featured: true,
-        impact: ["Dark mode support", "Markdown-based blog", "Mobile responsive"],
-        image: "/images/projects/portfolio.png"
-    },
-    {
         id: 3,
         title: "Premier League Bot",
         description: "Slack bot that delivers the latest news and match updates for your favorite Premier League team. Automated notifications and real-time score tracking.",
@@ -64,6 +42,17 @@ const projects = [
         featured: false,
         impact: ["Voice automation", "Smart home integration"],
         image: "/images/projects/alexa.png"
+    },
+    {
+        id: 7,
+        title: "Make Nepal Great",
+        description: "Democratic polling platform for Nepal's political engagement, enabling secure voting with Gmail authentication. Connects global Nepali diaspora for transparent, data-driven political discourse.",
+        tech: ["Next.js", "OAuth", "Real-time Analytics"],
+        github: null,
+        demo: "https://makenepalgreat.com",
+        featured: true,
+        impact: ["5,000+ verified voters", "25+ countries represented", "Transparent polling system"],
+        image: "/images/projects/make-nepal-great.png"
     }
 ];
 

@@ -20,9 +20,9 @@
   },
   "scripts": {
     "build:digitalocean": "yarn install --production=false && yarn run build && rm -rf node_modules && yarn install --production --frozen-lockfile",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +39,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.1.29",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "tailwindcss": "^4.1.14"
   }
 }
