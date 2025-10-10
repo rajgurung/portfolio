@@ -1,13 +1,13 @@
 /* Dark Mode Styles - Improved Color Palette */
 body.dark-mode {
-    background-color: #1e1e1e !important;
+    background-color: #1a1a1a !important;
     color: #e4e4e4;
 }
 
 /* Ensure all page wrappers inherit dark background */
 body.dark-mode #root,
 body.dark-mode #root > div {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 
 /* Blog List Page */
@@ -82,7 +82,7 @@ body.dark-mode .markdown-heading {
 }
 
 body.dark-mode .navbar {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
     border-bottom: none !important;
 }
 
@@ -96,6 +96,37 @@ body.dark-mode .nav-link:hover {
 
 body.dark-mode .navbar-brand {
     color: #e4e4e4 !important;
+}
+
+/* Navbar HIRE ME Link */
+.navbar-hire-link {
+    color: #ff8c42 !important;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #ff8c42;
+    transition: all 0.3s ease;
+}
+
+.navbar-hire-link:hover {
+    background: #ff8c42;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+body.dark-mode .navbar-hire-link {
+    color: #ff8c42 !important;
+    border-color: #ff8c42;
+}
+
+body.dark-mode .navbar-hire-link:hover {
+    background: #ff8c42;
+    color: #fff !important;
 }
 
 /* Dark Mode Toggle Button - Floating on Right Side */
@@ -154,19 +185,19 @@ body.dark-mode .navbar-toggler:not(.collapsed) .icon-bar {
 
 /* Mobile menu dropdown background */
 body.dark-mode .navbar-collapse {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 
 body.dark-mode .navbar-collapse.show {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 
 body.dark-mode .navbar-nav {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 
 body.dark-mode .nav-item {
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 
 /* Landing/About Page */
@@ -178,6 +209,13 @@ body.dark-mode .landing-page h1,
 body.dark-mode .landing-page h4,
 body.dark-mode .landing-page p {
     color: #e4e4e4;
+}
+
+/* Fix mobile navbar overlap on Landing page */
+@media (max-width: 768px) {
+    .landing-page {
+        padding-top: 120px !important;
+    }
 }
 
 body.dark-mode .section-title {
@@ -201,4 +239,74 @@ body.dark-mode .wrapper > div {
 
 body.dark-mode .border-top {
     border-color: #3a3a3a !important;
+}
+
+/* Projects Page Dark Mode */
+body.dark-mode .projects-page {
+    background: #1e1e1e;
+}
+
+body.dark-mode .projects-main-title {
+    color: #ececec;
+}
+
+body.dark-mode .projects-subtitle {
+    color: #a0a0a0;
+}
+
+body.dark-mode .section-heading {
+    color: #ececec;
+    border-bottom-color: #3a3a3a;
+}
+
+body.dark-mode .project-card {
+    background: #2a2a2a;
+}
+
+body.dark-mode .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .project-image-placeholder {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+}
+
+body.dark-mode .project-title {
+    color: #ececec;
+}
+
+body.dark-mode .project-description {
+    color: #c8c8c8;
+}
+
+body.dark-mode .tech-tag {
+    background: #3a3a3a;
+    color: #e4e4e4;
+}
+
+body.dark-mode .project-impact {
+    color: #a0a0a0;
+}
+
+body.dark-mode .project-link {
+    color: #e4e4e4;
+    border-color: #4a4a4a;
+    background: #2a2a2a;
+}
+
+body.dark-mode .project-link:hover {
+    background: #3a3a3a;
+    border-color: #d4a574;
+    color: #d4a574;
+}
+
+body.dark-mode .project-link-primary {
+    background: #d4a574;
+    color: #1e1e1e;
+    border-color: #d4a574;
+}
+
+body.dark-mode .project-link-primary:hover {
+    background: #c49564;
+    border-color: #c49564;
 }

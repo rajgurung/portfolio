@@ -32,6 +32,11 @@ class Navbar extends Component {
               {/* <b>RG</b> or logo here */}
             </Link>
 
+            {/* HIRE ME link - visible on navbar */}
+            <Link className="navbar-hire-link" to="/hire" onClick={this.closeNavbar}>
+              HIRE ME
+            </Link>
+
              {/*This is the hamburger menu button that shows in mobile view.*/}
              {/*When clicked, it toggles the navbar open/closed using React state.*/}
             <button
@@ -68,7 +73,6 @@ class Navbar extends Component {
                   <Link className="nav-link active" to="/blogs" onClick={this.closeNavbar}>BLOG</Link>
                   {/*<Link className="nav-link active" to="/cv" onClick={this.closeNavbar}>CV</Link>*/}
                   {/*<Link className="nav-link active" to="/about" onClick={this.closeNavbar}>ABOUT</Link>*/}
-                  {/*<Link className="nav-link active" to="/projects" onClick={this.closeNavbar}>PROJECTS</Link>*/}
                   {/*<Link className="nav-link active" to="/experience" onClick={this.closeNavbar}>EXPERIENCE</Link>*/}
                 </li>
               </ul>
