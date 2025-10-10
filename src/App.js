@@ -24,8 +24,9 @@ import Landing from './pages/Landing';
 import About from './components/About';
 
 import CvPage from './pages/CvPage';
+import HirePage from './pages/HirePage';
 
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 
 function App() {
     return (
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/blogs" element={<Blogs />} />
                     <Route path="/blogs/:slug" element={<BlogDetail />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/hire" element={<HirePage />} />
                     <Route path="/landing" element={<Landing />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/cv" element={<CvPage />} />
