@@ -37,6 +37,16 @@ class Navbar extends Component {
               HIRE ME
             </Link>
 
+            {/* Day/Night mode toggle - inline in navbar */}
+            <button
+                className="dark-mode-toggle-navbar"
+                onClick={toggleDarkMode}
+                aria-label="Toggle dark mode"
+                title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDarkMode ? '☀️' : '🌙'}
+            </button>
+
              {/*This is the hamburger menu button that shows in mobile view.*/}
              {/*When clicked, it toggles the navbar open/closed using React state.*/}
             <button
@@ -78,16 +88,6 @@ class Navbar extends Component {
               </ul>
             </div>
           </div>
-
-          {/* Floating dark mode toggle button */}
-          <button
-              className="dark-mode-toggle-floating"
-              onClick={toggleDarkMode}
-              aria-label="Toggle dark mode"
-              title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {isDarkMode ? '☀️' : '🌙'}
-          </button>
         </nav>
     );
   }
