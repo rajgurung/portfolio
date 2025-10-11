@@ -237,7 +237,10 @@ const HirePage = () => {
                         <div className="status-badge-wrapper">
                             <span className="status-badge">Available for hire</span>
                         </div>
-                        <p className="location-info">London, UK (GMT) · Open to all timezones</p>
+                        <p className="location-info">
+                            London, UK (GMT)<br />
+                            Open to all timezones
+                        </p>
                     </div>
                     <div className="hero-content">
                         <h1 className="hire-title">Raj Gurung</h1>
