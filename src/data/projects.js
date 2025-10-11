@@ -46,12 +46,12 @@ const projects = [
     {
         id: 7,
         title: "Make Nepal Great",
-        description: "Democratic polling platform for Nepal's political engagement, enabling secure voting with Gmail authentication. Connects global Nepali diaspora for transparent, data-driven political discourse.",
-        tech: ["Next.js", "OAuth", "Real-time Analytics"],
+        description: "Democratic polling platform for Nepal's political engagement, enabling secure voting with Gmail authentication. Connects global Nepali diaspora for transparent, data-driven political discourse. Full-stack application with Go REST API backend and Next.js frontend.",
+        tech: ["Next.js", "Go", "Gin", "PostgreSQL", "Redis", "JWT", "OAuth", "Docker"],
         github: null,
         demo: "https://makenepalgreat.com",
         featured: true,
-        impact: ["5,000+ verified voters", "25+ countries represented", "Transparent polling system"],
+        impact: ["5,000+ verified voters", "25+ countries represented", "Go REST API backend", "Redis session storage"],
         image: "/images/projects/make-nepal-great.png"
     },
     {
