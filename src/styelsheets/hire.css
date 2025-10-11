@@ -907,13 +907,15 @@ body.dark-mode .project-link:hover {
     color: #d4d4d4 !important;
 }
 
-body.dark-mode .project-link-primary {
+body.dark-mode .project-link-primary,
+body.dark-mode .hire-container .project-link-primary {
     background-color: #ff8c42 !important;
     color: #fff !important;
     border-color: #ff8c42 !important;
 }
 
-body.dark-mode .project-link-primary:hover {
+body.dark-mode .project-link-primary:hover,
+body.dark-mode .hire-container .project-link-primary:hover {
     background-color: #ffaa66 !important;
     border-color: #ffaa66 !important;
     color: #fff !important;
