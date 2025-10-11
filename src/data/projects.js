@@ -52,7 +52,7 @@ const projects = [
         demo: "https://makenepalgreat.com",
         featured: true,
         impact: ["5,000+ verified voters", "25+ countries represented", "Go REST API backend", "Redis session storage"],
-        image: "/images/projects/make-nepal-great-2.png"
+        image: "/images/projects/make-nepal-great.png"
     },
     {
         id: 8,
