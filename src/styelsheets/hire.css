@@ -803,14 +803,14 @@ body.dark-mode .skill-badge:hover {
 .project-status-badge {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 10px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #6b6b6b;
-    background-color: #f0f0f0;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #8b5a00;
+    background-color: #fff4e6;
+    border: 1.5px solid #ffcc80;
+    border-radius: 14px;
     line-height: 1.5;
 }
 
@@ -922,9 +922,9 @@ body.dark-mode .project-title {
 }
 
 body.dark-mode .project-status-badge {
-    background-color: #3a3a3a !important;
-    color: #a8a8a8 !important;
-    border-color: #4a4a4a !important;
+    background-color: #4a3200 !important;
+    color: #ffcc80 !important;
+    border-color: #8b5a00 !important;
 }
 
 body.dark-mode .project-description,
