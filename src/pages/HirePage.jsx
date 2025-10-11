@@ -361,14 +361,12 @@ const HirePage = () => {
                                 ) : (
                                     <div className="project-image-placeholder"></div>
                                 )}
+                                {project.status && (
+                                    <span className="project-status-badge">⏸️ Shelved</span>
+                                )}
                             </div>
                             <div className="project-content">
-                                <div className="project-header">
-                                    <h3 className="project-title">{project.title}</h3>
-                                    {project.status && (
-                                        <span className="project-status-badge">⏸️ Shelved</span>
-                                    )}
-                                </div>
+                                <h3 className="project-title">{project.title}</h3>
                                 <p className="project-description">{project.description}</p>
 
                                 <div className="project-tech">
