@@ -234,6 +234,10 @@ const HirePage = () => {
                 <div className="hero-layout">
                     <div className="hero-photo">
                         <img src={profilePic} alt="Raj Gurung" className="profile-image" />
+                        <div className="status-badge-wrapper">
+                            <span className="status-badge">Available for hire</span>
+                        </div>
+                        <p className="location-info">London, UK (GMT) · Open to all timezones</p>
                     </div>
                     <div className="hero-content">
                         <h1 className="hire-title">Raj Gurung</h1>
@@ -244,9 +248,6 @@ const HirePage = () => {
                             </p>
                             <p>
                                 As one of the earliest engineers at Syft, helped design and scale the platform through to its <strong>acquisition by Indeed</strong>. At Indeed, led multiple engineering projects and Service Excellence initiatives processing over <strong>12 million weekly requests</strong>. Reduced core API response times from <strong>over a minute to under a second</strong>, integrated machine learning into production workflows, and embedded telemetry and SLO-driven monitoring to ensure reliability at scale.
-                            </p>
-                            <p className="status">
-                                <span className="status-badge">Available for hire</span> · London, UK (GMT) · Open to all timezones
                             </p>
                         </div>
                     </div>
