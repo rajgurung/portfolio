@@ -53,6 +53,17 @@ const projects = [
         featured: true,
         impact: ["5,000+ verified voters", "25+ countries represented", "Transparent polling system"],
         image: "/images/projects/make-nepal-great.png"
+    },
+    {
+        id: 8,
+        title: "Stock Intelligence",
+        description: "AI-powered stock analysis platform providing real-time market insights, technical indicators, and predictive analytics. Built with modern React frontend and Python ML backend for intelligent investment decisions.",
+        tech: ["React", "Python", "TensorFlow", "REST API", "Real-time Data"],
+        github: "https://github.com/rajgurung/stock-intelligence-frontend",
+        demo: "https://stock-intelligence-frontend.vercel.app",
+        featured: true,
+        impact: ["Real-time market data", "ML-powered insights", "Technical analysis tools"],
+        image: "/images/projects/stock-intelligence.png"
     }
 ];
 

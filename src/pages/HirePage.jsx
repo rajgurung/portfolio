@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import profilePic from '../images/profile_pic.jpg';
+import projects from '../data/projects';
 import '../styelsheets/hire.css';
 
 const HirePage = () => {
@@ -332,6 +333,73 @@ const HirePage = () => {
                             <span className="skill-icon">{skill.icon}</span>
                             {skill.name}
                         </span>
+                    ))}
+                </div>
+            </section>
+
+            {/* Selected Projects Section */}
+            <section className="hire-section projects-section">
+                <h2 className="section-heading">SELECTED PROJECTS</h2>
+                <div className="projects-grid">
+                    {projects.filter(p => p.featured).map((project) => (
+                        <div key={project.id} className="project-card">
+                            <div className="project-image-wrapper">
+                                {project.image ? (
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="project-image"
+                                        onError={(e) => {
+                                            e.target.style.display = 'none';
+                                            e.target.parentElement.classList.add('project-image-placeholder');
+                                        }}
+                                    />
+                                ) : (
+                                    <div className="project-image-placeholder"></div>
+                                )}
+                            </div>
+                            <div className="project-content">
+                                <h3 className="project-title">{project.title}</h3>
+                                <p className="project-description">{project.description}</p>
+
+                                <div className="project-tech">
+                                    {project.tech.map((tech, index) => (
+                                        <span key={index} className="tech-badge">{tech}</span>
+                                    ))}
+                                </div>
+
+                                {project.impact && (
+                                    <ul className="project-impact">
+                                        {project.impact.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                <div className="project-links">
+                                    {project.demo && (
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="project-link project-link-primary"
+                                        >
+                                            View Site →
+                                        </a>
+                                    )}
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="project-link"
+                                        >
+                                            GitHub →
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </section>
