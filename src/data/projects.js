@@ -51,8 +51,9 @@ const projects = [
         github: null,
         demo: "https://makenepalgreat.com",
         featured: true,
-        impact: ["5,000+ verified voters", "25+ countries represented", "Go REST API backend", "Redis session storage"],
-        image: "/images/projects/make-nepal-great.png"
+        impact: ["Full-stack voting platform", "International diaspora reach", "Go REST API backend", "Redis session storage"],
+        image: "/images/projects/make-nepal-great.png",
+        status: null
     },
     {
         id: 8,
@@ -63,7 +64,8 @@ const projects = [
         demo: "https://stock-intelligence-frontend.vercel.app",
         featured: true,
         impact: ["Real-time market data", "ML-powered insights", "Technical analysis tools"],
-        image: "/images/projects/stock-intelligence.png"
+        image: "/images/projects/stock-intelligence.png",
+        status: "shelved"
     }
 ];
 

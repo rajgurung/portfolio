@@ -360,7 +360,12 @@ const HirePage = () => {
                                 )}
                             </div>
                             <div className="project-content">
-                                <h3 className="project-title">{project.title}</h3>
+                                <div className="project-header">
+                                    <h3 className="project-title">{project.title}</h3>
+                                    {project.status && (
+                                        <span className="project-status-badge">⏸️ Shelved</span>
+                                    )}
+                                </div>
                                 <p className="project-description">{project.description}</p>
 
                                 <div className="project-tech">
