@@ -431,8 +431,8 @@ const HirePage = () => {
 
                                     <footer>
                                         <cite>
-                                            — <a href={testimonial.linkedin} target="_blank" rel="noopener noreferrer">
-                                                {testimonial.author}
+                                            — <a href={testimonial.linkedin} target="_blank" rel="noopener noreferrer" className="testimonial-author-link">
+                                                {testimonial.author} <span className="linkedin-icon">🔗</span>
                                             </a>, {testimonial.role}
                                         </cite>
                                     </footer>

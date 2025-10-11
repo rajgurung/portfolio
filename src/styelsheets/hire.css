@@ -880,7 +880,8 @@ body.dark-mode .project-title {
     color: #f0f0f0 !important;
 }
 
-body.dark-mode .project-description {
+body.dark-mode .project-description,
+body.dark-mode .hire-container .project-description {
     color: #c5c5c5 !important;
 }
 
@@ -1016,12 +1017,17 @@ body.dark-mode .hire-container .project-link-primary:hover {
     color: #ff8c42;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .testimonial-item cite a:hover {
     color: #ffaa66;
     text-decoration: underline;
+}
+
+.linkedin-icon {
+    font-size: 0.875rem;
+    opacity: 0.8;
 }
 
 /* Read More Button */
