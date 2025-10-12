@@ -268,24 +268,24 @@ const HirePage = () => {
                             className="experience-slide"
                             ref={el => experienceRefs.current[index] = el}
                         >
-                            {experience.logo && (
-                                <div className="experience-logo">
-                                    <img src={experience.logo} alt={`${experience.company} logo`} />
-                                </div>
-                            )}
-                            <div className="experience-content">
+                            <div className="experience-top">
+                                {experience.logo && (
+                                    <div className="experience-logo">
+                                        <img src={experience.logo} alt={`${experience.company} logo`} />
+                                    </div>
+                                )}
                                 <div className="experience-header">
                                     <h3>{experience.title}</h3>
                                     <span className="company-inline">@ {experience.company}</span>
                                     <span className="duration">{experience.duration}</span>
                                 </div>
-                                <p className="experience-description">
-                                    {experience.description}
-                                </p>
-                                <p className="tech-stack-inline">
-                                    <strong>Tech:</strong> {experience.tech.join(' · ')}
-                                </p>
                             </div>
+                            <p className="experience-description">
+                                {experience.description}
+                            </p>
+                            <p className="tech-stack-inline">
+                                <strong>Tech:</strong> {experience.tech.join(' · ')}
+                            </p>
                         </div>
                     ))}
                 </div>
