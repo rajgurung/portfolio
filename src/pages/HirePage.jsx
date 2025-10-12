@@ -97,7 +97,7 @@ const HirePage = () => {
             title: "Senior Software Engineer",
             company: "Indeed",
             logo: "/images/logos/indeed.png",
-            duration: "Mar 2021 - Aug 2024",
+            duration: "Mar 2021 - Aug 2025",
             description: "Led multiple engineering projects and cross-functional teams using RFCs, design reviews, and retrospectives. Developed data products, eliminated bottlenecks in core APIs (reducing response time from 1min+ to under 1s), and led the Service Excellence Team. Mentored junior developers and led technical interviews for Senior and Staff Engineers.",
             tech: ["AWS", "Rails", "Sidekiq", "Kafka", "Snowflake", "PostgreSQL", "React", "Datadog"]
         },
