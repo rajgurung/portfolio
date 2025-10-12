@@ -97,6 +97,7 @@ const HirePage = () => {
             title: "Senior Software Engineer",
             company: "Indeed",
             logo: "/images/logos/indeed.png",
+            website: "https://indeedflex.co.uk",
             duration: "Mar 2021 - Aug 2025",
             description: "Led multiple engineering projects and cross-functional teams using RFCs, design reviews, and retrospectives. Developed data products, eliminated bottlenecks in core APIs (reducing response time from 1min+ to under 1s), and led the Service Excellence Team. Mentored junior developers and led technical interviews for Senior and Staff Engineers.",
             tech: ["AWS", "Rails", "Sidekiq", "Kafka", "Snowflake", "PostgreSQL", "React", "Datadog"]
@@ -106,6 +107,7 @@ const HirePage = () => {
             title: "Senior Software Engineer",
             company: "Syft (acquired by Indeed)",
             logo: "/images/logos/syft.png",
+            website: "https://indeedflex.co.uk",
             duration: "Oct 2017 - Mar 2021",
             description: "One of the early technical members with end-to-end ownership from ideation to post-production. Led development of key verticals including workforce management, multi-tenant employer, and agency partner solutions. Helped scale the platform through to acquisition by Indeed.",
             tech: ["Heroku", "Rails", "Sidekiq", "Rollbar", "PostgreSQL", "React"]
@@ -115,6 +117,7 @@ const HirePage = () => {
             title: "Software Engineer",
             company: "The Ai Corporation",
             logo: "/images/logos/ai-corp.png",
+            website: "https://www.aicorporation.com",
             duration: "Jan 2016 - Sep 2017",
             description: "Industry-leading fraud management service. Optimised real-time payment to prevent fraudulent transactions in a distributed system, boosting TPS by 10x. Designed scalable APIs and led a complex authorisation system enabling granular manager access.",
             tech: ["Rails", "PostgreSQL", "Distributed Systems", "REST APIs"]
@@ -124,6 +127,7 @@ const HirePage = () => {
             title: "Software Engineer",
             company: "In4System (acquired by MRI Software)",
             logo: "https://image.pitchbook.com/U3myX2sdTTCkDL19Ob6T0pxeNNQ1567112495490_200x200",
+            website: "https://www.mrisoftware.com",
             duration: "Dec 2013 - Dec 2015",
             description: "Asset Management Software for 850K social housing units. Led a large-scale migration from ASP.NET to Rails, standardising best practices. Developed REST APIs for a remote mobile team, collaborating with cross-functional teams for seamless integration.",
             tech: ["Rails", "PostgreSQL", "ASP.NET", "REST APIs"]
@@ -133,6 +137,7 @@ const HirePage = () => {
             title: "Junior Software Engineer",
             company: "Antix",
             logo: "/images/logos/antix.png",
+            website: "https://www.crunchbase.com/organization/antix-labs#overview",
             duration: "Oct 2012 - Nov 2013",
             description: "Developed a global online game platform with multi-language support, enabling consumers to play native games on STBs, TVs, phones, tablets and PCs. Integrated social logins for seamless cross-device access, improving user experience.",
             tech: ["Gaming Platform", "Multi-device", "Social Integration", "REST APIs"]
@@ -276,7 +281,16 @@ const HirePage = () => {
                                 )}
                                 <div className="experience-header">
                                     <h3>{experience.title}</h3>
-                                    <span className="company-inline">@ {experience.company}</span>
+                                    <span className="company-inline">
+                                        @ <a
+                                            href={experience.website}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="company-link"
+                                        >
+                                            {experience.company} ↗
+                                        </a>
+                                    </span>
                                     <span className="duration">{experience.duration}</span>
                                 </div>
                             </div>
