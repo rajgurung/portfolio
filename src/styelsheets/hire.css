@@ -665,6 +665,12 @@ body.dark-mode .tech-stack-inline {
     color: #ff8c42;
 }
 
+.arrow-icon {
+    font-size: 0.75em;
+    display: inline-block;
+    margin-left: 2px;
+}
+
 .duration {
     font-size: 0.8125rem;
     color: #999;

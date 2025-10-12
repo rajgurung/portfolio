@@ -288,7 +288,7 @@ const HirePage = () => {
                                             rel="noopener noreferrer"
                                             className="company-link"
                                         >
-                                            {experience.company} ↗
+                                            {experience.company} <span className="arrow-icon">↗</span>
                                         </a>
                                     </span>
                                     <span className="duration">{experience.duration}</span>
