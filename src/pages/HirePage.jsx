@@ -255,7 +255,7 @@ const HirePage = () => {
                                 Senior software engineer and technical leader with <strong>15+ years</strong> building mission-critical platforms across gaming, housing, fraud detection, and workforce systems. Started at Antix developing cross-device gaming platforms, moved into enterprise housing software at In4System (acquired by MRI Software), and real-time fraud detection at The Ai Corporation.
                             </p>
                             <p>
-                                As one of the earliest engineers at Syft, helped design and scale the platform through to its <strong>acquisition by Indeed</strong>. At Indeed, led multiple high-impact core projects, with ownership of the Agency Partners vertical, and Service Excellence initiatives processing over <strong>12 million weekly requests</strong>. Reduced core API response times from <strong>over a minute to under a second</strong>, integrated machine learning into production workflows, and embedded telemetry and SLO-driven monitoring to ensure reliability at scale.
+                                As one of the earliest engineers at Syft, helped design and scale the platform through to its <strong>acquisition by Indeed</strong>. At Indeed, led multiple high-impact core projects, with ownership of the <strong>Agency Partners vertical</strong>, and Service Excellence initiatives processing over <strong>12 million weekly requests</strong>. Reduced core API response times from <strong>over a minute to under a second</strong>, integrated machine learning into production workflows, and embedded telemetry and SLO-driven monitoring to ensure reliability at scale.
                             </p>
                         </div>
                     </div>
