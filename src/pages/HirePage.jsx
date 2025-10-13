@@ -249,7 +249,7 @@ const HirePage = () => {
                     </div>
                     <div className="hero-content">
                         <h1 className="hire-title">Raj Gurung</h1>
-                        <h2 className="hire-subtitle">Senior Software Engineer & Technical Leader</h2>
+                        <h2 className="hire-subtitle">Senior Software Engineer & Technical Partner</h2>
                         <div className="hire-intro">
                             <p>
                                 Senior software engineer and technical leader with <strong>15+ years</strong> building mission-critical platforms across gaming, housing, fraud detection, and workforce systems. Started at Antix developing cross-device gaming platforms, moved into enterprise housing software at In4System (acquired by MRI Software), and real-time fraud detection at The Ai Corporation.
