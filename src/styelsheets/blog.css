@@ -25,36 +25,37 @@
 }
 
 .blog-excerpt {
-    font-size: 1.1rem;
-    color: #332d2d;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    line-height: 1.7;
 }
 
 /* Blog Detail Styles */
 .blog-detail-container {
     /*background: #fdfaf6;*/
-    color: #333;
+    color: #1a1a1a;
     font-family: 'Lora', Georgia, serif;
-    font-size: 1.15rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    line-height: 1.8;
     padding: 4rem 1.5rem;
     max-width: 700px;
     margin: 0 auto;
 }
 
 .blog-detail-container p {
-    font-size: 1.16rem;
+    font-size: 1.2rem;
 }
 
 .blog-detail-container a {
-    color: #222;
+    color: #0066cc;
     text-decoration: none;
-    border-bottom: 2px solid #f4dccc;
-    transition: border-color 0.2s ease;
+    border-bottom: 2px solid #0066cc;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .blog-detail-container a:hover {
-    border-color: #e6c2ad;
+    color: #0052a3;
+    border-color: #0052a3;
 }
 
 .blog-detail-container h1,
