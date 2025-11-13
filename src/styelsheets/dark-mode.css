@@ -232,9 +232,17 @@ body.dark-mode .landing-page p {
     color: #e4e4e4;
 }
 
-/* Fix mobile navbar overlap on Landing page */
+/* Fix mobile navbar overlap on Landing, Blogs, and Blog Detail pages */
 @media (max-width: 768px) {
     .landing-page {
+        padding-top: 120px !important;
+    }
+
+    .blogs-page {
+        padding-top: 120px !important;
+    }
+
+    .blog-detail-page {
         padding-top: 120px !important;
     }
 }
@@ -531,7 +539,7 @@ body.dark-mode .project-link-primary:hover {
     }
 }
 
-/* Mobile: Keep original hamburger overlay behavior */
+/* Mobile: RG logo + dark mode toggle + hamburger menu */
 @media (max-width: 991px) {
     /* Keep hamburger overlay full-screen on mobile */
     .navbar-collapse {
@@ -563,18 +571,44 @@ body.dark-mode .project-link-primary:hover {
         padding: 1rem 0 !important;
     }
 
-    /* Right items also in mobile menu */
+    /* Hide desktop dark mode toggle (inside navbar-collapse) */
     .navbar-right-items {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-top: 2rem;
-        align-items: flex-start;
+        display: none !important;
+    }
+
+    /* Container for mobile navbar */
+    .hamburger-nav .container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Keep RG logo visible */
+    .navbar-brand {
+        font-size: 1.5rem !important;
+        font-weight: 800 !important;
+    }
+
+    /* Show mobile dark mode toggle and hamburger together on right */
+    .dark-mode-toggle-mobile {
+        display: flex !important;
+        margin-left: auto !important;
+        margin-right: 1rem !important;
     }
 
     /* Show hamburger button on mobile */
     .navbar-toggler {
         display: block !important;
         z-index: 10000;
+        margin-left: 0 !important;
+    }
+}
+
+/* Desktop: Hide mobile toggle, show desktop toggle */
+@media (min-width: 992px) {
+    .dark-mode-toggle-mobile {
+        display: none !important;
     }
 }

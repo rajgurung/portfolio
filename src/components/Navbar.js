@@ -37,21 +37,7 @@ class NavbarClass extends Component {
               <b>RG</b>
             </Link>
 
-            {/* Hamburger button - only shows on mobile (<992px) */}
-            <button
-                className={`navbar-toggler ${this.state.isCollapsed ? 'collapsed' : ''}`}
-                type="button"
-                onClick={this.toggleNavbar}
-                aria-expanded={!this.state.isCollapsed}
-                aria-label="Toggle navigation"
-            >
-              <span className="icon-bar top-bar"></span>
-              <span className="icon-bar middle-bar"></span>
-              <span className="icon-bar bottom-bar"></span>
-              <span className="sr-only">Toggle navigation</span>
-            </button>
-
-            {/* Navigation items - horizontal on desktop, collapsible on mobile */}
+            {/* Navigation items - horizontal on desktop, hidden on mobile */}
             <div className={collapseClass} id="navbar-toggle">
               <ul className="navbar-nav">
                 <li className="nav-item">
@@ -71,7 +57,7 @@ class NavbarClass extends Component {
                 </li>
               </ul>
 
-              {/* Right-side items: Dark mode toggle */}
+              {/* Right-side items: Dark mode toggle (desktop only) */}
               <div className="navbar-right-items">
                 <button
                     className="dark-mode-toggle-navbar"
@@ -83,6 +69,30 @@ class NavbarClass extends Component {
                 </button>
               </div>
             </div>
+
+            {/* Dark mode toggle - always visible on mobile */}
+            <button
+                className="dark-mode-toggle-navbar dark-mode-toggle-mobile"
+                onClick={toggleDarkMode}
+                aria-label="Toggle dark mode"
+                title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDarkMode ? '☀️' : '🌙'}
+            </button>
+
+            {/* Hamburger button - only shows on mobile (<992px) */}
+            <button
+                className={`navbar-toggler ${this.state.isCollapsed ? 'collapsed' : ''}`}
+                type="button"
+                onClick={this.toggleNavbar}
+                aria-expanded={!this.state.isCollapsed}
+                aria-label="Toggle navigation"
+            >
+              <span className="icon-bar top-bar"></span>
+              <span className="icon-bar middle-bar"></span>
+              <span className="icon-bar bottom-bar"></span>
+              <span className="sr-only">Toggle navigation</span>
+            </button>
           </div>
         </nav>
     );
