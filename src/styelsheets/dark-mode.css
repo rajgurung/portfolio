@@ -448,7 +448,7 @@ body.dark-mode .project-link-primary:hover {
     }
 
     .navbar-nav .nav-link {
-        font-size: 0.9rem !important;
+        font-size: 0.95rem !important;
         font-weight: 500 !important;
         color: #666 !important;
         padding: 0.5rem 0 !important;
@@ -480,7 +480,7 @@ body.dark-mode .project-link-primary:hover {
 
     /* HIRE ME button inside navbar-nav - sharp rectangular button */
     .navbar-nav .navbar-hire-link {
-        font-size: 0.9rem !important;
+        font-size: 0.95rem !important;
         font-weight: 500 !important;
         color: #ff8c42 !important;
         padding: 8px 20px !important;
