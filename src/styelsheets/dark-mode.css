@@ -65,11 +65,12 @@ body.dark-mode .blog-detail-container a:hover {
 }
 
 body.dark-mode .back-link {
-    color: #a0a0a0;
+    color: #ffa566;
 }
 
 body.dark-mode .back-link:hover {
-    color: #d4a574;
+    color: #ffb885;
+    border-bottom-color: #ffa566;
 }
 
 body.dark-mode .markdown-heading {
@@ -107,9 +108,10 @@ body.dark-mode .navbar-brand {
     text-decoration: none;
     margin-left: auto;
     margin-right: 1rem;
-    padding: 8px 20px;
+    padding: 7px 18px;
     border-radius: 20px;
     border: 2px solid #ff8c42;
+    line-height: 1.4;
     transition: all 0.3s ease;
 }
 
@@ -119,12 +121,22 @@ body.dark-mode .navbar-brand {
     text-decoration: none;
 }
 
+.navbar-hire-link.active {
+    background: #ff8c42;
+    color: #fff !important;
+}
+
 body.dark-mode .navbar-hire-link {
     color: #ff8c42 !important;
     border-color: #ff8c42;
 }
 
 body.dark-mode .navbar-hire-link:hover {
+    background: #ff8c42;
+    color: #fff !important;
+}
+
+body.dark-mode .navbar-hire-link.active {
     background: #ff8c42;
     color: #fff !important;
 }
@@ -149,7 +161,7 @@ body.dark-mode .navbar-hire-link:hover {
 }
 
 .dark-mode-toggle-navbar:hover {
-    transform: scale(1.1);
+    /* Removed transform: scale(1.1) as it triggers scrollbar */
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -161,6 +173,7 @@ body.dark-mode .dark-mode-toggle-navbar {
 
 body.dark-mode .dark-mode-toggle-navbar:hover {
     box-shadow: 0 2px 12px rgba(212, 165, 116, 0.3);
+    /* No transform to avoid triggering scrollbar */
 }
 
 /* Mobile responsive adjustments */
@@ -317,4 +330,251 @@ body.dark-mode .project-link-primary {
 body.dark-mode .project-link-primary:hover {
     background: #c49564;
     border-color: #c49564;
+}
+
+/* ========================================
+   DESKTOP HORIZONTAL NAVBAR STYLES
+   ======================================== */
+
+/* Desktop: Show horizontal navigation at ≥992px */
+@media (min-width: 992px) {
+    /* Override hamburger-nav styles for desktop */
+    .hamburger-nav {
+        position: relative !important;
+        padding: 1.25rem 0 !important;
+        margin-top: 1.5rem !important;
+    }
+
+    /* Clean navbar appearance */
+    .navbar {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Make navbar horizontal and auto-expand on desktop */
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        align-items: center;
+        position: static !important;
+        background: transparent !important;
+        height: auto !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+        top: auto !important;
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+    }
+
+    /* Override hamburger-nav collapse styles */
+    .hamburger-nav .navbar-collapse {
+        position: static !important;
+        height: auto !important;
+        background: transparent !important;
+        overflow: visible !important;
+    }
+
+    /* Override navbar-nav positioning */
+    .hamburger-nav .navbar-collapse .navbar-nav {
+        position: static !important;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    /* Hide hamburger button on desktop */
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+
+    /* Container should use flexbox on desktop */
+    .hamburger-nav .container {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        max-width: 850px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Navbar brand styling - clean and bold */
+    .navbar-brand {
+        font-size: 1.5rem !important;
+        font-weight: 800 !important;
+        margin-right: 1.6rem !important;
+        flex-shrink: 0;
+        letter-spacing: 0.05em;
+        line-height: 1.5 !important;
+        color: #ff6b1a !important;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .navbar-brand:hover {
+        color: #cc5500 !important;
+        transform: translateY(-1px);
+    }
+
+    body.dark-mode .navbar-brand {
+        color: #ff8c42 !important;
+    }
+
+    body.dark-mode .navbar-brand:hover {
+        color: #ff6b1a !important;
+    }
+
+    /* Main navigation links */
+    .navbar-nav {
+        flex-direction: row !important;
+        align-items: center !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        flex-grow: 0 !important;
+        flex-shrink: 0;
+        gap: 1.5rem !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem !important;
+        font-weight: 500 !important;
+        color: #666 !important;
+        padding: 0.5rem 0 !important;
+        border-bottom: none !important;
+        transition: color 0.2s ease !important;
+        letter-spacing: 0.02em;
+        line-height: 1.5 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff8c42 !important;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #ff8c42 !important;
+    }
+
+    body.dark-mode .navbar-nav .nav-link {
+        color: #a0a0a0 !important;
+    }
+
+    body.dark-mode .navbar-nav .nav-link:hover {
+        color: #ff8c42 !important;
+    }
+
+    body.dark-mode .navbar-nav .nav-link.active {
+        color: #ff8c42 !important;
+    }
+
+    /* HIRE ME button inside navbar-nav - sharp rectangular button */
+    .navbar-nav .navbar-hire-link {
+        font-size: 0.9rem !important;
+        font-weight: 500 !important;
+        color: #ff8c42 !important;
+        padding: 8px 20px !important;
+        line-height: 1.5 !important;
+        transition: all 0.2s ease !important;
+        text-decoration: none !important;
+        letter-spacing: 0.02em;
+        border: 2px solid #ff8c42 !important;
+        border-radius: 4px !important;
+        display: inline-block !important;
+    }
+
+    .navbar-nav .navbar-hire-link:hover {
+        background: #ff8c42 !important;
+        color: #fff !important;
+    }
+
+    .navbar-nav .navbar-hire-link.active {
+        background: #ff8c42 !important;
+        color: #fff !important;
+    }
+
+    body.dark-mode .navbar-nav .navbar-hire-link {
+        color: #ff8c42 !important;
+        border-color: #ff8c42 !important;
+    }
+
+    body.dark-mode .navbar-nav .navbar-hire-link:hover {
+        background: #ff8c42 !important;
+        color: #fff !important;
+    }
+
+    body.dark-mode .navbar-nav .navbar-hire-link.active {
+        background: #ff8c42 !important;
+        color: #fff !important;
+    }
+
+    /* Right-side items container (now only dark mode toggle) */
+    .navbar-right-items {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: 1.5rem !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* HIRE ME button on desktop */
+    .navbar-hire-link {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Dark mode toggle on desktop */
+    .dark-mode-toggle-navbar {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Mobile: Keep original hamburger overlay behavior */
+@media (max-width: 991px) {
+    /* Keep hamburger overlay full-screen on mobile */
+    .navbar-collapse {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.99) !important;
+        z-index: 9999;
+        padding: 5rem 2rem;
+    }
+
+    body.dark-mode .navbar-collapse {
+        background: rgba(26, 26, 26, 0.99) !important;
+    }
+
+    /* Stack navigation vertically on mobile */
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 1rem 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.5rem !important;
+        padding: 1rem 0 !important;
+    }
+
+    /* Right items also in mobile menu */
+    .navbar-right-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+
+    /* Show hamburger button on mobile */
+    .navbar-toggler {
+        display: block !important;
+        z-index: 10000;
+    }
 }

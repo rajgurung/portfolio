@@ -30,14 +30,8 @@ export default function BlogDetail() {
                     to="/blogs"
                     className="back-link"
                     style={{
-                        textDecoration: 'none',
-                        marginBottom: '2rem',
-                        color: '#888',
-                        transition: 'color 0.2s ease',
                         paddingTop: '3rem'
                     }}
-                    onMouseOver={e => (e.target.style.textDecoration = 'none')}
-                    onMouseOut={e => (e.target.style.textDecoration = 'none')}
                 >
                     ← All posts
                 </Link>
