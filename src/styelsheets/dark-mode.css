@@ -4,6 +4,11 @@ body.dark-mode {
     color: #e4e4e4;
 }
 
+/* Ensure html element also gets dark background */
+html:has(body.dark-mode) {
+    background-color: #1a1a1a !important;
+}
+
 /* Ensure all page wrappers inherit dark background */
 body.dark-mode #root,
 body.dark-mode #root > div {
@@ -233,7 +238,7 @@ body.dark-mode .landing-page p {
 }
 
 /* Fix mobile navbar overlap on Landing, Blogs, and Blog Detail pages */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .landing-page {
         padding-top: 120px !important;
     }
