@@ -1267,6 +1267,40 @@ body.dark-mode .back-to-top:hover {
     color: #4a4a4a;
 }
 
+/* Focus states for keyboard navigation */
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
+.project-link:focus-visible,
+.project-link-primary:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
+.carousel-nav-btn:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
+.read-more-btn:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
+.back-to-top:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
+.testimonial-author-link:focus-visible,
+.company-link:focus-visible {
+    outline: 2px solid #ff8c42;
+    outline-offset: 2px;
+}
+
 body.dark-mode .contact-intro {
     color: #c9c9c9 !important;
 }
