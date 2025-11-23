@@ -91,7 +91,7 @@ body:not(.dark-mode) .company-link:hover {
 }
 
 body:not(.dark-mode) .duration {
-    color: #999 !important;
+    color: #666 !important;
 }
 
 body:not(.dark-mode) .experience-description {
@@ -186,14 +186,25 @@ body:not(.dark-mode) .contact-intro {
     color: #3a3a3a !important;
 }
 
-body:not(.dark-mode) .btn-primary,
+body:not(.dark-mode) .btn-primary {
+    background-color: #ff8c42 !important;
+    color: #ffffff !important;
+    border: 1px solid #ff8c42 !important;
+}
+
 body:not(.dark-mode) .btn-secondary {
     background-color: #ffffff !important;
     color: #4a4a4a !important;
     border: 1px solid #e8e8e8 !important;
 }
 
-body:not(.dark-mode) .btn-primary:hover,
+body:not(.dark-mode) .btn-primary:hover {
+    background-color: #e07a35 !important;
+    border-color: #e07a35 !important;
+    box-shadow: 0 2px 6px rgba(255, 140, 66, 0.3) !important;
+    color: #ffffff !important;
+}
+
 body:not(.dark-mode) .btn-secondary:hover {
     background-color: #fffaf7 !important;
     border-color: #ff8c42 !important;
@@ -204,15 +215,15 @@ body:not(.dark-mode) .btn-secondary:hover {
 body:not(.dark-mode) .hire-footer {
     border-top: none !important;
     background-color: transparent !important;
-    color: #999 !important;
+    color: #666 !important;
 }
 
 body:not(.dark-mode) .hire-footer p {
-    color: #999 !important;
+    color: #666 !important;
 }
 
 body:not(.dark-mode) .footer-attribution {
-    color: #999 !important;
+    color: #666 !important;
 }
 
 body:not(.dark-mode) .footer-heart {
@@ -237,11 +248,11 @@ body.dark-mode .hire-container {
     color: #e0e0e0 !important;
 }
 
-body.dark-mode .hire-container a {
+body.dark-mode .hire-container a:not(.btn-primary):not(.btn-secondary):not(.project-link-primary) {
     color: #ff8c42 !important;
 }
 
-body.dark-mode .hire-container a:hover {
+body.dark-mode .hire-container a:not(.btn-primary):not(.btn-secondary):not(.project-link-primary):hover {
     color: #ffaa66 !important;
 }
 
@@ -318,7 +329,7 @@ body.dark-mode .carousel-indicator.active {
 }
 
 .hero-section {
-    margin-bottom: 120px;
+    margin-bottom: 64px;
 }
 
 /* Hero Layout with Photo */
@@ -673,7 +684,7 @@ body.dark-mode .tech-stack-inline {
 
 .duration {
     font-size: 0.8125rem;
-    color: #999;
+    color: #666;
     font-weight: 400;
     display: block;
     margin-top: 4px;
@@ -1194,7 +1205,8 @@ body.dark-mode .back-to-top:hover {
 
 /* Contact Section */
 .contact-section {
-    margin-top: 120px;
+    margin-top: 0;
+    margin-bottom: 96px;
 }
 
 .contact-intro {
@@ -1225,12 +1237,28 @@ body.dark-mode .back-to-top:hover {
     transition: all 0.2s ease;
     cursor: pointer;
     text-align: center;
+}
+
+.btn-primary {
+    background-color: #ff8c42;
+    color: #ffffff;
+    border: 1px solid #ff8c42;
+}
+
+.btn-secondary {
     background-color: #ffffff;
     color: #4a4a4a;
     border: 1px solid #e8e8e8;
 }
 
-.btn-primary:hover,
+.btn-primary:hover {
+    transform: translateY(-1px);
+    background-color: #e07a35;
+    border-color: #e07a35;
+    box-shadow: 0 2px 6px rgba(255, 140, 66, 0.3);
+    color: #ffffff;
+}
+
 .btn-secondary:hover {
     transform: translateY(-1px);
     background-color: #fffaf7;
@@ -1243,14 +1271,25 @@ body.dark-mode .contact-intro {
     color: #c9c9c9 !important;
 }
 
-body.dark-mode .btn-primary,
+body.dark-mode .btn-primary {
+    background-color: #ff8c42 !important;
+    color: #ffffff !important;
+    border: 1px solid #ff8c42 !important;
+}
+
 body.dark-mode .btn-secondary {
     background-color: #242424 !important;
     color: #d4d4d4 !important;
     border: 1px solid #3a3a3a !important;
 }
 
-body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:hover {
+    background-color: #e07a35 !important;
+    border-color: #e07a35 !important;
+    box-shadow: 0 2px 6px rgba(255, 140, 66, 0.4) !important;
+    color: #ffffff !important;
+}
+
 body.dark-mode .btn-secondary:hover {
     background-color: #2a2a2a !important;
     border-color: #ff8c42 !important;
@@ -1285,7 +1324,7 @@ body.dark-mode .btn-secondary:hover {
     padding-top: 0;
     border-top: none;
     background-color: transparent !important;
-    color: #999;
+    color: #666;
     font-size: 0.875rem;
     text-align: center;
 }
@@ -1296,7 +1335,7 @@ body.dark-mode .btn-secondary:hover {
 
 .footer-attribution {
     font-size: 0.8125rem;
-    color: #999;
+    color: #666;
 }
 
 .footer-heart {

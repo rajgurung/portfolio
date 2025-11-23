@@ -262,6 +262,34 @@ const HirePage = () => {
                 </div>
             </section>
 
+            {/* Contact/CTA Section */}
+            <section className="hire-section contact-section">
+                <h2 className="section-heading">GET IN TOUCH</h2>
+                <p className="contact-intro">
+                    I'm always interested in hearing about new opportunities, challenging projects, or just connecting with
+                    fellow developers.
+                </p>
+
+                <div className="cta-buttons">
+                    <a href="mailto:gurungraj26@gmail.com" className="btn-primary">
+                        <i className="fas fa-envelope"></i>
+                        Send me an email
+                    </a>
+                    <a href="/raj-gurung-cv.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                        <i className="fas fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="https://github.com/rajgurung" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                        <i className="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/raj---gurung/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                        <i className="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </section>
+
             {/* Experience Section - Horizontal Scroll Carousel */}
             <section className="hire-section experience-section">
                 <h2 className="section-heading">WORK EXPERIENCE</h2>
@@ -461,34 +489,6 @@ const HirePage = () => {
                             </div>
                         );
                     })}
-                </div>
-            </section>
-
-            {/* Contact/CTA Section */}
-            <section className="hire-section contact-section">
-                <h2 className="section-heading">GET IN TOUCH</h2>
-                <p className="contact-intro">
-                    I'm always interested in hearing about new opportunities, challenging projects, or just connecting with
-                    fellow developers.
-                </p>
-
-                <div className="cta-buttons">
-                    <a href="mailto:gurungraj26@gmail.com" className="btn-primary">
-                        <i className="fas fa-envelope"></i>
-                        Send me an email
-                    </a>
-                    <a href="/raj-gurung-cv.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                        <i className="fas fa-download"></i>
-                        Download CV
-                    </a>
-                    <a href="https://github.com/rajgurung" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                        <i className="fab fa-github"></i>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/raj---gurung/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                        <i className="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
                 </div>
             </section>
 
