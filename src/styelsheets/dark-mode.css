@@ -21,23 +21,27 @@ body.dark-mode .blogs-page {
 }
 
 body.dark-mode .blog-card {
-    border-color: #3a3a3a;
+    border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .blog-card:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 body.dark-mode .blog-title-link {
-    color: #e8e8e8;
+    color: #ececec;
 }
 
 body.dark-mode .blog-title-link:hover {
-    color: #d4a574;
+    color: #ff8c42;
 }
 
 body.dark-mode .blog-date {
-    color: #a0a0a0;
+    color: #666;
 }
 
 body.dark-mode .blog-excerpt {
-    color: #c8c8c8;
+    color: #bbb;
 }
 
 /* Blog Detail Page */
