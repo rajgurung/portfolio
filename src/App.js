@@ -21,7 +21,6 @@ import Projects from './pages/Projects';
 
 // import Landing from './pages/Landing';
 import Landing from './pages/Landing';
-import About from './components/About';
 
 import CvPage from './pages/CvPage';
 import HirePage from './pages/HirePage';
@@ -40,7 +39,6 @@ function App() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/hire" element={<HirePage />} />
                     <Route path="/landing" element={<Landing />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/cv" element={<CvPage />} />
                 </Routes>
             </Router>

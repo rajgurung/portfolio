@@ -252,10 +252,13 @@ const HirePage = () => {
                         <h2 className="hire-subtitle">Senior Software Engineer & Technical Partner</h2>
                         <div className="hire-intro">
                             <p>
-                                Senior software engineer and technical partner with <strong>15+ years</strong> building mission-critical platforms across gaming, housing, fraud detection, and workforce systems. Started at Antix developing cross-device gaming platforms, moved into enterprise housing software at In4System (acquired by MRI Software), and real-time fraud detection at The Ai Corporation.
+                                I build systems that need to work at scale. Over <strong>15 years</strong>, I've focused on platforms where downtime isn't an option: real-time fraud detection, workforce scheduling at <strong>12M weekly requests</strong>, and gaming infrastructure across devices.
                             </p>
                             <p>
-                                As one of the earliest engineers at Syft, helped design and scale the platform through to its <strong>acquisition by Indeed</strong>. At Indeed, led multiple high-impact core projects, with ownership of the <strong>Agency Partners vertical</strong>, and Service Excellence initiatives processing over <strong>12 million weekly requests</strong>. Reduced core API response times from <strong>over a minute to under a second</strong>, integrated machine learning into production workflows, and embedded <strong>telemetry and SLO-driven monitoring</strong> to ensure reliability at scale.
+                                Recent work: Reduced critical API response times from <strong>60+ seconds to sub-second</strong> by redesigning data access patterns and introducing caching layers. Led <strong>Agency Partners vertical</strong> at Indeed, implementing SLO-driven monitoring and automated rollback strategies. Integrated ML inference into production workflows while maintaining reliability targets.
+                            </p>
+                            <p>
+                                I care about pragmatic architecture, production observability, and teams that own their systems end-to-end. Strongest in backend systems, distributed architectures, and performance optimization.
                             </p>
                         </div>
                     </div>

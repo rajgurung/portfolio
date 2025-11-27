@@ -20,7 +20,7 @@ export default function Landing() {
                 <h1 className="section-title">Raj Gurung</h1>
                 <h4 className="section-title" style={{ marginTop: '50px' }}></h4>
                 <p className="section-title" style={{ marginTop: '2px' }}>
-                    Hey, I’m Raj — Husband, Dad to Kaizen, Developer, and a proud Nepalese 🇳🇵 from the beautiful city of Pokhara. I’ve been living in the UK 🇬🇧 since 2005. Welcome to my little corner of the internet — a digital home where I build, reflect, and just try to be myself. It’s a quiet place where I share what I’m working on, what I’m learning, and sometimes, just random thoughts along the way.
+                    Hey, I'm Raj. Husband, Dad to Kaizen, Developer, and a proud Nepalese 🇳🇵 from the beautiful city of Pokhara. I've been living in the UK 🇬🇧 since 2005. I'm a Senior Software Engineer with 15+ years building systems at scale (check out my <a href="/hire" style={{ color: '#ff8c42', textDecoration: 'none', borderBottom: '1px solid #ff8c42' }}>hire page</a> for the professional stuff). Welcome to my little corner of the internet, a digital home where I build, reflect, and just try to be myself. It's a quiet place where I share what I'm working on, what I'm learning, and sometimes, just random thoughts along the way.
                 </p>
             </div>
 
