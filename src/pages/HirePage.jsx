@@ -252,13 +252,10 @@ const HirePage = () => {
                         <h2 className="hire-subtitle">Senior Software Engineer & Technical Partner</h2>
                         <div className="hire-intro">
                             <p>
-                                I build systems that need to work at scale. Over <strong>15 years</strong>, I've focused on platforms where downtime isn't an option: real-time fraud detection, workforce scheduling at <strong>12M weekly requests</strong>, and gaming infrastructure across devices.
+                                I build systems that need to work at scale. Over <strong>15 years</strong>, I've worked on platforms where downtime isn't an option, like real-time fraud detection, workforce scheduling at <strong>12M weekly requests</strong>, and gaming infrastructure across devices. At Indeed, I reduced critical API response times from <strong>60+ seconds to sub-second</strong> by redesigning data access patterns and caching layers, led the <strong>Agency Partners vertical</strong> implementing SLO-driven monitoring and automated rollbacks, and integrated ML inference into production workflows while maintaining reliability targets.
                             </p>
                             <p>
-                                Recent work: Reduced critical API response times from <strong>60+ seconds to sub-second</strong> by redesigning data access patterns and introducing caching layers. Led <strong>Agency Partners vertical</strong> at Indeed, implementing SLO-driven monitoring and automated rollback strategies. Integrated ML inference into production workflows while maintaining reliability targets.
-                            </p>
-                            <p>
-                                I care about pragmatic architecture, production observability, and teams that own their systems end-to-end. Strongest in backend systems, distributed architectures, and performance optimization.
+                                I care about pragmatic architecture, production observability, and teams that own their systems end-to-end. Strongest in backend systems, distributed architectures, and performance optimization. The kind of work where details matter.
                             </p>
                         </div>
                     </div>
