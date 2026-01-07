@@ -7,9 +7,8 @@ export default function BlogDetail() {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
-        import(`../posts/${slug}.md`)
-            .then((res) => fetch(res.default).then(r => r.text()))
-            .then(setMarkdown)
+        import(`../posts/${slug}.md?raw`)
+            .then((res) => setMarkdown(res.default))
             .catch(() => setMarkdown('# Post not found'));
     }, [slug]);
 
