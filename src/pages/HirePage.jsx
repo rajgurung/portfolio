@@ -268,19 +268,21 @@ const HirePage = () => {
 
     return (
         <div className="hire-container">
-            {/* Sidebar Navigation */}
+            {/* Sidebar Navigation - Dots with Line */}
             <nav className="hire-sidebar">
+                <div className="sidebar-line"></div>
                 {sections.map(section => (
                     <a
                         key={section.id}
                         href={`#${section.id}`}
-                        className={activeSection === section.id ? 'active' : ''}
+                        className={`sidebar-dot ${activeSection === section.id ? 'active' : ''}`}
                         onClick={(e) => {
                             e.preventDefault();
                             document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
                         }}
+                        aria-label={section.label}
                     >
-                        {section.label}
+                        <span className="sidebar-label">{section.label}</span>
                     </a>
                 ))}
             </nav>
