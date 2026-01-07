@@ -268,10 +268,6 @@ body.dark-mode .cv-sidebar-title {
   transition: color 0.2s ease;
 }
 
-.cv-contact-item::before {
-  content: "→ ";
-  color: #ff8c42;
-}
 
 .cv-contact-item:hover {
   color: #ff8c42;
