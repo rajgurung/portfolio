@@ -100,7 +100,7 @@ export const cvData = {
       ["AWS", "Heroku", "Docker"],
       ["Datadog", "CI/CD"]
     ],
-    genai: [
+    GenAI: [
       ["Anthropic Claude", "OpenAI"],
       ["LLM-assisted Dev"]
     ],
