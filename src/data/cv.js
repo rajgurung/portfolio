@@ -2,7 +2,7 @@ export const cvData = {
   name: "Raj Gurung",
   title: "Senior Software Engineer (Staff-Track)",
   email: "gurungraj26@gmail.com",
-  linkedin: "linkedin.com/in/rajgurung",
+  linkedin: "linkedin.com/in/raj---gurung",
   github: "github.com/rajgurung",
   summary: `Senior Software Engineer with 10+ years of experience designing, building, and operating large-scale distributed systems across startups and enterprise environments. Experienced in leading cross-functional initiatives spanning ML integration, platform reliability, and performance optimisation, supporting systems handling millions of requests daily. Known for end-to-end ownership of complex problem spaces, driving alignment through RFCs and design reviews, and raising engineering standards through mentorship, observability, and operational excellence.`,
   experience: [
