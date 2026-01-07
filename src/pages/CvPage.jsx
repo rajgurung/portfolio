@@ -131,7 +131,7 @@ export default function CvPage() {
           <div id="contact" className="cv-sidebar-section">
             <h3 className="cv-sidebar-title">Contact</h3>
             <a href={`mailto:${cvData.email}`} className="cv-contact-item">
-              📧 {cvData.email}
+              <i className="fas fa-envelope"></i> {cvData.email}
             </a>
             <a
               href={`https://${cvData.linkedin}`}
@@ -139,7 +139,7 @@ export default function CvPage() {
               rel="noopener noreferrer"
               className="cv-contact-item"
             >
-              💼 LinkedIn
+              <i className="fab fa-linkedin"></i> LinkedIn
             </a>
             <a
               href={`https://${cvData.github}`}
@@ -147,14 +147,14 @@ export default function CvPage() {
               rel="noopener noreferrer"
               className="cv-contact-item"
             >
-              🐙 GitHub
+              <i className="fab fa-github"></i> GitHub
             </a>
             <a
               href="/raj-gurung-cv.pdf"
               download="raj-gurung-cv.pdf"
               className="cv-download-btn"
             >
-              📄 Download PDF
+              <i className="fas fa-file-pdf"></i> Download PDF
             </a>
           </div>
 
