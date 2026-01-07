@@ -27,6 +27,7 @@ class NavbarClass extends Component {
     const isHirePage = pathname === '/hire';
     const isBlogsPage = pathname === '/blogs' || pathname === '/';
     const isAboutPage = pathname === '/landing';
+    const isCvPage = pathname === '/cv';
     const collapseClass = isCollapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
 
     return (
@@ -48,6 +49,11 @@ class NavbarClass extends Component {
                 <li className="nav-item">
                   <Link className={`nav-link ${isAboutPage ? 'active' : ''}`} to="/landing" onClick={this.closeNavbar}>
                     ABOUT
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${isCvPage ? 'active' : ''}`} to="/cv" onClick={this.closeNavbar}>
+                    CV
                   </Link>
                 </li>
                 <li className="nav-item">
