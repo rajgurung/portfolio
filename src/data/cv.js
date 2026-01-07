@@ -13,15 +13,15 @@ export const cvData = {
       location: "Remote (London)",
       description: "Continued from Syft post-acquisition, with expanded scope and platform scale.",
       bullets: [
-        "Technical lead for core job offering and agency partner systems, ensuring Time SLA compliance across complex, time-sensitive workflows.",
-        "Led the integration of machine learning decisioning models into the core offering pipeline, partnering closely with ML and Product teams to improve allocation accuracy and operational efficiency.",
-        "Owned platform reliability and observability, designing SLOs, alerts, and dashboards using Datadog to ensure post-release confidence and fast incident response.",
-        "Drove performance improvements across underperforming core APIs, reducing response times from 1+ minute to sub-second, directly improving system throughput and user experience.",
-        "Led the Service Excellence initiative, owning the technical work to onboard a major enterprise client through a phased rollout while simultaneously improving platform reliability, scalability, and operational readiness, enabling sustained support for the client and the successful delivery of multi-million-pound contracts.",
-        "Operated at scale on systems handling 2M+ daily requests and 12M+ weekly requests, ensuring high availability, resilience, and predictable performance.",
-        "Contributed to maintaining a modular, scalable codebase using Packwerk, improving long-term maintainability and team autonomy.",
-        "Mentored junior, mid and senior engineers, supporting skill growth and career progression, resulting in multiple promotions.",
-        "Interviewed and assessed Senior and Staff Engineer candidates, contributing to hiring decisions and raising the technical bar across the organisation."
+        "<strong>Technical lead</strong> for core job offering and agency partner systems, ensuring Time SLA compliance across complex, time-sensitive workflows.",
+        "<strong>Led the integration of machine learning</strong> decisioning models into the core offering pipeline, partnering closely with ML and Product teams to improve allocation accuracy and operational efficiency.",
+        "<strong>Owned platform reliability</strong> and observability, designing SLOs, alerts, and dashboards using Datadog to ensure post-release confidence and fast incident response.",
+        "Drove performance improvements across underperforming core APIs, reducing response times from <strong>1+ minute to sub-second</strong>, directly improving system throughput and user experience.",
+        "<strong>Led the Service Excellence initiative</strong>, owning the technical work to onboard a major enterprise client through a phased rollout while simultaneously improving platform reliability, scalability, and operational readiness, enabling sustained support for the client and the successful delivery of <strong>multi-million-pound contracts</strong>.",
+        "Operated at scale on systems handling <strong>2M+ daily requests and 12M+ weekly requests</strong>, ensuring high availability, resilience, and predictable performance.",
+        "Contributed to maintaining a modular, scalable codebase using <strong>Packwerk</strong>, improving long-term maintainability and team autonomy.",
+        "Mentored junior, mid and senior engineers, supporting skill growth and career progression, resulting in <strong>multiple promotions</strong>.",
+        "Interviewed and assessed <strong>Senior and Staff Engineer candidates</strong>, contributing to hiring decisions and raising the technical bar across the organisation."
       ],
       tech: "AWS, Ruby on Rails, Sidekiq, Kafka, Snowflake, PostgreSQL, Datadog, ReDash, React"
     },
@@ -32,12 +32,12 @@ export const cvData = {
       location: "Remote (London)",
       description: "Instantly connect job seekers with opportunities that match their availability and flexibility—acquired by Indeed.",
       bullets: [
-        "One of the early technical members of the startup, with end-to-end ownership from ideation to post-production, delivering high-impact solutions.",
-        "Led development of key verticals, including workforce management, multi-tenant employer, and agency partner solutions.",
-        "Designed and built scalable backend systems to support real-time job matching based on worker availability and employer demand.",
-        "Took ownership of production stability, diagnosing and resolving live issues under load, implementing fixes and improvements to ensure reliable operation as usage scaled.",
+        "One of the <strong>early technical members</strong> of the startup, with <strong>end-to-end ownership</strong> from ideation to post-production, delivering high-impact solutions.",
+        "<strong>Led development of key verticals</strong>, including workforce management, multi-tenant employer, and agency partner solutions.",
+        "Designed and built <strong>scalable backend systems</strong> to support <strong>real-time job matching</strong> based on worker availability and employer demand.",
+        "Took <strong>ownership of production stability</strong>, diagnosing and resolving live issues under load, implementing fixes and improvements to ensure reliable operation as usage scaled.",
         "Worked closely with Product and Design to translate evolving business requirements into reliable, scalable technical solutions.",
-        "Played a key role during the acquisition by Indeed, ensuring platform stability, continuity of knowledge, and a smooth transition into a larger enterprise environment."
+        "Played a key role during the <strong>acquisition by Indeed</strong>, ensuring platform stability, continuity of knowledge, and a smooth transition into a larger enterprise environment."
       ],
       tech: "Heroku, Ruby on Rails, Sidekiq, PostgreSQL, Rollbar, React"
     },
@@ -48,11 +48,11 @@ export const cvData = {
       location: "Guildford",
       description: "Industry-leading fraud management service.",
       bullets: [
-        "Worked on an industry-leading fraud management platform, building and operating real-time systems used to assess and prevent fraudulent transactions.",
-        "Designed and optimised high-throughput, low-latency workflows in a distributed system, significantly improving transaction processing capacity.",
-        "Improved transaction processing performance by 10x, enabling the platform to handle increased load while maintaining accuracy and reliability.",
-        "Built and maintained scalable APIs supporting core fraud detection and decisioning functionality.",
-        "Took ownership of platform availability and system health, improving reliability in business-critical, real-time environments.",
+        "Worked on an industry-leading fraud management platform, building and operating <strong>real-time systems</strong> used to assess and prevent fraudulent transactions.",
+        "Designed and optimised <strong>high-throughput, low-latency</strong> workflows in a distributed system, significantly improving transaction processing capacity.",
+        "Improved transaction processing performance by <strong>10x</strong>, enabling the platform to handle increased load while maintaining accuracy and reliability.",
+        "Built and maintained <strong>scalable APIs</strong> supporting core fraud detection and decisioning functionality.",
+        "Took ownership of <strong>platform availability</strong> and system health, improving reliability in business-critical, real-time environments.",
         "Collaborated closely with product and domain specialists to translate complex fraud rules and requirements into robust technical implementations.",
         "Contributed to improving deployment and operational practices, reducing risk and increasing confidence in production changes."
       ],
@@ -65,8 +65,8 @@ export const cvData = {
       location: "Wokingham",
       description: "Asset Management Software. The company had 850K social housing. Later acquired by the MRI Software.",
       bullets: [
-        "Led a large-scale migration from ASP.NET to Rails, standardising best practices and ensuring a smooth transition.",
-        "Developed REST APIs for a remote mobile team, collaborating with cross-functional teams for seamless integration."
+        "<strong>Led a large-scale migration</strong> from ASP.NET to Rails, standardising best practices and ensuring a smooth transition.",
+        "Developed <strong>REST APIs</strong> for a remote mobile team, collaborating with cross-functional teams for seamless integration."
       ],
       tech: null
     },
@@ -77,8 +77,8 @@ export const cvData = {
       location: "Reading",
       description: "Antix lets consumers play native games on their STBs, TVs, phones, tablets and PCs.",
       bullets: [
-        "Developed a global online game platform with multi-language support, enhancing user access and engagement.",
-        "Integrated social logins for seamless cross-device access, improving user experience."
+        "Developed a <strong>global online game platform</strong> with multi-language support, enhancing user access and engagement.",
+        "Integrated <strong>social logins</strong> for seamless cross-device access, improving user experience."
       ],
       tech: null
     }

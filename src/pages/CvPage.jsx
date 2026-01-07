@@ -34,7 +34,7 @@ export default function CvPage() {
                 )}
                 <ul className="cv-bullets">
                   {job.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex}>{bullet}</li>
+                    <li key={bulletIndex} dangerouslySetInnerHTML={{ __html: bullet }} />
                   ))}
                 </ul>
                 {job.tech && (
