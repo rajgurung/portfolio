@@ -27,7 +27,8 @@
       "Bash(git restore:*)",
       "WebFetch(domain:davidslv.uk)",
       "Bash(yarn dev)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(gh pr create:*)"
     ],
     "deny": [],
     "ask": []
