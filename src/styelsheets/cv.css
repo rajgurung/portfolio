@@ -297,7 +297,7 @@ body.dark-mode .cv-contact-item:hover {
 .cv-skill-category-name {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #333;
+  color: #111;
   margin: 0 0 0.35rem 0;
 }
 
@@ -357,7 +357,7 @@ body.dark-mode .cv-school {
 
 .cv-years {
   font-size: 0.75rem;
-  color: #666;
+  color: #aaa;
   margin: 0.1rem 0 0 0;
 }
 
