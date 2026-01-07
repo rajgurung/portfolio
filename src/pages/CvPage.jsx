@@ -1,109 +1,117 @@
-import { Document, Page, pdfjs } from 'react-pdf';
-import workerSrc from 'pdfjs-dist/build/pdf.worker.entry';
-import { useRef, useEffect, useState } from 'react';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-
-pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+import { cvData } from '../data/cv';
 
 export default function CvPage() {
-    const [numPages, setNumPages] = useState(null);
-    const wrapperRef = useRef();
-    const [width, setWidth] = useState(800);
+  return (
+    <div className="cv-page">
+      {/* Two Column Layout */}
+      <div className="cv-container">
+        {/* Main Content */}
+        <main className="cv-main">
+          {/* Name/Title - integrated at top of column */}
+          <div className="cv-name-section">
+            <h1 className="cv-name">{cvData.name}</h1>
+            <p className="cv-title">{cvData.title}</p>
+          </div>
 
-    useEffect(() => {
-        const updateWidth = () => {
-            if (wrapperRef.current) {
-                setWidth(wrapperRef.current.offsetWidth);
-            }
-        };
+          {/* Summary */}
+          <section className="cv-section">
+            <h2 className="cv-section-title">Professional Summary</h2>
+            <p className="cv-summary">{cvData.summary}</p>
+          </section>
 
-        updateWidth();
-        window.addEventListener('resize', updateWidth);
-        return () => window.removeEventListener('resize', updateWidth);
-    }, []);
-
-    const onLoadSuccess = ({ numPages }) => {
-        setNumPages(numPages);
-    };
-
-    return (
-        <div
-            style={{
-                margin: 'auto',
-                width: '80%',
-                padding: '20px',
-                position: 'relative',
-                minHeight: '100vh',
-            }}
-        >
-            <div className="text-center" style={{ marginTop: '3rem' }}>
-
-                {/* Download Button (top-left, aligned with layout) */}
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        padding: '20px',
-                        marginBottom: '1.5rem',
-                    }}
-                >
-                    <a
-                        href="/raj-gurung-cv.pdf"
-                        download="raj-gurung-cv.pdf"
-                        style={{
-                            textDecoration: 'none',
-                            color: '#000',
-                            fontWeight: 500,
-                            border: '1px solid #000',
-                            padding: '0.5rem 1rem',
-                            borderRadius: '5px',
-                            backgroundColor: '#fff',
-                            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
-                        }}
-                    >
-                        Download PDF
-                    </a>
+          {/* Experience */}
+          <section className="cv-section">
+            <h2 className="cv-section-title">Experience</h2>
+            {cvData.experience.map((job, index) => (
+              <article key={index} className="cv-job">
+                <div className="cv-job-header">
+                  <h3 className="cv-company">{job.company}</h3>
+                  <span className="cv-dates">{job.dates}</span>
                 </div>
+                <p className="cv-job-title">{job.title} • {job.location}</p>
+                {job.description && (
+                  <p className="cv-job-description">{job.description}</p>
+                )}
+                <ul className="cv-bullets">
+                  {job.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex}>{bullet}</li>
+                  ))}
+                </ul>
+                {job.tech && (
+                  <p className="cv-tech">
+                    <strong>Tech:</strong> {job.tech}
+                  </p>
+                )}
+              </article>
+            ))}
+          </section>
+        </main>
 
-                {/* PDF Viewer */}
-                <div
-                    ref={wrapperRef}
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                    }}
-                >
-                    <Document
-                        file="/raj-gurung-cv.pdf"
-                        onLoadSuccess={onLoadSuccess}
-                        onLoadError={console.error}
-                        loading="Loading CV..."
-                    >
-                        {Array.from(new Array(numPages), (el, index) => (
-                            <div key={`page_${index}`} style={{ marginBottom: '2rem' }}>
-                                <Page
-                                    pageNumber={index + 1}
-                                    renderTextLayer={false}
-                                    renderAnnotationLayer={false}
-                                    width={width > 1200 ? 1200 : width}
-                                />
-                                <p
-                                    style={{
-                                        fontSize: '0.9rem',
-                                        color: '#888',
-                                        marginTop: '0.5rem',
-                                        textAlign: 'center',
-                                    }}
-                                >
-                                    Page {index + 1} of {numPages}
-                                </p>
-                            </div>
-                        ))}
-                    </Document>
+        {/* Sidebar */}
+        <aside className="cv-sidebar">
+          {/* Contact + Download */}
+          <div className="cv-sidebar-section">
+            <h3 className="cv-sidebar-title">Contact</h3>
+            <a href={`mailto:${cvData.email}`} className="cv-contact-item">
+              {cvData.email}
+            </a>
+            <a
+              href={`https://${cvData.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-contact-item"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={`https://${cvData.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-contact-item"
+            >
+              GitHub
+            </a>
+            <a
+              href="/raj-gurung-cv.pdf"
+              download="raj-gurung-cv.pdf"
+              className="cv-download-btn"
+            >
+              Download PDF
+            </a>
+          </div>
+
+          {/* Skills */}
+          <div className="cv-sidebar-section">
+            <h3 className="cv-sidebar-title">Skills</h3>
+            {Object.entries(cvData.skills).map(([category, skillGroups]) => (
+              <div key={category} className="cv-skill-category">
+                <h4 className="cv-skill-category-name">
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                </h4>
+                <div className="cv-skill-lines">
+                  {skillGroups.map((group, index) => (
+                    <p key={index} className="cv-skill-line">
+                      <span className="cv-skill-arrow">→</span> {group.join(', ')}
+                    </p>
+                  ))}
                 </div>
-            </div>
-        </div>
-    );
+              </div>
+            ))}
+          </div>
+
+          {/* Education */}
+          <div className="cv-sidebar-section">
+            <h3 className="cv-sidebar-title">Education</h3>
+            {cvData.education.map((edu, index) => (
+              <div key={index} className="cv-education-item">
+                <p className="cv-degree">{edu.degree}</p>
+                <p className="cv-school">{edu.school}</p>
+                <p className="cv-years">{edu.years}</p>
+              </div>
+            ))}
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
 }

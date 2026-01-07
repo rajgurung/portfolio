@@ -9,6 +9,7 @@ import './styelsheets/linear-icons.css';
 import './styelsheets/fontawesome-all.min.css';
 import './styelsheets/dark-mode.css';
 import './styelsheets/projects.css';
+import './styelsheets/cv.css';
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

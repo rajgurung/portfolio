@@ -1,0 +1,447 @@
+/* CV Page Styles */
+
+.cv-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Name Section - Integrated at top of main column */
+.cv-name-section {
+  margin-bottom: 2rem;
+}
+
+.cv-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff8c42;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cv-title {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  margin: 0.5rem 0 0 0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+body.dark-mode .cv-title {
+  color: #999;
+}
+
+/* Download Button - In sidebar */
+.cv-download-btn {
+  display: block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ff8c42;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ff8c42;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: transparent;
+  text-align: center;
+}
+
+.cv-download-btn:hover {
+  background: #ff8c42;
+  color: #fff;
+}
+
+body.dark-mode .cv-download-btn {
+  border-color: #ff8c42;
+  color: #ff8c42;
+}
+
+body.dark-mode .cv-download-btn:hover {
+  background: #ff8c42;
+  color: #1a1a1a;
+}
+
+/* Two Column Layout */
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+}
+
+/* Main Content (Left Column) */
+.cv-main {
+  min-width: 0;
+}
+
+/* Sidebar (Right Column) */
+.cv-sidebar {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+body.dark-mode .cv-sidebar {
+  background: #252525;
+}
+
+/* Section Titles */
+.cv-section-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #0a0a0a;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ff8c42;
+}
+
+body.dark-mode .cv-section-title {
+  color: #e0e0e0;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+/* Summary */
+.cv-summary {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+
+body.dark-mode .cv-summary {
+  color: #ccc;
+}
+
+/* Experience */
+.cv-job {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.cv-job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+body.dark-mode .cv-job {
+  border-bottom-color: #333;
+}
+
+.cv-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff8c42;
+  margin: 0;
+}
+
+.cv-dates {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 500;
+}
+
+body.dark-mode .cv-dates {
+  color: #999;
+}
+
+.cv-job-title {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+body.dark-mode .cv-job-title {
+  color: #ddd;
+}
+
+.cv-job-description {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+body.dark-mode .cv-job-description {
+  color: #999;
+}
+
+/* Bullet Points */
+.cv-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #111;
+}
+
+.cv-bullets li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ff8c42;
+  font-weight: 500;
+}
+
+body.dark-mode .cv-bullets li {
+  color: #bbb;
+}
+
+/* Tech Stack */
+.cv-tech {
+  font-size: 0.8rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.cv-tech strong {
+  color: #1a1a1a;
+}
+
+body.dark-mode .cv-tech {
+  color: #999;
+}
+
+body.dark-mode .cv-tech strong {
+  color: #ccc;
+}
+
+/* Sidebar Sections */
+.cv-sidebar-section {
+  margin-bottom: 1.75rem;
+}
+
+.cv-sidebar-section:last-child {
+  margin-bottom: 0;
+}
+
+.cv-sidebar-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0a0a0a;
+  margin: 0 0 0.75rem 0;
+}
+
+body.dark-mode .cv-sidebar-title {
+  color: #e0e0e0;
+}
+
+/* Contact */
+.cv-contact-item {
+  display: block;
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.cv-contact-item::before {
+  content: "→ ";
+  color: #ff8c42;
+}
+
+.cv-contact-item:hover {
+  color: #ff8c42;
+}
+
+body.dark-mode .cv-contact-item {
+  color: #ccc;
+}
+
+body.dark-mode .cv-contact-item:hover {
+  color: #ff8c42;
+}
+
+/* Skills */
+.cv-skill-category {
+  margin-bottom: 1rem;
+}
+
+.cv-skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.cv-skill-category-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.35rem 0;
+}
+
+body.dark-mode .cv-skill-category-name {
+  color: #aaa;
+}
+
+.cv-skill-lines {
+  margin: 0;
+}
+
+.cv-skill-line {
+  font-size: 0.8rem;
+  color: #111;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.4;
+}
+
+.cv-skill-arrow {
+  color: #ff8c42;
+  margin-right: 0.25rem;
+}
+
+body.dark-mode .cv-skill-line {
+  color: #bbb;
+}
+
+/* Education */
+.cv-education-item {
+  margin-bottom: 1rem;
+}
+
+.cv-education-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-degree {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+body.dark-mode .cv-degree {
+  color: #ddd;
+}
+
+.cv-school {
+  font-size: 0.8rem;
+  color: #444;
+  margin: 0.1rem 0 0 0;
+}
+
+body.dark-mode .cv-school {
+  color: #999;
+}
+
+.cv-years {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0.1rem 0 0 0;
+}
+
+body.dark-mode .cv-years {
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cv-sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .cv-page {
+    padding: 1.5rem;
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv-name {
+    font-size: 2rem;
+  }
+
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .cv-download-btn {
+    display: none !important;
+  }
+
+  .cv-page {
+    padding: 0;
+    max-width: none;
+  }
+
+  .cv-sidebar {
+    background: #f9f9f9 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-container {
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+  }
+
+  .cv-name {
+    color: #ff8c42 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-section-title {
+    border-bottom-color: #ff8c42 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-bullets li::before,
+  .cv-skill-list li::before,
+  .cv-contact-item::before {
+    color: #ff8c42 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-job {
+    page-break-inside: avoid;
+  }
+}
