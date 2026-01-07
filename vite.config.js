@@ -9,7 +9,11 @@ export default defineConfig({
   preview: {
     port: 8080,
     host: true,
-    allowedHosts: true
+    allowedHosts: [
+      'rajgurung.me',
+      'www.rajgurung.me',
+      '.ondigitalocean.app'
+    ]
   },
   build: {
     outDir: 'build'
