@@ -5,7 +5,7 @@ export default function Blogs() {
         <div className="blogs-page" style={{
             display: 'flex',
             justifyContent: 'center',
-            padding: '3rem 1rem 4rem', // ⬅️ top padding to prevent navbar clipping
+            padding: '3rem 1rem 4rem',
             minHeight: '100vh',
             boxSizing: 'border-box',
         }}>
