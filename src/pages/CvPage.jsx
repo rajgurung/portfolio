@@ -1,10 +1,18 @@
+import { useEffect, useRef } from 'react';
 import { cvData } from '../data/cv';
 
 export default function CvPage() {
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    // Scroll to content, hiding navbar
+    contentRef.current?.scrollIntoView({ behavior: 'instant' });
+  }, []);
+
   return (
     <div className="cv-page">
       {/* Two Column Layout */}
-      <div className="cv-container">
+      <div className="cv-container" ref={contentRef}>
         {/* Main Content */}
         <main className="cv-main">
           {/* Name/Title - integrated at top of column */}
