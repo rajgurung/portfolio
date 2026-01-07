@@ -4,7 +4,7 @@ import { cvData } from '../data/cv';
 export default function CvPage() {
   const contentRef = useRef(null);
   const [activeSection, setActiveSection] = useState('about');
-  const isScrollingRef = useRef(false);
+  const isScrollingRef = useRef(true); // Start true to prevent observer on mount
 
   // Sections for sidebar - only scrollable left column content
   const sections = [
@@ -16,6 +16,10 @@ export default function CvPage() {
   useEffect(() => {
     // Scroll to content, hiding navbar
     contentRef.current?.scrollIntoView({ behavior: 'instant' });
+    // Allow observer to update after initial scroll settles
+    setTimeout(() => {
+      isScrollingRef.current = false;
+    }, 100);
   }, []);
 
   // Scroll spy for sidebar navigation
