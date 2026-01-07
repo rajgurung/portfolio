@@ -1,34 +1,92 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cvData } from '../data/cv';
 
 export default function CvPage() {
   const contentRef = useRef(null);
+  const [activeSection, setActiveSection] = useState('about');
+  const isScrollingRef = useRef(false);
+
+  // Sections for sidebar
+  const sections = [
+    { id: 'about', label: 'About' },
+    { id: 'summary', label: 'Summary' },
+    { id: 'experience', label: 'Experience' },
+    { id: 'contact', label: 'Contact' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'education', label: 'Education' }
+  ];
 
   useEffect(() => {
     // Scroll to content, hiding navbar
     contentRef.current?.scrollIntoView({ behavior: 'instant' });
   }, []);
 
+  // Scroll spy for sidebar navigation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (isScrollingRef.current) return;
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-40% 0px -60% 0px' }
+    );
+
+    sections.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [sections]);
+
   return (
     <div className="cv-page">
+      {/* Sidebar Navigation - Dots with Line */}
+      <nav className="cv-nav-sidebar">
+        <div className="sidebar-line"></div>
+        {sections.map(section => (
+          <a
+            key={section.id}
+            href={`#${section.id}`}
+            className={`sidebar-dot ${activeSection === section.id ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              isScrollingRef.current = true;
+              setActiveSection(section.id);
+              document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
+              setTimeout(() => {
+                isScrollingRef.current = false;
+              }, 1000);
+            }}
+            aria-label={section.label}
+          >
+            <span className="sidebar-label">{section.label}</span>
+          </a>
+        ))}
+      </nav>
+
       {/* Two Column Layout */}
       <div className="cv-container" ref={contentRef}>
         {/* Main Content */}
         <main className="cv-main">
           {/* Name/Title - integrated at top of column */}
-          <div className="cv-name-section">
+          <div id="about" className="cv-name-section">
             <h1 className="cv-name">{cvData.name}</h1>
             <p className="cv-title">{cvData.title}</p>
           </div>
 
           {/* Summary */}
-          <section className="cv-section">
+          <section id="summary" className="cv-section">
             <h2 className="cv-section-title">Professional Summary</h2>
             <p className="cv-summary">{cvData.summary}</p>
           </section>
 
           {/* Experience */}
-          <section className="cv-section">
+          <section id="experience" className="cv-section">
             <h2 className="cv-section-title">Experience</h2>
             {cvData.experience.map((job, index) => (
               <article key={index} className="cv-job">
@@ -58,7 +116,7 @@ export default function CvPage() {
         {/* Sidebar */}
         <aside className="cv-sidebar">
           {/* Contact + Download */}
-          <div className="cv-sidebar-section">
+          <div id="contact" className="cv-sidebar-section">
             <h3 className="cv-sidebar-title">Contact</h3>
             <a href={`mailto:${cvData.email}`} className="cv-contact-item">
               📧 {cvData.email}
@@ -89,7 +147,7 @@ export default function CvPage() {
           </div>
 
           {/* Skills */}
-          <div className="cv-sidebar-section">
+          <div id="skills" className="cv-sidebar-section">
             <h3 className="cv-sidebar-title">Skills</h3>
             {Object.entries(cvData.skills).map(([category, skillGroups]) => (
               <div key={category} className="cv-skill-category">
@@ -108,7 +166,7 @@ export default function CvPage() {
           </div>
 
           {/* Education */}
-          <div className="cv-sidebar-section">
+          <div id="education" className="cv-sidebar-section">
             <h3 className="cv-sidebar-title">Education</h3>
             {cvData.education.map((edu, index) => (
               <div key={index} className="cv-education-item">
