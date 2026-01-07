@@ -67,7 +67,6 @@ body.dark-mode .sidebar-line {
     letter-spacing: 0.05em;
     color: #bbb;
     transition: all 0.2s ease;
-    pointer-events: none;
 }
 
 .sidebar-dot:hover .sidebar-label {
