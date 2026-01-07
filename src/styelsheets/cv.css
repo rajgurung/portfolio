@@ -473,8 +473,8 @@ body.dark-mode .cv-years {
   color: #777;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* Responsive - match navbar breakpoint at 991px */
+@media (max-width: 991px) {
   .cv-container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -487,11 +487,15 @@ body.dark-mode .cv-years {
 
   .cv-page {
     padding: 1.5rem;
-    padding-top: 5rem;
+    padding-top: 6rem;  /* Increased for mobile navbar height */
   }
 }
 
 @media (max-width: 600px) {
+  .cv-page {
+    padding-top: 6.5rem;  /* Extra padding for smaller screens */
+  }
+
   .cv-name {
     font-size: 2rem;
   }
