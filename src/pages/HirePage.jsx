@@ -278,6 +278,7 @@ const HirePage = () => {
                         className={`sidebar-dot ${activeSection === section.id ? 'active' : ''}`}
                         onClick={(e) => {
                             e.preventDefault();
+                            setActiveSection(section.id);
                             document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
                         }}
                         aria-label={section.label}
