@@ -2,54 +2,29 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": ">=18",
     "yarn": ">=1.22"
   },
   "dependencies": {
-    "@craco/craco": "^7.1.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "postcss-loader": "^8.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^6.30.0",
-    "react-scripts": "^5.0.1",
-    "tailwindcss": "^4.1.14"
+    "react-router-dom": "^6.30.0"
   },
   "scripts": {
-    "build:digitalocean": "yarn install --production=false && yarn run build && rm -rf node_modules && yarn install --production --frozen-lockfile",
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:digitalocean": "yarn install && yarn build"
   },
   "devDependencies": {
-    "daisyui": "^5.1.29"
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
   },
   "resolutions": {
-    "nth-check": "^2.1.1",
-    "webpack-dev-server": "^5.2.1",
-    "form-data": "^4.0.1",
-    "brace-expansion": "^2.0.1"
+    "mdast-util-to-hast": ">=13.2.1"
   }
 }
