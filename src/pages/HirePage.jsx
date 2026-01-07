@@ -147,6 +147,7 @@ const HirePage = () => {
     // Refs for scroll container and experience items
     const scrollContainerRef = useRef(null);
     const experienceRefs = useRef([]);
+    const contentRef = useRef(null);
 
     // Carousel state for tracking current visible item
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -178,6 +179,11 @@ const HirePage = () => {
         { id: 'projects', label: 'Projects' },
         { id: 'testimonials', label: 'Testimonials' }
     ];
+
+    // Scroll to content on mount, hiding navbar
+    useEffect(() => {
+        contentRef.current?.scrollIntoView({ behavior: 'instant' });
+    }, []);
 
     // Show back to top button when scrolled down
     useEffect(() => {
@@ -271,7 +277,7 @@ const HirePage = () => {
     }, [experiences.length]);
 
     return (
-        <div className="hire-container">
+        <div className="hire-container" ref={contentRef}>
             {/* Sidebar Navigation - Dots with Line */}
             <nav className="hire-sidebar">
                 <div className="sidebar-line"></div>

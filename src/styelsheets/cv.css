@@ -121,6 +121,7 @@ body.dark-mode .cv-nav-sidebar .sidebar-dot.active .sidebar-label {
 /* Name Section - Integrated at top of main column */
 .cv-name-section {
   margin-bottom: 2rem;
+  scroll-margin-top: 2rem;
 }
 
 .cv-name {
@@ -181,6 +182,7 @@ body.dark-mode .cv-download-btn:hover {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 3rem;
+  scroll-margin-top: 2rem;
 }
 
 /* Main Content (Left Column) */
