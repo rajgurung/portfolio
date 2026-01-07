@@ -165,6 +165,19 @@ const HirePage = () => {
     // Back to top button state
     const [showBackToTop, setShowBackToTop] = useState(false);
 
+    // Active section for sidebar navigation
+    const [activeSection, setActiveSection] = useState('about');
+
+    // Sections for sidebar
+    const sections = [
+        { id: 'about', label: 'About' },
+        { id: 'contact', label: 'Contact' },
+        { id: 'experience', label: 'Experience' },
+        { id: 'skills', label: 'Skills' },
+        { id: 'projects', label: 'Projects' },
+        { id: 'testimonials', label: 'Testimonials' }
+    ];
+
     // Show back to top button when scrolled down
     useEffect(() => {
         const handleScroll = () => {
@@ -174,6 +187,27 @@ const HirePage = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Scroll spy for sidebar navigation
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { rootMargin: '-40% 0px -60% 0px' }
+        );
+
+        sections.forEach(section => {
+            const element = document.getElementById(section.id);
+            if (element) observer.observe(element);
+        });
+
+        return () => observer.disconnect();
+    }, [sections]);
 
     // Scroll to top function
     const scrollToTop = () => {
@@ -234,8 +268,25 @@ const HirePage = () => {
 
     return (
         <div className="hire-container">
+            {/* Sidebar Navigation */}
+            <nav className="hire-sidebar">
+                {sections.map(section => (
+                    <a
+                        key={section.id}
+                        href={`#${section.id}`}
+                        className={activeSection === section.id ? 'active' : ''}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                    >
+                        {section.label}
+                    </a>
+                ))}
+            </nav>
+
             {/* Hero Section */}
-            <section className="hire-section hero-section">
+            <section id="about" className="hire-section hero-section">
                 <div className="hero-layout">
                     <div className="hero-photo">
                         <img src={profilePic} alt="Raj Gurung" className="profile-image" />
@@ -263,7 +314,7 @@ const HirePage = () => {
             </section>
 
             {/* Contact/CTA Section */}
-            <section className="hire-section contact-section">
+            <section id="contact" className="hire-section contact-section">
                 <h2 className="section-heading">GET IN TOUCH</h2>
                 <p className="contact-intro">
                     I'm always interested in hearing about new opportunities, challenging projects, or just connecting with
@@ -291,7 +342,7 @@ const HirePage = () => {
             </section>
 
             {/* Experience Section - Horizontal Scroll Carousel */}
-            <section className="hire-section experience-section">
+            <section id="experience" className="hire-section experience-section">
                 <h2 className="section-heading">WORK EXPERIENCE</h2>
 
                 <div className="experience-carousel" ref={scrollContainerRef}>
@@ -354,7 +405,7 @@ const HirePage = () => {
             </section>
 
             {/* Skills Section */}
-            <section className="hire-section skills-section">
+            <section id="skills" className="hire-section skills-section">
                 <h2 className="section-heading">SKILLS</h2>
                 <div className="skills-badges">
                     {[
@@ -384,7 +435,7 @@ const HirePage = () => {
             </section>
 
             {/* Selected Projects Section */}
-            <section className="hire-section projects-section">
+            <section id="projects" className="hire-section projects-section">
                 <h2 className="section-heading">SELECTED PROJECTS</h2>
                 <div className="projects-grid">
                     {projects.filter(p => p.featured).map((project) => (
@@ -454,7 +505,7 @@ const HirePage = () => {
             </section>
 
             {/* Testimonials Section */}
-            <section className="hire-section testimonials-section">
+            <section id="testimonials" className="hire-section testimonials-section">
                 <h2 className="section-heading">TESTIMONIALS</h2>
 
                 <div className="testimonials-grid">
