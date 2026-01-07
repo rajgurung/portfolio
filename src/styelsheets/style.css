@@ -2946,6 +2946,13 @@ label.btn-file {
   border-radius: 0;
 }
 
+/* Align navbar container with page content (1200px) */
+.navbar.custom-menu > .container {
+  max-width: 1200px !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
 .nav-link {
   font-size: 1rem;
   font-weight: 500;

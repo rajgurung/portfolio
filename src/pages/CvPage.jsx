@@ -24,24 +24,35 @@ export default function CvPage() {
 
   // Scroll spy for sidebar navigation
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (isScrollingRef.current) return;
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+    // Determine active section based on scroll position
+    const handleScroll = () => {
+      if (isScrollingRef.current) return;
+
+      let currentSection = 'about';
+      let closestDistance = Infinity;
+
+      // Find the section closest to the top of viewport
+      for (const section of sections) {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const distance = Math.abs(rect.top);
+
+          // Section is at or above viewport top and closest so far
+          if (rect.top <= 150 && distance < closestDistance) {
+            closestDistance = distance;
+            currentSection = section.id;
           }
-        });
-      },
-      { rootMargin: '-40% 0px -60% 0px' }
-    );
+        }
+      }
 
-    sections.forEach(section => {
-      const element = document.getElementById(section.id);
-      if (element) observer.observe(element);
-    });
+      setActiveSection(currentSection);
+    };
 
-    return () => observer.disconnect();
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run once on mount
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [sections]);
 
   return (

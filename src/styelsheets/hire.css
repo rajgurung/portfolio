@@ -119,7 +119,7 @@ body.dark-mode .sidebar-dot.active .sidebar-label {
     padding: 48px 32px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.75;
-    color: #1a1a1a;
+    color: #000;
     background-color: #fff;
     font-size: 16px;
 }
@@ -135,7 +135,7 @@ body:not(.dark-mode) #root {
 
 body:not(.dark-mode) .hire-container {
     background-color: #fff !important;
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .hire-title {
@@ -143,7 +143,7 @@ body:not(.dark-mode) .hire-title {
 }
 
 body:not(.dark-mode) .hire-subtitle {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .section-heading {
@@ -151,11 +151,11 @@ body:not(.dark-mode) .section-heading {
 }
 
 body:not(.dark-mode) .hire-intro {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .hire-intro p {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .profile-image {
@@ -163,7 +163,7 @@ body:not(.dark-mode) .profile-image {
 }
 
 body:not(.dark-mode) .status {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .status-badge {
@@ -188,15 +188,15 @@ body:not(.dark-mode) .experience-logo {
 }
 
 body:not(.dark-mode) .experience-header h3 {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .company-inline {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .company-link {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .company-link:hover {
@@ -204,23 +204,23 @@ body:not(.dark-mode) .company-link:hover {
 }
 
 body:not(.dark-mode) .duration {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .experience-description {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .tech-stack-inline {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .carousel-nav-btn {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .carousel-nav-btn:hover:not(:disabled) {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .carousel-nav-btn:disabled {
@@ -229,7 +229,7 @@ body:not(.dark-mode) .carousel-nav-btn:disabled {
 
 body:not(.dark-mode) .skill-badge {
     background-color: #ffffff !important;
-    color: #111 !important;
+    color: #000 !important;
     border: 1px solid #e8e8e8 !important;
 }
 
@@ -255,11 +255,11 @@ body:not(.dark-mode) .testimonial-item::before {
 }
 
 body:not(.dark-mode) .testimonial-item p {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .testimonial-item p:first-of-type {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .testimonial-item footer {
@@ -267,7 +267,7 @@ body:not(.dark-mode) .testimonial-item footer {
 }
 
 body:not(.dark-mode) .testimonial-item cite {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .testimonial-item cite a {
@@ -296,7 +296,7 @@ body:not(.dark-mode) .back-to-top:hover {
 }
 
 body:not(.dark-mode) .contact-intro {
-    color: #1a1a1a !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .btn-primary {
@@ -307,7 +307,7 @@ body:not(.dark-mode) .btn-primary {
 
 body:not(.dark-mode) .btn-secondary {
     background-color: #ffffff !important;
-    color: #111 !important;
+    color: #000 !important;
     border: 1px solid #e8e8e8 !important;
 }
 
@@ -322,21 +322,21 @@ body:not(.dark-mode) .btn-secondary:hover {
     background-color: #fffaf7 !important;
     border-color: #ff8c42 !important;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15) !important;
-    color: #111 !important;
+    color: #000 !important;
 }
 
 body:not(.dark-mode) .hire-footer {
     border-top: none !important;
     background-color: transparent !important;
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .hire-footer p {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .footer-attribution {
-    color: #444 !important;
+    color: #111 !important;
 }
 
 body:not(.dark-mode) .footer-heart {
@@ -420,7 +420,7 @@ body.dark-mode .carousel-indicator.active {
 .hire-subtitle {
     font-size: 1rem;
     font-weight: 500;
-    color: #444;
+    color: #111;
     margin: 0 0 32px 0;
     line-height: 1.5;
 }
@@ -476,7 +476,7 @@ body.dark-mode .carousel-indicator.active {
 .location-info {
     margin-top: 12px;
     font-size: 0.9375rem;
-    color: #444;
+    color: #111;
     text-align: center;
     line-height: 1.6;
     max-width: 220px;
@@ -530,7 +530,7 @@ body.dark-mode .location-info {
 
 .hire-intro {
     font-size: 1rem;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.7;
 }
 
@@ -540,7 +540,7 @@ body.dark-mode .location-info {
 
 .status {
     font-size: 0.875rem;
-    color: #444;
+    color: #111;
     margin-top: 16px;
 }
 
@@ -699,7 +699,7 @@ body.dark-mode .tech-stack-inline {
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #444;
+    color: #111;
     cursor: pointer;
     padding: 8px;
     line-height: 1;
@@ -707,7 +707,7 @@ body.dark-mode .tech-stack-inline {
 }
 
 .carousel-nav-btn:hover:not(:disabled) {
-    color: #1a1a1a;
+    color: #000;
 }
 
 .carousel-nav-btn:disabled {
@@ -731,7 +731,7 @@ body.dark-mode .tech-stack-inline {
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: transparent;
-    color: #444;
+    color: #111;
     font-size: 0.875rem;
     text-decoration: none;
     cursor: pointer;
@@ -768,19 +768,19 @@ body.dark-mode .tech-stack-inline {
     font-weight: 700;
     margin: 0 0 6px 0;
     display: block;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.4;
 }
 
 .company-inline {
     font-size: 0.9375rem;
-    color: #444;
+    color: #111;
     font-weight: 500;
     display: block;
 }
 
 .company-link {
-    color: #444;
+    color: #111;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -797,7 +797,7 @@ body.dark-mode .tech-stack-inline {
 
 .duration {
     font-size: 0.75rem;
-    color: #444;
+    color: #111;
     font-weight: 400;
     display: block;
     margin-top: 4px;
@@ -805,14 +805,14 @@ body.dark-mode .tech-stack-inline {
 
 .experience-description {
     margin: 0;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.7;
     font-size: 0.9375rem;
 }
 
 .tech-stack-inline {
     font-size: 0.75rem;
-    color: #444;
+    color: #111;
     margin: 0;
 }
 
@@ -830,7 +830,7 @@ body.dark-mode .tech-stack-inline {
     gap: 6px;
     padding: 8px 16px;
     font-size: 0.875rem;
-    color: #111;
+    color: #000;
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     border-radius: 20px;
@@ -959,7 +959,7 @@ body.dark-mode .skill-badge:hover {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 12px 0;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.3;
 }
 
@@ -984,7 +984,7 @@ body.dark-mode .skill-badge:hover {
 
 .project-description {
     font-size: 0.9375rem;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.7;
     margin: 0 0 16px 0;
 }
@@ -1001,7 +1001,7 @@ body.dark-mode .skill-badge:hover {
     padding: 4px 12px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #111;
+    color: #000;
     background-color: #f8f8f8;
     border: 1px solid #e8e8e8;
     border-radius: 12px;
@@ -1013,7 +1013,7 @@ body.dark-mode .skill-badge:hover {
     padding: 0;
     margin: 0 0 20px 0;
     font-size: 0.875rem;
-    color: #444;
+    color: #111;
 }
 
 .project-impact li {
@@ -1049,7 +1049,7 @@ body.dark-mode .skill-badge:hover {
     border-radius: 20px;
     transition: all 0.2s ease;
     background-color: #ffffff;
-    color: #111;
+    color: #000;
     border: 1px solid #e8e8e8;
 }
 
@@ -1058,7 +1058,7 @@ body.dark-mode .skill-badge:hover {
     background-color: #fffaf7;
     border-color: #ff8c42;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15);
-    color: #111;
+    color: #000;
 }
 
 .project-link-primary {
@@ -1197,7 +1197,7 @@ body.dark-mode .hire-container .project-link-primary:hover {
 
 .testimonial-item p {
     font-style: normal;
-    color: #1a1a1a;
+    color: #000;
     margin: 0 0 16px 0;
     line-height: 1.75;
     font-size: 0.9375rem;
@@ -1205,7 +1205,7 @@ body.dark-mode .hire-container .project-link-primary:hover {
 
 .testimonial-item p:first-of-type {
     font-size: 1rem;
-    color: #1a1a1a;
+    color: #000;
     font-weight: 500;
     line-height: 1.6;
 }
@@ -1224,7 +1224,7 @@ body.dark-mode .hire-container .project-link-primary:hover {
 
 .testimonial-item cite {
     font-style: normal;
-    color: #444;
+    color: #111;
     font-size: 0.875rem;
     font-weight: 500;
     display: block;
@@ -1334,7 +1334,7 @@ body.dark-mode .back-to-top:hover {
 
 .contact-intro {
     margin: 0 0 40px 0;
-    color: #1a1a1a;
+    color: #000;
     line-height: 1.7;
     font-size: 1rem;
 }
@@ -1370,7 +1370,7 @@ body.dark-mode .back-to-top:hover {
 
 .btn-secondary {
     background-color: #ffffff;
-    color: #111;
+    color: #000;
     border: 1px solid #e8e8e8;
 }
 
@@ -1387,7 +1387,7 @@ body.dark-mode .back-to-top:hover {
     background-color: #fffaf7;
     border-color: #ff8c42;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15);
-    color: #111;
+    color: #000;
 }
 
 /* Focus states for keyboard navigation */
@@ -1481,7 +1481,7 @@ body.dark-mode .btn-secondary:hover {
     padding-top: 0;
     border-top: none;
     background-color: transparent !important;
-    color: #444;
+    color: #111;
     font-size: 0.875rem;
     text-align: center;
 }
@@ -1492,7 +1492,7 @@ body.dark-mode .btn-secondary:hover {
 
 .footer-attribution {
     font-size: 0.75rem;
-    color: #444;
+    color: #111;
 }
 
 .footer-heart {
