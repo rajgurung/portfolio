@@ -6,14 +6,11 @@ export default function CvPage() {
   const [activeSection, setActiveSection] = useState('about');
   const isScrollingRef = useRef(false);
 
-  // Sections for sidebar
+  // Sections for sidebar - only scrollable left column content
   const sections = [
     { id: 'about', label: 'About' },
     { id: 'summary', label: 'Summary' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'contact', label: 'Contact' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'education', label: 'Education' }
+    { id: 'experience', label: 'Experience' }
   ];
 
   useEffect(() => {
