@@ -167,6 +167,7 @@ const HirePage = () => {
 
     // Active section for sidebar navigation
     const [activeSection, setActiveSection] = useState('about');
+    const isScrollingRef = useRef(false);
 
     // Sections for sidebar
     const sections = [
@@ -192,6 +193,9 @@ const HirePage = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
+                // Ignore updates while programmatic scrolling is happening
+                if (isScrollingRef.current) return;
+
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
@@ -278,8 +282,13 @@ const HirePage = () => {
                         className={`sidebar-dot ${activeSection === section.id ? 'active' : ''}`}
                         onClick={(e) => {
                             e.preventDefault();
+                            isScrollingRef.current = true;
                             setActiveSection(section.id);
                             document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
+                            // Re-enable observer after scroll completes
+                            setTimeout(() => {
+                                isScrollingRef.current = false;
+                            }, 1000);
                         }}
                         aria-label={section.label}
                     >
