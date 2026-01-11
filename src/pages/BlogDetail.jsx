@@ -19,6 +19,7 @@ export default function BlogDetail() {
                     components={{
                         h1: ({ node, ...props }) => <h1 className="markdown-heading" {...props} />,
                         p: ({ node, ...props }) => <p {...props} />,
+                        a: ({ node, ...props }) => <a target="_blank" rel="noopener noreferrer" {...props} />,
                     }}
                 >
                     {markdown}
