@@ -4,7 +4,7 @@ const blogPosts = [
         slug: "end-of-hardcore-coding",
         title: "AI Killed the Coding Star",
         date: "2026-01-10 — January",
-        excerpt: "800 million ChatGPT users. 79% of developers already on board.",
+        excerpt: "As of 2025, 800 million ChatGPT users. Cursor hit $1B revenue. 79% of developers already on board.",
         content: `With heavy usage of AI assisted coding, your sharp knife of coding skills will dull. It has to. You cannot sharpen everything at once. As you gain other skills this era demands, something else gives.`,
     },
     {
