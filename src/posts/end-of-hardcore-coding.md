@@ -2,7 +2,7 @@
 
 I didn't see it coming.
 
-Fourteen years as a software engineer, and I didn't think AI would disrupt my livelihood so swiftly. I was oblivious of the storm that had been brewing quietly for years. 800 million ChatGPT users. Cursor hit $1B revenue. Claude Code processing 195 million lines weekly. 79% of developers already on board. So strong that it has shook the foundation of many white-collar folks. Dare I say it has uprooted the normal rhythms of many. Now, more than ever, the battle is to adapt or be left behind.
+Fourteen years as a software engineer, and I didn't think AI would disrupt my livelihood so swiftly. I was oblivious of the storm that had been brewing quietly for years. As of 2025, 800 million ChatGPT users. Cursor hit $1B revenue. Claude Code processing 195 million lines weekly. 79% of developers already on board. So strong that it has shook the foundation of many white-collar folks. Dare I say it has uprooted the normal rhythms of many. Now, more than ever, the battle is to adapt or be left behind.
 
 If I rewind the clock a decade ago, an AI intelligent enough to write decent code, a horde of sub-agents working tirelessly and efficiently better than humans. I would have honestly laughed it off. Wouldn't you?
 
