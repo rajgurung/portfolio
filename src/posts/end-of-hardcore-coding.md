@@ -4,7 +4,7 @@ I didn't see it coming.
 
 Fourteen years as a software engineer, and I didn't think AI would disrupt my livelihood so swiftly. I was oblivious of the storm that had been brewing quietly for years. As of 2025, 800 million ChatGPT users. Cursor hit $1B revenue. Claude Code processing 195 million lines weekly. 79% of developers already on board. So strong that it has shook the foundation of many white-collar folks. Dare I say it has uprooted the normal rhythms of many. Now, more than ever, the battle is to adapt or be left behind.
 
-If I rewind the clock a decade ago, an AI intelligent enough to write decent code, a horde of sub-agents working tirelessly and efficiently better than humans. I would have honestly laughed it off. Wouldn't you?
+If I rewind the clock a decade ago, and someone said an AI would be intelligent enough to write decent code, a horde of sub-agents working tirelessly and efficiently better than humans. I would have honestly laughed it off. Wouldn't you?
 
 Yet here we are.
 
@@ -12,7 +12,7 @@ And here is the part we do not talk about enough. With heavy usage of AI assiste
 
 What frustrates me is the contradiction. Companies are investing heavily in Agentic Coding. Automating the business flows. Using AI to fill gaps and solidify their process. Mandating to use AI for coding to increase velocity.
 
-But the very same companies interview like it is 2012. Long theoretical rocket science assessments. Live Coding Tests. Rhetorical Puzzle Questions. Grinning at the interviewee whilst they struggle to even understand the parameters. A PRESSURE COOKER SITUATION.
+But the very same companies interview with an absurdly complex chain of stages. Long theoretical rocket science assessments. Live Coding Tests. Rhetorical Puzzle Questions. Grinning at the interviewee whilst they struggle to even understand the parameters. A PRESSURE COOKER SITUATION. I can't remember the interview being this difficult 8 years ago. It's ironic that you are asked to write code even after having years of professional experience working in complex, critical, and high-impact situations.
 
 One interviewer even said to me: *"We will watch you struggle during what's meant to be pairing sessions."* What's the point of disguising it as pairing when it's not meant to be?
 
