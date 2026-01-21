@@ -8,8 +8,8 @@ body {
 }
 
 html, body {
-  color: #777777;
-  background-color: white;
+  color: #6B7280;
+  background-color: #FAF8F5;
   font-weight: 500;
   letter-spacing: 0.03rem;
 }
@@ -20,7 +20,7 @@ html, body {
 }
 
 .content {
-  background: #f7f7f7;
+  background: #F5F2ED;
   padding: 30px 65px;
 }
 
@@ -2984,7 +2984,7 @@ label.btn-file {
 }
 
 .navbar-light.bg-transparent.nav-scroll {
-  background-color: rgba(255, 255, 255, 0.98) !important;
+  background-color: rgba(250, 248, 245, 0.98) !important;
 }
 
 .navbar-inverse.bg-transparent.nav-scroll {
@@ -3139,7 +3139,7 @@ label.btn-file {
 }
 
 .navbar-light.hamburger-nav .navbar-collapse {
-  background-color: rgba(255, 255, 255, 0.99);
+  background-color: rgba(250, 248, 245, 0.99);
 }
 
 .navbar-inverse.hamburger-nav .navbar-collapse {
@@ -3423,7 +3423,7 @@ nav .btn-xs {
 }
 
 .transparent-menu.nav-scroll {
-  background: white;
+  background: #FAF8F5;
 }
 
 .navbar-inverse.transparent-menu.nav-scroll {
@@ -5959,7 +5959,7 @@ header.video-wrapper #bgvideo {
   }
 
   .navbar-expand-lg.navbar-light.bg-transparent .navbar-collapse {
-    background-color: white !important;
+    background-color: #FAF8F5 !important;
   }
 
   .navbar-expand-lg.navbar-inverse.bg-transparent .navbar-collapse {
