@@ -1,6 +1,13 @@
 // This is a mock database — an array of blog post objects
 const blogPosts = [
     {
+        slug: "telemetry-claude-code",
+        title: "Telemetry Doesn't Have to Be Painful",
+        date: "2026-05-10 — May",
+        excerpt: "Years of Datadog experience, golden signals, Sidekiq queues — and how Claude Code plus Terraform made observability vendor-agnostic and painless.",
+        content: `I have spent years building observability at scale with Datadog. Monitors, dashboards, SLOs, log pipelines — the whole nine yards. Then I discovered what happens when you combine Terraform with Claude Code. And honestly, it has changed how I think about telemetry entirely.`,
+    },
+    {
         slug: "end-of-hardcore-coding",
         title: "AI Killed the Coding Star",
         date: "2026-01-10 — January",
