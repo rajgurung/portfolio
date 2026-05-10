@@ -21,7 +21,7 @@
     font-weight: 500;
     line-height: 1.3;
     letter-spacing: -0.015em;
-    color: #2D3436;
+    color: #2D2D2D;
     text-decoration: none;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), letter-spacing 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
@@ -47,7 +47,7 @@
 .blog-excerpt {
     font-family: 'Lora', serif;
     font-size: 1.15rem;
-    color: #4A5568;
+    color: #3D3D3D;
     line-height: 1.65;
     font-weight: 400;
     max-width: 720px;
@@ -57,9 +57,10 @@
 /* Blog Detail Styles */
 .blog-detail-container {
     /*background: #fdfaf6;*/
-    color: #2D3436;
+    color: #2D2D2D;
     font-family: 'Lora', Georgia, serif;
     font-size: 1.2rem;
+    font-weight: 400;
     line-height: 1.8;
     max-width: 850px;
     width: 100%;
@@ -87,7 +88,7 @@
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
     font-weight: 600;
-    color: #2D3436;
+    color: #2D2D2D;
     line-height: 1.4;
 }
 
@@ -101,6 +102,60 @@
     justify-content: center;
     padding: 3rem 1rem 4rem;
     box-sizing: border-box;
+}
+
+/* Code blocks */
+.blog-detail-container pre {
+    background: #f5f2eb;
+    border-left: 4px solid #ff8c42;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    margin: 1.75rem 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.blog-detail-container pre code {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85rem;
+    color: #2D2D2D;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.blog-detail-container code {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9em;
+    background: #f0ebe3;
+    color: #c7522a;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+/* Lists */
+.blog-detail-container ul,
+.blog-detail-container ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-detail-container li {
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+}
+
+/* Horizontal rule */
+.blog-detail-container hr {
+    border: none;
+    border-top: 2px solid #e8e0d4;
+    margin: 3rem 0;
+}
+
+/* Headings with subtle accent */
+.blog-detail-container h2 {
+    color: #c7522a;
 }
 
 .back-link,

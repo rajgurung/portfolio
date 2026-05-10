@@ -119,23 +119,23 @@ body.dark-mode .sidebar-dot.active .sidebar-label {
     padding: 48px 32px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.75;
-    color: #000;
-    background-color: #fff;
+    color: #2D2D2D;
+    background-color: #F8F5F0;
     font-size: 16px;
 }
 
 /* Force light mode when dark mode toggle is OFF (even if OS prefers dark) */
 body:not(.dark-mode) {
-    background-color: #fff !important;
+    background-color: #F8F5F0 !important;
 }
 
 body:not(.dark-mode) #root {
-    background-color: #fff !important;
+    background-color: #F8F5F0 !important;
 }
 
 body:not(.dark-mode) .hire-container {
-    background-color: #fff !important;
-    color: #000 !important;
+    background-color: #F8F5F0 !important;
+    color: #2D2D2D !important;
 }
 
 body:not(.dark-mode) .hire-title {
@@ -172,7 +172,7 @@ body:not(.dark-mode) .status-badge {
 }
 
 body:not(.dark-mode) .experience-slide {
-    background-color: #ffffff !important;
+    background-color: #FDFCFA !important;
     border-color: #f0f0f0 !important;
 }
 
@@ -182,8 +182,8 @@ body:not(.dark-mode) .experience-slide:hover {
 }
 
 body:not(.dark-mode) .experience-logo {
-    background-color: #fff !important;
-    border-color: #e5e5e5 !important;
+    background-color: #FDFCFA !important;
+    border-color: #ece7df !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
 }
 
@@ -228,20 +228,20 @@ body:not(.dark-mode) .carousel-nav-btn:disabled {
 }
 
 body:not(.dark-mode) .skill-badge {
-    background-color: #ffffff !important;
-    color: #000 !important;
-    border: 1px solid #e8e8e8 !important;
+    background-color: #FDFCFA !important;
+    color: #2D2D2D !important;
+    border: 1px solid #ece7df !important;
 }
 
 body:not(.dark-mode) .skill-badge:hover {
-    background-color: #fffaf7 !important;
+    background-color: #FFF8F2 !important;
     border-color: #ff8c42 !important;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15) !important;
 }
 
 body:not(.dark-mode) .testimonial-item {
-    background-color: #ffffff !important;
-    border-color: #f0f0f0 !important;
+    background-color: #FDFCFA !important;
+    border-color: #ece7df !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 }
 
@@ -306,9 +306,9 @@ body:not(.dark-mode) .btn-primary {
 }
 
 body:not(.dark-mode) .btn-secondary {
-    background-color: #ffffff !important;
-    color: #000 !important;
-    border: 1px solid #e8e8e8 !important;
+    background-color: #FDFCFA !important;
+    color: #2D2D2D !important;
+    border: 1px solid #ece7df !important;
 }
 
 body:not(.dark-mode) .btn-primary:hover {
@@ -319,7 +319,7 @@ body:not(.dark-mode) .btn-primary:hover {
 }
 
 body:not(.dark-mode) .btn-secondary:hover {
-    background-color: #fffaf7 !important;
+    background-color: #FFF8F2 !important;
     border-color: #ff8c42 !important;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15) !important;
     color: #000 !important;
@@ -589,10 +589,10 @@ body.dark-mode .status-badge {
     scroll-snap-align: start;
     max-width: 420px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: #FDFCFA;
     padding: 24px;
     border-radius: 12px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ece7df;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     display: flex;
@@ -621,9 +621,9 @@ body.dark-mode .status-badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #FDFCFA;
     border-radius: 8px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #ece7df;
     padding: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
@@ -830,9 +830,9 @@ body.dark-mode .tech-stack-inline {
     gap: 6px;
     padding: 8px 16px;
     font-size: 0.875rem;
-    color: #000;
-    background-color: #ffffff;
-    border: 1px solid #e8e8e8;
+    color: #2D2D2D;
+    background-color: #FDFCFA;
+    border: 1px solid #ece7df;
     border-radius: 20px;
     line-height: 1.5;
     transition: all 0.2s ease;
@@ -841,7 +841,7 @@ body.dark-mode .tech-stack-inline {
 
 .skill-badge:hover {
     transform: translateY(-2px) scale(1.05);
-    background-color: #fffaf7;
+    background-color: #FFF8F2;
     border-color: #ff8c42;
     box-shadow: 0 4px 12px rgba(255, 140, 66, 0.2);
 }
@@ -904,9 +904,9 @@ body.dark-mode .skill-badge:hover {
 }
 
 .project-card {
-    background-color: #ffffff;
+    background-color: #FDFCFA;
     border-radius: 12px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ece7df;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     overflow: hidden;
@@ -1001,9 +1001,9 @@ body.dark-mode .skill-badge:hover {
     padding: 4px 12px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #000;
-    background-color: #f8f8f8;
-    border: 1px solid #e8e8e8;
+    color: #2D2D2D;
+    background-color: #F3EEE8;
+    border: 1px solid #ece7df;
     border-radius: 12px;
     line-height: 1.5;
 }
@@ -1048,14 +1048,14 @@ body.dark-mode .skill-badge:hover {
     text-decoration: none;
     border-radius: 20px;
     transition: all 0.2s ease;
-    background-color: #ffffff;
-    color: #000;
-    border: 1px solid #e8e8e8;
+    background-color: #FDFCFA;
+    color: #2D2D2D;
+    border: 1px solid #ece7df;
 }
 
 .project-link:hover {
     transform: translateY(-1px);
-    background-color: #fffaf7;
+    background-color: #FFF8F2;
     border-color: #ff8c42;
     box-shadow: 0 2px 6px rgba(255, 140, 66, 0.15);
     color: #000;
@@ -1163,9 +1163,9 @@ body.dark-mode .hire-container .project-link-primary:hover {
 
 .testimonial-item {
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #FDFCFA;
     border-radius: 12px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ece7df;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     position: relative;
@@ -1369,9 +1369,9 @@ body.dark-mode .back-to-top:hover {
 }
 
 .btn-secondary {
-    background-color: #ffffff;
-    color: #000;
-    border: 1px solid #e8e8e8;
+    background-color: #FDFCFA;
+    color: #2D2D2D;
+    border: 1px solid #ece7df;
 }
 
 .btn-primary:hover {

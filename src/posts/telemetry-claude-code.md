@@ -58,7 +58,7 @@ The beauty of this approach is that it is measurable. You can set an SLO on each
 
 Compare that to a queue called `urgent` with no defined latency target. When it backs up, what do you do? How do you know if the delay is acceptable or not? You do not. You guess. And guessing in production is how incidents happen.
 
-This shift in thinking was one of the most valuable lessons I picked up at Indeed. It sounds simple, but it fundamentally changed how I designed background job systems from that point on.
+This shift in thinking was one of the most valuable lessons I picked up at Indeed. It sounds simple, but it fundamentally changed how I designed background job systems from that point on. If you want to dig deeper into this approach, Judoscale wrote a great piece on [planning Sidekiq queues around latency](https://judoscale.com/blog/planning-sidekiq-queues) that covers the thinking well.
 
 ## The Sidekiq Observability Problem
 
