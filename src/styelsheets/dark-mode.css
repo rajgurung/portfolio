@@ -86,6 +86,36 @@ body.dark-mode .markdown-heading {
     color: #ececec;
 }
 
+/* Blog Detail - Code blocks in dark mode */
+body.dark-mode .blog-detail-container pre {
+    background: #2a2a2a;
+    border-left-color: #ff8c42;
+}
+
+body.dark-mode .blog-detail-container pre code {
+    color: #e4e4e4;
+}
+
+body.dark-mode .blog-detail-container code {
+    background: #333;
+    color: #ff8c42;
+}
+
+/* Blog Detail - Headings in dark mode */
+body.dark-mode .blog-detail-container h2 {
+    color: #ff8c42;
+}
+
+/* Blog Detail - Horizontal rule in dark mode */
+body.dark-mode .blog-detail-container hr {
+    border-top-color: #3a3a3a;
+}
+
+/* Blog Detail - Lists in dark mode */
+body.dark-mode .blog-detail-container li {
+    color: #d4d4d4;
+}
+
 /* Navbar */
 .navbar {
     border-bottom: none !important;
