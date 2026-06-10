@@ -24,7 +24,7 @@ export const Route = createFileRoute("/cv")({
 function CvPage() {
   return (
     <Shell>
-      <section className="relative z-10 mx-auto max-w-[900px] px-6 pt-10 pb-12 sm:pt-16">
+      <section className="relative z-10 mx-auto max-w-[1100px] px-6 pt-10 pb-12 sm:pt-16">
         <span className="font-display text-[11px] uppercase tracking-[0.3em] text-ember">
           The résumé
         </span>
@@ -52,7 +52,7 @@ function CvPage() {
         </p>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-[900px] px-6 pb-16">
+      <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-16">
         <SectionHeader index="01" label="Experience" caption="2012 — present" />
         <ol className="mt-10 flex flex-col gap-12">
           {cv.experience.map((r) => (
@@ -88,7 +88,7 @@ function CvPage() {
         </ol>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-[900px] px-6 pb-16">
+      <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-16">
         <SectionHeader index="02" label="Skills" caption="Tools of the trade" />
         <dl className="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-6">
           {Object.entries(cv.skills).map(([k, v]) => (
@@ -111,7 +111,7 @@ function CvPage() {
         </dl>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-[900px] px-6 pb-32">
+      <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-32">
         <SectionHeader index="03" label="Education" caption="" />
         <ul className="mt-10 flex flex-col gap-6">
           {cv.education.map((e) => (
