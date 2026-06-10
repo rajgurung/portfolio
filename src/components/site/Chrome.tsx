@@ -34,11 +34,11 @@ export function Nav() {
     <nav className="relative z-20 mx-auto flex max-w-[1100px] items-center justify-between px-6 py-7">
       <Link
         to="/"
-        className="font-display text-sm font-medium tracking-[0.2em] uppercase text-foreground/90 hover:text-ember transition-colors"
+        className="font-display text-lg font-bold tracking-[0.2em] uppercase text-foreground/90 hover:text-ember transition-colors"
       >
         RG<span className="text-ember">.</span>
       </Link>
-      <div className="flex items-center gap-5 sm:gap-7 text-[12px] uppercase tracking-[0.22em] text-foreground/55">
+      <div className="flex items-center gap-5 sm:gap-7 text-[13px] font-medium uppercase tracking-[0.22em] text-foreground/55">
         <Link
           to="/writing"
           className="hover:text-foreground transition-colors"
