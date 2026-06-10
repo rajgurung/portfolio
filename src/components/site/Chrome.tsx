@@ -1,63 +1,25 @@
 import { Link } from "@tanstack/react-router";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export function AmbientBackdrop() {
-  const [pos, setPos] = useState({ x: 50, y: 30 });
-  const rafRef = useRef<number | null>(null);
-  const targetRef = useRef({ x: 50, y: 30 });
-
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
-      targetRef.current = {
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100,
-      };
+      document.documentElement.style.setProperty("--cursor-x", `${e.clientX}px`);
+      document.documentElement.style.setProperty("--cursor-y", `${e.clientY}px`);
     };
-
-    const animate = () => {
-      setPos((prev) => ({
-        x: prev.x + (targetRef.current.x - prev.x) * 0.04,
-        y: prev.y + (targetRef.current.y - prev.y) * 0.04,
-      }));
-      rafRef.current = requestAnimationFrame(animate);
-    };
-
     window.addEventListener("mousemove", handleMove);
-    rafRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMove);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
+    return () => window.removeEventListener("mousemove", handleMove);
   }, []);
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-      <div
-        className="absolute h-[60vh] w-[60vh] rounded-full blur-[120px] transition-none"
-        style={{
-          left: `${pos.x}%`,
-          top: `${pos.y}%`,
-          transform: "translate(-50%, -50%)",
-          background:
-            "radial-gradient(circle at center, rgba(245,165,36,0.45) 0%, rgba(245,165,36,0.15) 35%, rgba(6,6,10,0) 70%)",
-        }}
-      />
-      <div
-        className="absolute -left-40 bottom-[-20vh] h-[70vh] w-[70vh] rounded-full blur-[140px] opacity-60"
-        style={{
-          background:
-            "radial-gradient(circle at center, rgba(80,90,255,0.18) 0%, rgba(6,6,10,0) 70%)",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)",
-        }}
-      />
-    </div>
+    <div
+      aria-hidden
+      className="pointer-events-none fixed inset-0 z-0"
+      style={{
+        background:
+          "radial-gradient(600px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.15), transparent 40%)",
+      }}
+    />
   );
 }
 
