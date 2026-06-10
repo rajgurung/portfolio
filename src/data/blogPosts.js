@@ -1,6 +1,13 @@
 // This is a mock database — an array of blog post objects
 const blogPosts = [
     {
+        slug: "why-i-decommissioned-aws",
+        title: "Why I Decommissioned AWS and Moved to Railway",
+        date: "2026-06-10 — June",
+        excerpt: "$36 burned in 10 days. 67 Terraform resources just to run a Rails app. I ran terraform destroy and moved to Railway. Here is why.",
+        content: `I just ran terraform destroy on my entire AWS infrastructure. VPC, ECS, RDS, ElastiCache, S3 buckets, ECR, IAM roles. 67 resources, gone in about ten minutes. And honestly, it felt great.`,
+    },
+    {
         slug: "telemetry-claude-code",
         title: "Telemetry Doesn't Have to Be Painful",
         date: "2026-05-10 — May",
