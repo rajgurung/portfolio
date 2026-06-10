@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function AmbientBackdrop() {
   useEffect(() => {
@@ -97,22 +98,16 @@ export function Footer() {
             <span className="animate-blink text-ember">▍</span>
           </span>
         </div>
-        <div className="flex gap-6 text-[11px] uppercase tracking-[0.25em]">
-          {[
-            { label: "GitHub", href: "https://github.com/rajgurung" },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/raj---gurung" },
-            { label: "Email", href: "mailto:gurungraj26@gmail.com" },
-          ].map((l) => (
-            <a
-              key={l.label}
-              href={l.href}
-              target="_blank"
-              rel="noreferrer"
-              className="text-foreground/55 hover:text-ember transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
+        <div className="flex gap-5 items-center">
+          <a href="https://github.com/rajgurung" target="_blank" rel="noreferrer" className="text-foreground/55 hover:text-ember transition-colors" aria-label="GitHub">
+            <Github size={18} />
+          </a>
+          <a href="https://www.linkedin.com/in/raj---gurung" target="_blank" rel="noreferrer" className="text-foreground/55 hover:text-ember transition-colors" aria-label="LinkedIn">
+            <Linkedin size={18} />
+          </a>
+          <a href="mailto:gurungraj26@gmail.com" className="text-foreground/55 hover:text-ember transition-colors" aria-label="Email">
+            <Mail size={18} />
+          </a>
         </div>
       </div>
     </footer>

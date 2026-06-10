@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Shell, SectionHeader } from "@/components/site/Chrome";
 import { cv } from "@/content/cv";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/cv")({
   head: () => ({
@@ -33,17 +34,15 @@ function CvPage() {
         </h1>
         <p className="mt-3 font-display text-lg text-foreground/65">{cv.title}</p>
 
-        <div className="mt-6 flex flex-wrap gap-4 text-[11px] uppercase tracking-[0.22em] text-foreground/55">
-          <a href={`mailto:${cv.email}`} className="hover:text-ember transition-colors">
-            {cv.email}
+        <div className="mt-6 flex flex-wrap items-center gap-4 text-foreground/55">
+          <a href={`mailto:${cv.email}`} className="hover:text-ember transition-colors" aria-label="Email">
+            <Mail size={18} />
           </a>
-          <span className="text-foreground/25">·</span>
-          <a href={cv.linkedin} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors">
-            LinkedIn
+          <a href={cv.linkedin} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors" aria-label="LinkedIn">
+            <Linkedin size={18} />
           </a>
-          <span className="text-foreground/25">·</span>
-          <a href={cv.github} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors">
-            GitHub
+          <a href={cv.github} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors" aria-label="GitHub">
+            <Github size={18} />
           </a>
         </div>
 
