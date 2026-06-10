@@ -46,7 +46,7 @@ function PostPage() {
 
   return (
     <Shell>
-      <article className="relative z-10 mx-auto max-w-[720px] px-6 pt-10 pb-24 sm:pt-16">
+      <article className="relative z-10 mx-auto max-w-[1100px] px-6 pt-10 pb-24 sm:pt-16">
         <Link
           to="/writing"
           className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-foreground/45 hover:text-ember transition-colors"
