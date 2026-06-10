@@ -4,83 +4,68 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal portfolio website for rajgurung.me, built with React (Create React App). The site focuses on blogging with additional pages for CV, about, and projects. The primary content is blog posts stored as Markdown files.
+Personal portfolio website for rajgurung.me. Dark "Nocturne" design with warm amber accent, built with TanStack Start (React 19, SSR), TypeScript, and Tailwind CSS v4. The site has a homepage with hero + writing feed + projects strip, plus dedicated pages for writing, projects, hire, and CV.
 
 ## Key Commands
 
-### Development
 ```bash
-yarn start          # Start development server on localhost:3000
-yarn build          # Create production build
-yarn test           # Run tests in watch mode
-```
-
-### Deployment
-```bash
-yarn build:digitalocean  # Special build command for DigitalOcean deployment
-                         # Installs all deps, builds, removes dev deps
+npm run dev        # Start dev server (Vite)
+npm run build      # Production build (outputs to dist/)
+npm run preview    # Preview production build
+npm run lint       # ESLint
+npm run format     # Prettier
 ```
 
 ## Architecture
 
-### Routing Structure
-The app uses React Router v6 with the following routes (see `src/App.js:28-38`):
-- `/` and `/blogs` → Blog list page (primary landing)
-- `/blogs/:slug` → Individual blog post detail
-- `/about` → About page
-- `/cv` → CV page with PDF viewer
-- `/landing` → Alternative landing page (legacy)
+### Stack
+- TanStack Start (SSR framework on top of TanStack Router)
+- React 19 + TypeScript
+- Tailwind CSS v4 with custom design tokens (see src/styles.css)
+- Vite 7
+- shadcn/ui primitives (Radix UI)
 
-### Blog System Architecture
+### Routing (file-based via TanStack Router)
+Routes live in `src/routes/`:
+- `index.tsx` - Homepage (hero, writing feed, projects, hire CTA)
+- `writing.tsx` - Layout wrapper for writing routes
+- `writing.index.tsx` - All essays list
+- `writing.$slug.tsx` - Individual essay (loads markdown)
+- `projects.tsx` - Projects page
+- `hire.tsx` - Hire page (experience, skills, testimonials)
+- `cv.tsx` - CV page
+- `__root.tsx` - Root layout (meta tags, error/404 handling)
 
-**Two-layer content system:**
+### Content System
+- `src/content/posts.ts` - Post metadata (slug, title, date, excerpt, readingTime, location) + eager markdown imports via Vite glob
+- `src/content/posts/*.md` - Markdown files for each essay
+- `src/content/projects.ts` - Project data
+- `src/content/cv.ts` - CV data (experience, skills, education)
 
-1. **Metadata layer** (`src/data/blogPosts.js`):
-   - Array of post objects with `slug`, `title`, `date`, `excerpt`, `content`
-   - Used for blog list rendering and post metadata
-   - Must be updated manually when adding new posts
+**Adding a new blog post:**
+1. Create `src/content/posts/{slug}.md`
+2. Add metadata entry to the `META` object in `src/content/posts.ts`
 
-2. **Content layer** (`src/posts/*.md`):
-   - Full Markdown files matching the slugs
-   - Loaded dynamically in `BlogDetail.js:10-13` using dynamic imports
-   - Rendered via `react-markdown` package
+### Layout
+- `src/components/site/Chrome.tsx` - Shell (Nav, Footer, AmbientBackdrop, SectionHeader)
+- All pages wrap content in `<Shell>` for consistent nav/footer/backdrop
 
-**Important:** When adding a new blog post, you must:
-1. Create the `.md` file in `src/posts/` with slug as filename
-2. Add corresponding entry to `blogPosts` array in `src/data/blogPosts.js`
+### Design System
+Defined in `src/styles.css`:
+- Colors: `--ink` (#06060a), `--ember` (#f5a524), `--ember-glow` (#fbbf24)
+- Fonts: Space Grotesk (display), DM Sans (body)
+- Custom animations: reveal-up, char-in, glow-pulse, line-grow, cursor-blink
+- Film grain overlay via `.grain` utility
+- `.prose-essay` class for markdown content styling
 
-### Component Structure
-
-- `components/`: Reusable UI components
-  - `Navbar.js`: Navigation bar (appears on all pages)
-  - `BlogList.jsx`: Maps through `blogPosts` array, renders `BlogCard` for each
-  - `BlogCard.jsx`: Individual blog post preview card
-  - `About.js`, `Project.js`, `Experience.js`: Static content pages
-
-- `pages/`: Route-level page components
-  - `Blogs.js`: Container for blog list with centered layout
-  - `BlogDetail.js`: Fetches and renders individual markdown posts
-  - `CvPage.jsx`: PDF viewer for CV
-  - `Landing.js`: Alternative landing page
-
-### Styling
-Multiple CSS approaches in use:
-- Bootstrap CSS (`styelsheets/bootstrap.min.css`)
-- Custom stylesheets in `src/styelsheets/` (note: typo "styelsheets" is intentional)
-- Inline React styles (particularly in `Blogs.js` and `BlogDetail.js`)
-- Import order in `App.js:1-9` matters for style precedence
-
-## Dependencies
-
-Key packages:
-- `react-router-dom` v6: Client-side routing
-- `react-markdown`: Renders markdown to React components
-- `react-pdf` + `pdfjs-dist`: PDF viewing for CV page
-- `react-scripts`: CRA tooling (build/dev/test)
+### Public Assets
+- `public/raj-gurung-cv.pdf` - Downloadable CV
+- `public/favicon.ico`
+- `public/robots.txt`
 
 ## Engine Requirements
-- Node.js >= 18
-- Yarn >= 1.22
+- Node.js >= 20 (22+ recommended)
+- npm
 
 ## Git Commit Guidelines
 - Do NOT add "Co-Authored-By: Claude" footer to commit messages
