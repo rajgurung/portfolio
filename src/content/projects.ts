@@ -10,6 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Softly",
+    description:
+      "Life admin tool — one calm place to manage the stuff that quietly piles up.",
+    tech: ["Rails", "PostgreSQL", "Tailwind CSS"],
+    demo: "https://mysoftly.app",
+    featured: true,
+  },
+  {
+    title: "staffOS",
+    description:
+      "The trust, review, and documentation layer for AI-assisted engineering work.",
+    tech: ["Ruby", "Rails", "PostgreSQL"],
+    github: "https://github.com/rajgurung/staffOS",
+    featured: true,
+  },
+  {
     title: "Make Nepal Great",
     description:
       "Democratic polling platform for Nepal's political engagement — secure Gmail auth, transparent voting, connecting the global Nepali diaspora.",

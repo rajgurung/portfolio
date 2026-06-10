@@ -208,6 +208,30 @@ function ProjectsStrip({ items }: { items: typeof projects }) {
             <p className="mt-2 text-sm text-foreground/55 leading-relaxed line-clamp-3">
               {p.description}
             </p>
+            {(p.demo || p.github) && (
+              <div className="mt-4 flex gap-4 text-[11px] uppercase tracking-[0.25em]">
+                {p.demo && (
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-ember hover:text-ember-glow transition-colors inline-flex items-center gap-1.5"
+                  >
+                    Live <span aria-hidden>↗</span>
+                  </a>
+                )}
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-foreground/55 hover:text-foreground transition-colors inline-flex items-center gap-1.5"
+                  >
+                    Source <span aria-hidden>↗</span>
+                  </a>
+                )}
+              </div>
+            )}
             <span
               aria-hidden
               className="absolute inset-x-0 bottom-0 h-px scale-x-0 origin-left bg-gradient-to-r from-ember/80 via-ember/20 to-transparent transition-transform duration-500 group-hover:scale-x-100"
