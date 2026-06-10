@@ -162,7 +162,7 @@ function EssayRow({ essay, index }: { essay: (typeof posts)[number]; index: numb
           <h3 className="font-display text-xl sm:text-3xl font-medium tracking-tight text-balance text-foreground group-hover:text-ember-glow transition-colors">
             {essay.title}
           </h3>
-          <p className="mt-2 sm:mt-3 max-w-[58ch] text-sm sm:text-[15px] leading-relaxed text-foreground/55 sm:max-h-0 sm:overflow-hidden sm:opacity-0 sm:translate-y-1 transition-all duration-500 group-hover:max-h-40 group-hover:opacity-100 group-hover:translate-y-0">
+          <p className="mt-2 sm:mt-3 max-w-[58ch] text-sm sm:text-[15px] leading-relaxed text-foreground/55">
             {essay.excerpt}
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] uppercase tracking-[0.22em] text-foreground/40">
