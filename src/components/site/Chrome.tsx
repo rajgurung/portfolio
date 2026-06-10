@@ -17,7 +17,7 @@ export function AmbientBackdrop() {
       className="pointer-events-none fixed inset-0 z-0"
       style={{
         background:
-          "radial-gradient(900px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)",
+          "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)",
       }}
     />
   );
