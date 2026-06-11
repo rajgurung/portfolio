@@ -20,7 +20,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "staffOS",
+    title: "StaffOS",
     description:
       "The trust, review, and documentation layer for AI-assisted engineering work.",
     tech: ["Ruby", "Rails", "PostgreSQL"],
