@@ -195,8 +195,18 @@ function ProjectsStrip({ items }: { items: typeof projects }) {
         {items.map((p) => (
           <div
             key={p.title}
-            className="group relative overflow-hidden rounded-lg border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm p-6 hover:border-ember/40 transition-colors"
+            className="group relative overflow-hidden rounded-lg border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm hover:border-ember/40 transition-colors"
           >
+            {p.image && (
+              <div className="overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-36 object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                />
+              </div>
+            )}
+            <div className="p-6">
             <div className="flex items-baseline justify-between gap-3">
               <h4 className="font-display text-lg font-medium tracking-tight">
                 {p.title}
@@ -232,6 +242,7 @@ function ProjectsStrip({ items }: { items: typeof projects }) {
                 )}
               </div>
             )}
+            </div>
             <span
               aria-hidden
               className="absolute inset-x-0 bottom-0 h-px scale-x-0 origin-left bg-gradient-to-r from-ember/80 via-ember/20 to-transparent transition-transform duration-500 group-hover:scale-x-100"

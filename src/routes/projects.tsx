@@ -82,7 +82,17 @@ function ProjectsPage() {
 
 function FeaturedCard({ project }: { project: (typeof projects)[number] }) {
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm p-7 hover:border-ember/40 transition-colors">
+    <div className="group relative overflow-hidden rounded-xl border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm hover:border-ember/40 transition-colors">
+      {project.image && (
+        <div className="overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+          />
+        </div>
+      )}
+      <div className="p-7">
       <div className="flex items-baseline justify-between">
         <h3 className="font-display text-2xl font-medium tracking-tight">
           {project.title}
@@ -127,6 +137,7 @@ function FeaturedCard({ project }: { project: (typeof projects)[number] }) {
             Source <span aria-hidden>↗</span>
           </a>
         )}
+      </div>
       </div>
       <span
         aria-hidden

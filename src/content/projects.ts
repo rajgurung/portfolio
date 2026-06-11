@@ -6,6 +6,7 @@ export type Project = {
   github?: string;
   featured?: boolean;
   status?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -31,6 +32,7 @@ export const projects: Project[] = [
       "Democratic polling platform for Nepal's political engagement — secure Gmail auth, transparent voting, connecting the global Nepali diaspora.",
     tech: ["Next.js", "Go", "Gin", "PostgreSQL", "Redis", "JWT", "Docker"],
     demo: "https://makenepalgreat.com",
+    image: "/images/projects/make-nepal-great.png",
     featured: true,
   },
   {
@@ -40,6 +42,7 @@ export const projects: Project[] = [
     tech: ["React", "Python", "TensorFlow", "REST API"],
     demo: "https://stock-intelligence-frontend.vercel.app",
     github: "https://github.com/rajgurung/stock-intelligence-frontend",
+    image: "/images/projects/stock-intelligence.png",
     featured: true,
     status: "shelved",
   },
