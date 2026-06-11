@@ -84,11 +84,11 @@ function FeaturedCard({ project }: { project: (typeof projects)[number] }) {
   return (
     <div className="group relative overflow-hidden rounded-xl border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm hover:border-ember/40 transition-colors">
       {project.image && (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden bg-ink-soft">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+            className="w-full h-48 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500"
           />
         </div>
       )}
