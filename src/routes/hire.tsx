@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Shell, SectionHeader } from "@/components/site/Chrome";
 import { cv } from "@/content/cv";
 import { projects } from "@/content/projects";
+import { Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/hire")({
   head: () => ({
@@ -48,48 +49,56 @@ const testimonials = [
       "I had the privilege of managing Raj for a few years at Indeed Flex. I watched him grow from a highly capable engineer to a strong colleague enabler. Raj is the rare engineer who is as aware of the human element of software development as he is the technical. During our time together, I was impressed by his skill in breaking down work according to the technical aspects while also considering the people on both the implementation and user sides. For example, during our work on the Service Excellence team, Raj was more than capable of triaging any issue that arrived on our desk. He could use his extensive knowledge to correctly diagnose the problem and highlight likely solutions, ready for another engineer to pick up. Additionally, he would consistently consider how quickly an issue could be patched in order to unblock the user who had reported it. This two-tier approach — enabling his colleagues while ensuring users were also unblocked — allowed us to make a significant impact on our incoming support issues, freeing up engineers for deeper work. Beyond that, Raj is also a solid mentor, having successfully onboarded many new engineers into the team, while also working closely with less senior engineers to help them grow and progress. Raj embodies the Tech Lead attitude, and I wouldn't hesitate to work with him again.",
     author: "Jonathan Barrett",
     role: "Software Engineering Manager · Indeed",
+    linkedin: "https://www.linkedin.com/in/jonathan-e-barrett/",
   },
   {
     quote:
       "Working with Raj has been an absolute pleasure. He is not only a highly talented backend engineer, but also the kind of teammate that every group wishes to have. His technical skills are outstanding — from designing robust architectures to solving complex challenges with creativity and precision. Raj has an impressive ability to balance writing clean, maintainable code with delivering practical solutions that move projects forward.",
     author: "Francisco Javier López",
     role: "Staff Backend Engineer",
+    linkedin: "https://www.linkedin.com/in/fjlopez/",
   },
   {
     quote:
       "Raj is an exceptional engineering partner — proactive, responsive, and always willing to jump in to help solve problems. He brings clarity to complex situations, asks the right questions, and ensures everyone is aligned before moving forward.",
     author: "Palak Jain",
     role: "Senior Product Manager",
+    linkedin: "https://www.linkedin.com/in/palak13/",
   },
   {
     quote:
       "I worked alongside Raj during our time at Indeed and I couldn't have asked for a better colleague to run ideas past. We worked together on the Agency team when I joined and I remember he was always willing to give a helping hand in my early days. He presented a deep and knowledgeable insight of the system and was ready to walk me through everything with patience.",
     author: "Adrian Booth",
     role: "Software Developer",
+    linkedin: "https://www.linkedin.com/in/adrianfbooth/",
   },
   {
     quote:
       "I had the pleasure to work with Raj during my time at Indeed Flex. He is everything you'd want in a software engineer: highly technically skilled and caring for his craft, but also a thoughtful communicator, and an empathetic human being. Any team or organisation would be lucky to have him.",
     author: "Gosha Tcherednitchenko",
     role: "Full-Stack Software Engineer",
+    linkedin: "https://www.linkedin.com/in/goshatch/",
   },
   {
     quote:
       "I had the pleasure of working with Raj, and I can confidently say he is an exceptional software engineer. Technically strong and highly dependable, Raj consistently delivers high-quality work while maintaining a collaborative and supportive attitude. He's a true team player, always eager to help others, share knowledge and contribute to the success of the team. I would gladly work with him again and highly recommend him to any team looking for a talented and reliable engineer.",
     author: "Aliki Giakou",
     role: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/alikigiakou/",
   },
   {
     quote:
       "Raj is one of the best back-end developers I have ever worked with, and it was always a pleasure to collaborate with him on the same projects. He is not only highly knowledgeable and helpful but also an exceptional team player and a great person to work with. I was particularly impressed by his ability to lead cross-functional teams, ensuring smooth collaboration between different departments and driving projects to successful completion. Any company would be fortunate to have Raj on their team, both for his technical expertise and his leadership skills.",
     author: "Boris Jakubik",
     role: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/boris-jakubik/",
   },
   {
     quote:
       "I worked with Raj on a Ruby project. He has great skills there, and is very easygoing. Raj has deep knowledge of Ruby on Rails — he can solve any issue within minutes. In addition he managed meetings for the team, and has great ability to deal with his peers. I was very glad working with him on the team, and for sure I would work with him again.",
     author: "Bhanu Vaddi",
     role: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/bhanuvaddi/",
   },
 ];
 
@@ -310,7 +319,14 @@ function HirePage() {
                 {t.quote}
               </blockquote>
               <figcaption className="mt-4">
-                <div className="font-display text-[13px] text-foreground/85">{t.author}</div>
+                <div className="font-display text-[13px] text-foreground/85 inline-flex items-center gap-2">
+                  {t.author}
+                  {t.linkedin && (
+                    <a href={t.linkedin} target="_blank" rel="noreferrer" className="text-foreground/40 hover:text-ember transition-colors" aria-label={`${t.author} on LinkedIn`}>
+                      <Linkedin size={14} />
+                    </a>
+                  )}
+                </div>
                 <div className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/45">
                   {t.role}
                 </div>
