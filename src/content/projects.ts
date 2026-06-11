@@ -16,6 +16,7 @@ export const projects: Project[] = [
       "Life admin tool — one calm place to manage the stuff that quietly piles up.",
     tech: ["Rails", "PostgreSQL", "Tailwind CSS"],
     demo: "https://mysoftly.app",
+    image: "/images/projects/softly.png",
     featured: true,
   },
   {
