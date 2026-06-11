@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
-export function AmbientBackdrop() {
+export function AmbientBackdrop({ theme }: { theme: string }) {
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
       document.documentElement.style.setProperty("--cursor-x", `${e.clientX}px`);
@@ -12,19 +13,20 @@ export function AmbientBackdrop() {
     return () => window.removeEventListener("mousemove", handleMove);
   }, []);
 
+  const gradient = theme === "light"
+    ? "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(217,119,6,0.07), transparent 40%)"
+    : "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)";
+
   return (
     <div
       aria-hidden
       className="pointer-events-none fixed inset-0 z-0"
-      style={{
-        background:
-          "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)",
-      }}
+      style={{ background: gradient }}
     />
   );
 }
 
-export function Nav() {
+export function Nav({ theme, toggleTheme }: { theme: string; toggleTheme: () => void }) {
   return (
     <nav className="relative z-20 mx-auto flex max-w-[1100px] items-center justify-between px-6 py-7">
       <Link
@@ -63,6 +65,13 @@ export function Nav() {
           Hire me
           <span aria-hidden>→</span>
         </Link>
+        <button
+          onClick={toggleTheme}
+          className="text-foreground/45 hover:text-ember transition-colors"
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
       </div>
     </nav>
   );
@@ -137,10 +146,12 @@ export function SectionHeader({
 }
 
 export function Shell({ children }: { children: React.ReactNode }) {
+  const { theme, toggle } = useTheme();
+
   return (
     <div className="grain min-h-screen bg-background text-foreground font-body relative overflow-x-clip">
-      <AmbientBackdrop />
-      <Nav />
+      <AmbientBackdrop theme={theme} />
+      <Nav theme={theme} toggleTheme={toggle} />
       <main className="relative">{children}</main>
       <Footer />
     </div>

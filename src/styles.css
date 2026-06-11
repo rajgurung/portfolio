@@ -63,6 +63,7 @@
   --ember: #f5a524;
   --ember-glow: #fbbf24;
 
+  /* Dark mode (default) */
   --background: var(--ink);
   --foreground: #f5f5f7;
   --card: var(--ink-soft);
@@ -81,6 +82,35 @@
   --destructive-foreground: #f5f5f7;
   --border: color-mix(in oklab, #f5f5f7 8%, transparent);
   --input: color-mix(in oklab, #f5f5f7 12%, transparent);
+  --ring: var(--ember);
+}
+
+/* Light mode */
+.light {
+  --ink: #f0ede8;
+  --ink-soft: #e8e4de;
+  --haze: #ddd9d2;
+  --ember: #d97706;
+  --ember-glow: #b45309;
+
+  --background: #f0ede8;
+  --foreground: #1c1917;
+  --card: #f5f5f4;
+  --card-foreground: #1c1917;
+  --popover: #f5f5f4;
+  --popover-foreground: #1c1917;
+  --primary: var(--ember);
+  --primary-foreground: #fafaf9;
+  --secondary: #e7e5e4;
+  --secondary-foreground: #1c1917;
+  --muted: #e7e5e4;
+  --muted-foreground: #78716c;
+  --accent: #e7e5e4;
+  --accent-foreground: #1c1917;
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: #fafaf9;
+  --border: color-mix(in oklab, #1c1917 10%, transparent);
+  --input: color-mix(in oklab, #1c1917 14%, transparent);
   --ring: var(--ember);
 }
 
@@ -106,6 +136,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   ::selection {
@@ -211,14 +242,16 @@
 /* ───── Essay prose ───── */
 .prose-essay {
   font-family: var(--font-body);
-  color: color-mix(in oklab, #f5f5f7 88%, transparent);
+  color: var(--foreground);
+  opacity: 0.88;
   font-size: 1.0625rem;
   line-height: 1.75;
 }
 .prose-essay > * + * { margin-top: 1.25em; }
 .prose-essay h1, .prose-essay h2, .prose-essay h3, .prose-essay h4 {
   font-family: var(--font-display);
-  color: #f5f5f7;
+  color: var(--foreground);
+  opacity: 1;
   font-weight: 500;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -235,12 +268,12 @@
   transition: text-decoration-color 0.2s;
 }
 .prose-essay a:hover { text-decoration-color: var(--ember); }
-.prose-essay strong { color: #f5f5f7; font-weight: 600; }
-.prose-essay em { font-style: italic; color: color-mix(in oklab, #f5f5f7 70%, transparent); }
+.prose-essay strong { color: var(--foreground); font-weight: 600; }
+.prose-essay em { font-style: italic; opacity: 0.7; }
 .prose-essay blockquote {
   border-left: 2px solid var(--ember);
   padding: 0.25em 0 0.25em 1.25em;
-  color: color-mix(in oklab, #f5f5f7 70%, transparent);
+  opacity: 0.7;
   font-style: italic;
 }
 .prose-essay ul, .prose-essay ol { padding-left: 1.5em; }
@@ -267,8 +300,8 @@
   font-size: 0.88em;
 }
 .prose-essay pre {
-  background: var(--ink-soft);
-  border: 1px solid color-mix(in oklab, #f5f5f7 8%, transparent);
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
   padding: 1.25em;
   overflow-x: auto;
@@ -277,21 +310,22 @@
 }
 .prose-essay pre code {
   background: transparent;
-  color: color-mix(in oklab, #f5f5f7 88%, transparent);
+  color: var(--foreground);
+  opacity: 0.88;
   padding: 0;
 }
 .prose-essay hr {
   border: none;
-  border-top: 1px solid color-mix(in oklab, #f5f5f7 10%, transparent);
+  border-top: 1px solid var(--border);
   margin: 2.5em 0;
 }
 .prose-essay img {
   border-radius: 0.75rem;
-  border: 1px solid color-mix(in oklab, #f5f5f7 8%, transparent);
+  border: 1px solid var(--border);
 }
 .prose-essay table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .prose-essay th, .prose-essay td {
-  border-bottom: 1px solid color-mix(in oklab, #f5f5f7 10%, transparent);
+  border-bottom: 1px solid var(--border);
   padding: 0.6em 0.8em;
   text-align: left;
 }
