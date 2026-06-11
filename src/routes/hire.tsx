@@ -100,6 +100,13 @@ const testimonials = [
     role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/bhanuvaddi/",
   },
+  {
+    quote:
+      "I had the pleasure of working closely with Raj for over two and a half years, and honestly, he's one of those engineers who just makes everything better. What struck me most about Raj is how he combines deep technical expertise with genuine leadership. He took on the SET leader role and didn't just manage, he actually improved how we worked. The handover template he created? Game-changer. The playbooks he helped build? We still use them. These aren't the flashy things that get celebrated, but they're the things that actually make a team function well. Raj has this rare ability to understand complex business logic and then build elegant solutions around it. Whether it was the agency cascade logic, allocation prediction services, or client management systems, he didn't just code features, he really understood the problems we were solving. His work on the Cascade Brief showed how effectively he can collaborate with cross-functional teams and actually get things done. But here's what I appreciated most: Raj is genuinely helpful. He's the person who'll jump on a call when you're stuck, who'll take the time to explain something properly, who makes you feel like your questions matter. He's proactive approach to collaboration is what makes someone invaluable to a team. Any team would be lucky to have Raj. He brings technical skill, yes, but also the kind of thoughtful leadership and collaborative spirit that lifts everyone around him.",
+    author: "David Silva",
+    role: "Senior Backend Engineer · Indeed",
+    linkedin: "https://www.linkedin.com/in/davidslv/",
+  },
 ];
 
 function HirePage() {
