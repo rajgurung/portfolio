@@ -314,7 +314,7 @@ function HirePage() {
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-32">
         <SectionHeader index="04" label="Testimonials" caption="From peers & leads" />
         <div className="mt-10 columns-1 sm:columns-2 gap-6 [column-fill:_balance]">
-          {testimonials.map((t, i) => (
+          {[...testimonials].sort(() => Math.random() - 0.5).map((t, i) => (
             <figure
               key={i}
               className="mb-6 break-inside-avoid rounded-2xl border border-foreground/10 bg-ink-soft/40 p-6"
