@@ -198,11 +198,11 @@ function ProjectsStrip({ items }: { items: typeof projects }) {
             className="group relative overflow-hidden rounded-lg border border-foreground/10 bg-ink-soft/60 backdrop-blur-sm hover:border-ember/40 transition-colors"
           >
             {p.image && (
-              <div className="overflow-hidden bg-ink-soft">
+              <div className="overflow-hidden">
                 <img
                   src={p.image}
                   alt={p.title}
-                  className="w-full h-36 object-contain opacity-80 group-hover:opacity-100 transition-all duration-500"
+                  className="w-full h-36 object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
               </div>
             )}
