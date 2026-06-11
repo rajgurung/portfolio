@@ -29,6 +29,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "PulseCheck",
+    description:
+      "AI-powered signal monitoring — track what matters, get alerted when it shifts.",
+    tech: ["Next.js", "Tailwind CSS", "Vercel"],
+    demo: "https://pulsecheck-landing.vercel.app",
+    github: "https://github.com/rajgurung/pulsecheck-landing",
+    image: "/images/projects/pulsecheck.png",
+    featured: true,
+  },
+  {
     title: "Make Nepal Great",
     description:
       "Democratic polling platform for Nepal's political engagement — secure Gmail auth, transparent voting, connecting the global Nepali diaspora.",
