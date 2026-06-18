@@ -4,6 +4,8 @@ dist
 .vinxi
 .nitro
 .cache
+.vite
+.memsearch
 build
 
 .DS_Store
