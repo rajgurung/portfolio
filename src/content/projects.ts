@@ -39,6 +39,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Warden Zero",
+    description:
+      "A top-down arena horde shooter. Survive escalating waves, level up from gems, build your loadout, and beat the boss, all in the browser.",
+    tech: ["Phaser", "TypeScript", "Vite", "WebGL"],
+    demo: "https://warden-zero.vercel.app",
+    github: "https://github.com/rajgurung/warden-zero",
+    image: "/images/projects/warden-zero.png",
+    featured: true,
+  },
+  {
     title: "Make Nepal Great",
     description:
       "Democratic polling platform for Nepal's political engagement — secure Gmail auth, transparent voting, connecting the global Nepali diaspora.",

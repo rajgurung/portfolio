@@ -51,6 +51,13 @@ export function Nav({ theme, toggleTheme }: { theme: string; toggleTheme: () => 
           Projects
         </Link>
         <Link
+          to="/game"
+          className="hover:text-foreground transition-colors"
+          activeProps={{ className: "text-foreground" }}
+        >
+          Game
+        </Link>
+        <Link
           to="/cv"
           className="hover:text-foreground transition-colors"
           activeProps={{ className: "text-foreground" }}

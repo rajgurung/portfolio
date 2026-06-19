@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WritingRouteImport } from './routes/writing'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as HireRouteImport } from './routes/hire'
+import { Route as GameRouteImport } from './routes/game'
 import { Route as CvRouteImport } from './routes/cv'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WritingIndexRouteImport } from './routes/writing.index'
@@ -30,6 +31,11 @@ const ProjectsRoute = ProjectsRouteImport.update({
 const HireRoute = HireRouteImport.update({
   id: '/hire',
   path: '/hire',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GameRoute = GameRouteImport.update({
+  id: '/game',
+  path: '/game',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CvRoute = CvRouteImport.update({
@@ -56,6 +62,7 @@ const WritingSlugRoute = WritingSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/game': typeof GameRoute
   '/hire': typeof HireRoute
   '/projects': typeof ProjectsRoute
   '/writing': typeof WritingRouteWithChildren
@@ -65,6 +72,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/game': typeof GameRoute
   '/hire': typeof HireRoute
   '/projects': typeof ProjectsRoute
   '/writing/$slug': typeof WritingSlugRoute
@@ -74,6 +82,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/game': typeof GameRoute
   '/hire': typeof HireRoute
   '/projects': typeof ProjectsRoute
   '/writing': typeof WritingRouteWithChildren
@@ -85,17 +94,26 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cv'
+    | '/game'
     | '/hire'
     | '/projects'
     | '/writing'
     | '/writing/$slug'
     | '/writing/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cv' | '/hire' | '/projects' | '/writing/$slug' | '/writing'
+  to:
+    | '/'
+    | '/cv'
+    | '/game'
+    | '/hire'
+    | '/projects'
+    | '/writing/$slug'
+    | '/writing'
   id:
     | '__root__'
     | '/'
     | '/cv'
+    | '/game'
     | '/hire'
     | '/projects'
     | '/writing'
@@ -106,6 +124,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CvRoute: typeof CvRoute
+  GameRoute: typeof GameRoute
   HireRoute: typeof HireRoute
   ProjectsRoute: typeof ProjectsRoute
   WritingRoute: typeof WritingRouteWithChildren
@@ -132,6 +151,13 @@ declare module '@tanstack/react-router' {
       path: '/hire'
       fullPath: '/hire'
       preLoaderRoute: typeof HireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/game': {
+      id: '/game'
+      path: '/game'
+      fullPath: '/game'
+      preLoaderRoute: typeof GameRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cv': {
@@ -181,6 +207,7 @@ const WritingRouteWithChildren =
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CvRoute: CvRoute,
+  GameRoute: GameRoute,
   HireRoute: HireRoute,
   ProjectsRoute: ProjectsRoute,
   WritingRoute: WritingRouteWithChildren,
