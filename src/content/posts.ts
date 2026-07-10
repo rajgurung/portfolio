@@ -17,6 +17,15 @@ export type PostMeta = {
 };
 
 const META: Record<string, Omit<PostMeta, "slug">> = {
+  "the-urge-to-not-care": {
+    title: "The Urge to Not Care",
+    date: "10 Jul 2026",
+    iso: "2026-07-10",
+    excerpt:
+      "Somehow, knowingly or unknowingly, I have come to realise that I have sold my soul to the LLM. The war ensues.",
+    readingTime: "4 min",
+    location: "London",
+  },
   "why-i-decommissioned-aws": {
     title: "Why I Decommissioned AWS and Moved to Railway",
     date: "10 Jun 2026",
