@@ -18,6 +18,7 @@ export const projects: Project[] = [
     demo: "https://mysoftly.app",
     image: "/images/projects/softly.png",
     featured: true,
+    status: "in progress",
   },
   {
     title: "StaffOS",
@@ -27,6 +28,7 @@ export const projects: Project[] = [
     github: "https://github.com/rajgurung/staffOS",
     image: "/images/projects/staffos.png",
     featured: true,
+    status: "in progress",
   },
   {
     title: "PulseCheck",
@@ -37,6 +39,7 @@ export const projects: Project[] = [
     github: "https://github.com/rajgurung/pulsecheck-landing",
     image: "/images/projects/pulsecheck.png",
     featured: true,
+    status: "in progress",
   },
   {
     title: "Warden Zero",
@@ -47,6 +50,7 @@ export const projects: Project[] = [
     github: "https://github.com/rajgurung/warden-zero",
     image: "/images/projects/warden-zero.png",
     featured: true,
+    status: "beta",
   },
   {
     title: "Make Nepal Great",
@@ -56,6 +60,7 @@ export const projects: Project[] = [
     demo: "https://makenepalgreat.com",
     image: "/images/projects/make-nepal-great.png",
     featured: true,
+    status: "live",
   },
   {
     title: "Stock Intelligence",
