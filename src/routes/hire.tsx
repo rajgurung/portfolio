@@ -7,17 +7,17 @@ import { Linkedin } from "lucide-react";
 export const Route = createFileRoute("/hire")({
   head: () => ({
     meta: [
-      { title: "Hire Raj Gurung — Senior Software Engineer & Technical Partner" },
+      { title: "Work with Raj Gurung — Senior Software Engineer & Technical Partner" },
       {
         name: "description",
         content:
-          "Available for hire. 15 years building systems at scale — distributed architectures, performance, observability, and AI-assisted dev workflows.",
+          "Currently at Hexarad. 15 years building systems at scale — distributed architectures, performance, observability, and AI-assisted dev workflows.",
       },
-      { property: "og:title", content: "Hire Raj Gurung — Senior / Staff Engineering" },
+      { property: "og:title", content: "Work with Raj Gurung — Senior / Staff Engineering" },
       {
         property: "og:description",
         content:
-          "Pragmatic architecture, production observability, and teams that own their systems end-to-end. Open to contract or full-time.",
+          "Pragmatic architecture, production observability, and teams that own their systems end-to-end. Always open to interesting conversations.",
       },
     ],
   }),
