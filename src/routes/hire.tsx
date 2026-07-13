@@ -255,7 +255,7 @@ function HirePage() {
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-24">
         <SectionHeader index="03" label="Selected Projects" caption="Shipped & shelved" />
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {projects.map((p) => (
+          {projects.filter((p) => p.featured).map((p) => (
             <article
               key={p.title}
               className="group relative overflow-hidden rounded-2xl border border-foreground/10 bg-ink-soft/40 p-7 hover:border-ember/40 transition-colors"
