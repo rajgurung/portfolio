@@ -25,6 +25,7 @@ export const projects: Project[] = [
     description:
       "The trust, review, and documentation layer for AI-assisted engineering work.",
     tech: ["Ruby", "Rails", "PostgreSQL"],
+    demo: "https://staffos.rajgurung.me",
     github: "https://github.com/rajgurung/staffOS",
     image: "/images/projects/staffos.png",
     featured: true,
