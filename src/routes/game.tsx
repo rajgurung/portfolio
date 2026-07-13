@@ -41,8 +41,11 @@ function GamePage() {
         <span className="font-display text-[11px] uppercase tracking-[0.3em] text-ember">
           Playable · built from scratch
         </span>
-        <h1 className="mt-4 font-display text-5xl sm:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
+        <h1 className="mt-4 flex flex-wrap items-center gap-4 font-display text-5xl sm:text-7xl font-medium leading-[0.95] tracking-[-0.03em]">
           Warden Zero.
+          <span className="rounded-full border border-ember/40 px-3 py-1 font-mono text-[11px] font-normal uppercase tracking-[0.25em] text-ember">
+            beta
+          </span>
         </h1>
         <p className="mt-6 max-w-[60ch] text-foreground/65 leading-relaxed">
           A chaotic horde shooter with two modes: an arena where you survive eight
