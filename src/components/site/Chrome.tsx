@@ -69,7 +69,7 @@ export function Nav({ theme, toggleTheme }: { theme: string; toggleTheme: () => 
           className="hidden sm:inline-flex items-center gap-2 rounded-full border border-ember/40 px-3.5 py-1.5 text-ember hover:bg-ember hover:text-ink transition-colors"
           activeProps={{ className: "bg-ember text-ink" }}
         >
-          Hire me
+          Work with me
           <span aria-hidden>→</span>
         </Link>
         <button

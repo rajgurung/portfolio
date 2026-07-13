@@ -285,11 +285,12 @@ function HireBlock() {
               Currently
             </span>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl font-medium tracking-tight text-balance">
-              Available for hire — Senior / Staff engineering.
+              Engineering at Hexarad — Senior / Staff.
             </h3>
             <p className="mt-4 text-foreground/60 leading-relaxed">
               Distributed systems, Rails platforms, observability rollouts,
-              and AI-assisted dev workflows. Open to contract or full-time.
+              and AI-assisted dev workflows. Always open to interesting
+              conversations.
             </p>
           </div>
           <div className="flex flex-col sm:items-end gap-3">
@@ -297,7 +298,7 @@ function HireBlock() {
               to="/hire"
               className="group inline-flex items-center gap-3 self-start rounded-full bg-ember px-7 py-3.5 font-display text-[12px] uppercase tracking-[0.25em] text-ink hover:bg-ember-glow transition-colors"
             >
-              Hire me
+              Work with me
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
                 →
               </span>
