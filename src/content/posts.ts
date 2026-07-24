@@ -17,6 +17,15 @@ export type PostMeta = {
 };
 
 const META: Record<string, Omit<PostMeta, "slug">> = {
+  "being-just-dangerous-enough": {
+    title: "Being Just Dangerous Enough",
+    date: "24 Jul 2026",
+    iso: "2026-07-24",
+    excerpt:
+      "Everyone is a rockstar now. A deadly ninja. A one man army. The catch: your superpowers are hosted offshore, somewhere in the cloud.",
+    readingTime: "2 min",
+    location: "London",
+  },
   "the-urge-to-not-care": {
     title: "The Urge to Not Care",
     date: "10 Jul 2026",
