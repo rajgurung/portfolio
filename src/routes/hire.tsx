@@ -144,12 +144,18 @@ function HirePage() {
             redesigning data access and caching, led the{" "}
             <span className="text-foreground">Agency Partners</span> vertical with SLO-driven
             monitoring and automated rollbacks, and integrated ML inference into production
-            workflows while holding reliability targets.
+            workflows while holding reliability targets. At Hexarad, I led one of the UK's
+            first generative-AI report-drafting pipelines into a live NHS clinical
+            workflow: a{" "}
+            <span className="text-foreground">Consul service mesh spanning AWS and two
+            datacentres</span>, sidecar-routed traffic with explicit ingress and egress
+            controls, and secure cross-account networking between organisations.
           </p>
           <p className="text-foreground/55 leading-relaxed text-[14px] border-l border-ember/40 pl-5">
             I care about pragmatic architecture, production observability, and teams that own
             their systems end-to-end. Strongest in backend systems, distributed architectures,
-            and performance optimisation. The kind of work where details matter.
+            cloud infrastructure on AWS and Terraform, and performance optimisation. The kind
+            of work where details matter.
           </p>
         </div>
 
