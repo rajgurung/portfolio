@@ -58,13 +58,6 @@ export function Nav({ theme, toggleTheme }: { theme: string; toggleTheme: () => 
           Game
         </Link>
         <Link
-          to="/cv"
-          className="hover:text-foreground transition-colors"
-          activeProps={{ className: "text-foreground" }}
-        >
-          CV
-        </Link>
-        <Link
           to="/hire"
           className="hidden sm:inline-flex items-center gap-2 rounded-full border border-ember/40 px-3.5 py-1.5 text-ember hover:bg-ember hover:text-ink transition-colors"
           activeProps={{ className: "bg-ember text-ink" }}
