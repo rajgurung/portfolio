@@ -13,9 +13,10 @@ export function AmbientBackdrop({ theme }: { theme: string }) {
     return () => window.removeEventListener("mousemove", handleMove);
   }, []);
 
-  const gradient = theme === "light"
-    ? "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(217,119,6,0.07), transparent 40%)"
-    : "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)";
+  const gradient =
+    theme === "light"
+      ? "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(217,119,6,0.07), transparent 40%)"
+      : "radial-gradient(1100px circle at var(--cursor-x, 50%) var(--cursor-y, 30%), rgba(245,165,36,0.12), transparent 40%)";
 
   return (
     <div
@@ -108,13 +109,29 @@ export function Footer() {
           </span>
         </div>
         <div className="flex gap-5 items-center">
-          <a href="https://github.com/rajgurung" target="_blank" rel="noreferrer" className="text-foreground/55 hover:text-ember transition-colors" aria-label="GitHub">
+          <a
+            href="https://github.com/rajgurung"
+            target="_blank"
+            rel="noreferrer"
+            className="text-foreground/55 hover:text-ember transition-colors"
+            aria-label="GitHub"
+          >
             <Github size={18} />
           </a>
-          <a href="https://www.linkedin.com/in/raj---gurung" target="_blank" rel="noreferrer" className="text-foreground/55 hover:text-ember transition-colors" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/raj---gurung"
+            target="_blank"
+            rel="noreferrer"
+            className="text-foreground/55 hover:text-ember transition-colors"
+            aria-label="LinkedIn"
+          >
             <Linkedin size={18} />
           </a>
-          <a href="mailto:gurungraj26@gmail.com" className="text-foreground/55 hover:text-ember transition-colors" aria-label="Email">
+          <a
+            href="mailto:gurungraj26@gmail.com"
+            className="text-foreground/55 hover:text-ember transition-colors"
+            aria-label="Email"
+          >
             <Mail size={18} />
           </a>
         </div>

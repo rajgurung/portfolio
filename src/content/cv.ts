@@ -40,8 +40,7 @@ export const cv = {
       title: "Senior Software Engineer",
       dates: "Mar 2021 — Aug 2025",
       location: "Remote (London)",
-      description:
-        "Continued from Syft post-acquisition with expanded scope and platform scale.",
+      description: "Continued from Syft post-acquisition with expanded scope and platform scale.",
       bullets: [
         "Technical lead for core job offering and agency partner systems, ensuring Time SLA compliance across time-sensitive workflows.",
         "Led ML decisioning model integration into the core offering pipeline, improving allocation accuracy and operational efficiency.",
@@ -100,8 +99,7 @@ export const cv = {
       title: "Junior Software Engineer",
       dates: "Oct 2012 — Nov 2013",
       location: "Reading",
-      description:
-        "Native games across STBs, TVs, phones, tablets and PCs.",
+      description: "Native games across STBs, TVs, phones, tablets and PCs.",
       bullets: [
         "Developed a global online game platform with multi-language support.",
         "Integrated social logins for seamless cross-device access.",
@@ -112,13 +110,41 @@ export const cv = {
     Languages: ["Ruby", "JavaScript", "TypeScript", "SQL", "Elixir", "Go", "Java", "Rust"],
     Frameworks: ["Rails", "Phoenix", "React", "Sidekiq"],
     Data: ["PostgreSQL", "Redis", "Kafka", "Snowflake"],
-    Infrastructure: ["AWS", "Terraform", "Consul", "Docker", "Datadog", "New Relic", "CI/CD", "Heroku", "Railway"],
-    "GenAI": ["Anthropic Claude", "OpenAI", "LLM-assisted Dev"],
-    Practices: ["Distributed Systems", "System Design", "Performance Tuning", "Observability/SLOs", "Mentoring"],
+    Infrastructure: [
+      "AWS",
+      "Terraform",
+      "Consul",
+      "Docker",
+      "Datadog",
+      "New Relic",
+      "CI/CD",
+      "Heroku",
+      "Railway",
+    ],
+    GenAI: ["Anthropic Claude", "OpenAI", "LLM-assisted Dev"],
+    Practices: [
+      "Distributed Systems",
+      "System Design",
+      "Performance Tuning",
+      "Observability/SLOs",
+      "Mentoring",
+    ],
   },
   education: [
-    { degree: "MSc Information Systems", school: "University of Surrey, Guildford", years: "2011 — 2012" },
-    { degree: "BSc (Hons) Computer Science", school: "Anglia Ruskin University, Chelmsford", years: "2008 — 2011" },
-    { degree: "BTech Information Technology", school: "Bracknell & Wokingham College", years: "2005 — 2007" },
+    {
+      degree: "MSc Information Systems",
+      school: "University of Surrey, Guildford",
+      years: "2011 — 2012",
+    },
+    {
+      degree: "BSc (Hons) Computer Science",
+      school: "Anglia Ruskin University, Chelmsford",
+      years: "2008 — 2011",
+    },
+    {
+      degree: "BTech Information Technology",
+      school: "Bracknell & Wokingham College",
+      years: "2005 — 2007",
+    },
   ],
 };

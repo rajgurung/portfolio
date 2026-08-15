@@ -78,10 +78,9 @@ function Hero() {
           className="animate-reveal max-w-[46ch] text-pretty text-base sm:text-lg leading-relaxed text-foreground/70"
           style={{ animationDelay: "900ms" }}
         >
-          15+ years building mission-critical platforms — gaming, housing,
-          fraud detection, workforce systems. Recently shipping with Rails,
-          Terraform, and Claude. Writing about engineering, AI, and the road
-          between <span className="text-foreground">Nepal</span> and{" "}
+          15+ years building mission-critical platforms — gaming, housing, fraud detection,
+          workforce systems. Recently shipping with Rails, Terraform, and Claude. Writing about
+          engineering, AI, and the road between <span className="text-foreground">Nepal</span> and{" "}
           <span className="text-foreground">the UK</span>.
         </p>
 
@@ -207,41 +206,39 @@ function ProjectsStrip({ items }: { items: typeof projects }) {
               </div>
             )}
             <div className="p-6">
-            <div className="flex items-baseline justify-between gap-3">
-              <h4 className="font-display text-lg font-medium tracking-tight">
-                {p.title}
-              </h4>
-              <span className="text-[10px] font-mono tabular-nums text-foreground/40 uppercase tracking-[0.2em]">
-                {p.status ?? "live"}
-              </span>
-            </div>
-            <p className="mt-2 text-sm text-foreground/55 leading-relaxed line-clamp-3">
-              {p.description}
-            </p>
-            {(p.demo || p.github) && (
-              <div className="mt-4 flex gap-4 text-[11px] uppercase tracking-[0.25em]">
-                {p.demo && (
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-ember hover:text-ember-glow transition-colors inline-flex items-center gap-1.5"
-                  >
-                    Live <span aria-hidden>↗</span>
-                  </a>
-                )}
-                {p.github && (
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-foreground/55 hover:text-foreground transition-colors inline-flex items-center gap-1.5"
-                  >
-                    Source <span aria-hidden>↗</span>
-                  </a>
-                )}
+              <div className="flex items-baseline justify-between gap-3">
+                <h4 className="font-display text-lg font-medium tracking-tight">{p.title}</h4>
+                <span className="text-[10px] font-mono tabular-nums text-foreground/40 uppercase tracking-[0.2em]">
+                  {p.status ?? "live"}
+                </span>
               </div>
-            )}
+              <p className="mt-2 text-sm text-foreground/55 leading-relaxed line-clamp-3">
+                {p.description}
+              </p>
+              {(p.demo || p.github) && (
+                <div className="mt-4 flex gap-4 text-[11px] uppercase tracking-[0.25em]">
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-ember hover:text-ember-glow transition-colors inline-flex items-center gap-1.5"
+                    >
+                      Live <span aria-hidden>↗</span>
+                    </a>
+                  )}
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-foreground/55 hover:text-foreground transition-colors inline-flex items-center gap-1.5"
+                    >
+                      Source <span aria-hidden>↗</span>
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
             <span
               aria-hidden
@@ -275,8 +272,7 @@ function HireBlock() {
           aria-hidden
           className="absolute -top-32 -right-32 h-80 w-80 rounded-full blur-3xl opacity-40"
           style={{
-            background:
-              "radial-gradient(circle, rgba(245,165,36,0.6) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(245,165,36,0.6) 0%, transparent 70%)",
           }}
         />
         <div className="relative flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
@@ -288,9 +284,8 @@ function HireBlock() {
               Engineering at Hexarad — Senior / Staff.
             </h3>
             <p className="mt-4 text-foreground/60 leading-relaxed">
-              Distributed systems, Rails platforms, observability rollouts,
-              and AI-assisted dev workflows. Always open to interesting
-              conversations.
+              Distributed systems, Rails platforms, observability rollouts, and AI-assisted dev
+              workflows. Always open to interesting conversations.
             </p>
           </div>
           <div className="flex flex-col sm:items-end gap-3">

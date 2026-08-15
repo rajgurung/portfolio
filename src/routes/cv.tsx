@@ -35,20 +35,34 @@ function CvPage() {
         <p className="mt-3 font-display text-lg text-foreground/65">{cv.title}</p>
 
         <div className="mt-6 flex flex-wrap items-center gap-4 text-foreground/55">
-          <a href={`mailto:${cv.email}`} className="hover:text-ember transition-colors" aria-label="Email">
+          <a
+            href={`mailto:${cv.email}`}
+            className="hover:text-ember transition-colors"
+            aria-label="Email"
+          >
             <Mail size={18} />
           </a>
-          <a href={cv.linkedin} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors" aria-label="LinkedIn">
+          <a
+            href={cv.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ember transition-colors"
+            aria-label="LinkedIn"
+          >
             <Linkedin size={18} />
           </a>
-          <a href={cv.github} target="_blank" rel="noreferrer" className="hover:text-ember transition-colors" aria-label="GitHub">
+          <a
+            href={cv.github}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ember transition-colors"
+            aria-label="GitHub"
+          >
             <Github size={18} />
           </a>
         </div>
 
-        <p className="mt-8 text-foreground/70 leading-relaxed text-pretty">
-          {cv.summary}
-        </p>
+        <p className="mt-8 text-foreground/70 leading-relaxed text-pretty">{cv.summary}</p>
       </section>
 
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-16">
@@ -92,9 +106,7 @@ function CvPage() {
         <dl className="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-6">
           {Object.entries(cv.skills).map(([k, v]) => (
             <div key={k}>
-              <dt className="font-mono text-[11px] uppercase tracking-[0.22em] text-ember">
-                {k}
-              </dt>
+              <dt className="font-mono text-[11px] uppercase tracking-[0.22em] text-ember">{k}</dt>
               <dd className="mt-2 flex flex-wrap gap-1.5">
                 {v.map((t) => (
                   <span

@@ -9,8 +9,8 @@ const rawPosts = import.meta.glob("./posts/*.md", {
 export type PostMeta = {
   slug: string;
   title: string;
-  date: string;       // human label e.g. "10 Jun 2026"
-  iso: string;        // ISO date for sorting
+  date: string; // human label e.g. "10 Jun 2026"
+  iso: string; // ISO date for sorting
   excerpt: string;
   readingTime: string;
   location: string;
@@ -75,8 +75,7 @@ const META: Record<string, Omit<PostMeta, "slug">> = {
     title: "You've Been Impacted, Layoffs",
     date: "13 Jun 2025",
     iso: "2025-06-13",
-    excerpt:
-      "The room feels quieter with every goodbye. Their absence echoes louder than silence.",
+    excerpt: "The room feels quieter with every goodbye. Their absence echoes louder than silence.",
     readingTime: "4 min",
     location: "London",
   },
@@ -92,8 +91,7 @@ const META: Record<string, Omit<PostMeta, "slug">> = {
     title: "React + Vibes = This Site",
     date: "18 Apr 2025",
     iso: "2025-04-18",
-    excerpt:
-      "I'm getting things done in React, but I can't shake the feeling that I'm winging it.",
+    excerpt: "I'm getting things done in React, but I can't shake the feeling that I'm winging it.",
     readingTime: "3 min",
     location: "London",
   },

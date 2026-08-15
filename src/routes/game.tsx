@@ -16,7 +16,8 @@ export const Route = createFileRoute("/game")({
       { property: "og:title", content: "Warden Zero — a browser game by Raj Gurung" },
       {
         property: "og:description",
-        content: "A chaotic top-down arena horde shooter. Survive 8 waves, level up, beat the boss.",
+        content:
+          "A chaotic top-down arena horde shooter. Survive 8 waves, level up, beat the boss.",
       },
     ],
   }),
@@ -48,10 +49,10 @@ function GamePage() {
           </span>
         </h1>
         <p className="mt-6 max-w-[60ch] text-foreground/65 leading-relaxed">
-          A chaotic horde shooter with two modes: an arena where you survive eight
-          escalating waves, level up and fell the Warden Colossus — and Operation
-          Greenfang, a 2.5D jungle assault where you call in artillery and air
-          strikes. Built end to end with Phaser 3, TypeScript and Vite.
+          A chaotic horde shooter with two modes: an arena where you survive eight escalating waves,
+          level up and fell the Warden Colossus — and Operation Greenfang, a 2.5D jungle assault
+          where you call in artillery and air strikes. Built end to end with Phaser 3, TypeScript
+          and Vite.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-4">

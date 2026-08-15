@@ -35,8 +35,7 @@ function ProjectsPage() {
           Projects.
         </h1>
         <p className="mt-6 max-w-[55ch] text-foreground/65 leading-relaxed">
-          Things I've built outside of work — some shipped, some shelved, all
-          taught me something.
+          Things I've built outside of work — some shipped, some shelved, all taught me something.
         </p>
       </section>
 
@@ -55,19 +54,14 @@ function ProjectsPage() {
           {rest.map((p) => (
             <li key={p.title} className="py-7 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-8">
               <div>
-                <h3 className="font-display text-xl font-medium tracking-tight">
-                  {p.title}
-                </h3>
+                <h3 className="font-display text-xl font-medium tracking-tight">{p.title}</h3>
                 <p className="mt-1 max-w-[60ch] text-sm text-foreground/55 leading-relaxed">
                   {p.description}
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-foreground/45">
                 {p.tech.slice(0, 4).map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-foreground/10 px-2.5 py-1"
-                  >
+                  <span key={t} className="rounded-full border border-foreground/10 px-2.5 py-1">
                     {t}
                   </span>
                 ))}
@@ -93,51 +87,47 @@ function FeaturedCard({ project }: { project: (typeof projects)[number] }) {
         </div>
       )}
       <div className="p-7">
-      <div className="flex items-baseline justify-between">
-        <h3 className="font-display text-2xl font-medium tracking-tight">
-          {project.title}
-        </h3>
-        {project.status && (
-          <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-foreground/35">
-            {project.status}
-          </span>
-        )}
-      </div>
-      <p className="mt-3 text-sm text-foreground/65 leading-relaxed">
-        {project.description}
-      </p>
-      <div className="mt-5 flex flex-wrap gap-1.5">
-        {project.tech.map((t) => (
-          <span
-            key={t}
-            className="rounded-full border border-foreground/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-foreground/55"
-          >
-            {t}
-          </span>
-        ))}
-      </div>
-      <div className="mt-6 flex gap-5 text-[11px] uppercase tracking-[0.25em]">
-        {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noreferrer"
-            className="text-ember hover:text-ember-glow transition-colors inline-flex items-center gap-1.5"
-          >
-            Live <span aria-hidden>↗</span>
-          </a>
-        )}
-        {project.github && (
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="text-foreground/55 hover:text-foreground transition-colors inline-flex items-center gap-1.5"
-          >
-            Source <span aria-hidden>↗</span>
-          </a>
-        )}
-      </div>
+        <div className="flex items-baseline justify-between">
+          <h3 className="font-display text-2xl font-medium tracking-tight">{project.title}</h3>
+          {project.status && (
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-foreground/35">
+              {project.status}
+            </span>
+          )}
+        </div>
+        <p className="mt-3 text-sm text-foreground/65 leading-relaxed">{project.description}</p>
+        <div className="mt-5 flex flex-wrap gap-1.5">
+          {project.tech.map((t) => (
+            <span
+              key={t}
+              className="rounded-full border border-foreground/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-foreground/55"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+        <div className="mt-6 flex gap-5 text-[11px] uppercase tracking-[0.25em]">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+              className="text-ember hover:text-ember-glow transition-colors inline-flex items-center gap-1.5"
+            >
+              Live <span aria-hidden>↗</span>
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="text-foreground/55 hover:text-foreground transition-colors inline-flex items-center gap-1.5"
+            >
+              Source <span aria-hidden>↗</span>
+            </a>
+          )}
+        </div>
       </div>
       <span
         aria-hidden

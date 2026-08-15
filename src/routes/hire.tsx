@@ -138,24 +138,25 @@ function HirePage() {
             I build systems that need to work at scale. Over{" "}
             <span className="text-foreground">15 years</span>, I've worked on platforms where
             downtime isn't an option — real-time fraud detection, workforce scheduling at{" "}
-            <span className="text-foreground">12M weekly requests</span>, and gaming
-            infrastructure across devices. At Indeed, I reduced critical API response times
-            from <span className="text-foreground">60+ seconds to sub-second</span> by
-            redesigning data access and caching, led the{" "}
-            <span className="text-foreground">Agency Partners</span> vertical with SLO-driven
-            monitoring and automated rollbacks, and integrated ML inference into production
-            workflows while holding reliability targets. At Hexarad, I led one of the UK's
-            first generative-AI report-drafting pipelines into a live NHS clinical
+            <span className="text-foreground">12M weekly requests</span>, and gaming infrastructure
+            across devices. At Indeed, I reduced critical API response times from{" "}
+            <span className="text-foreground">60+ seconds to sub-second</span> by redesigning data
+            access and caching, led the <span className="text-foreground">Agency Partners</span>{" "}
+            vertical with SLO-driven monitoring and automated rollbacks, and integrated ML inference
+            into production workflows while holding reliability targets. At Hexarad, I led one of
+            the UK's first generative-AI report-drafting pipelines into a live NHS clinical
             workflow: a{" "}
-            <span className="text-foreground">Consul service mesh spanning AWS and two
-            datacentres</span>, sidecar-routed traffic with explicit ingress and egress
-            controls, and secure cross-account networking between organisations.
+            <span className="text-foreground">
+              Consul service mesh spanning AWS and two datacentres
+            </span>
+            , sidecar-routed traffic with explicit ingress and egress controls, and secure
+            cross-account networking between organisations.
           </p>
           <p className="text-foreground/55 leading-relaxed text-[14px] border-l border-ember/40 pl-5">
-            I care about pragmatic architecture, production observability, and teams that own
-            their systems end-to-end. Strongest in backend systems, distributed architectures,
-            cloud infrastructure on AWS and Terraform, and performance optimisation. The kind
-            of work where details matter.
+            I care about pragmatic architecture, production observability, and teams that own their
+            systems end-to-end. Strongest in backend systems, distributed architectures, cloud
+            infrastructure on AWS and Terraform, and performance optimisation. The kind of work
+            where details matter.
           </p>
         </div>
 
@@ -165,7 +166,9 @@ function HirePage() {
             className="group inline-flex items-center gap-3 rounded-full bg-ember px-6 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-ink hover:bg-ember-glow transition-colors"
           >
             Send me an email
-            <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+            <span aria-hidden className="transition-transform group-hover:translate-x-1">
+              →
+            </span>
           </a>
           <a
             href="/raj-gurung-cv.pdf"
@@ -205,10 +208,7 @@ function HirePage() {
         <SectionHeader index="01" label="Work Experience" caption="2012 — Present" />
         <ol className="mt-10 space-y-10">
           {cv.experience.map((role, i) => (
-            <li
-              key={role.company}
-              className="grid gap-6 sm:grid-cols-[120px_1fr] items-start"
-            >
+            <li key={role.company} className="grid gap-6 sm:grid-cols-[120px_1fr] items-start">
               <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-foreground/40">
                 <div className="text-ember">/ {String(i + 1).padStart(2, "0")}</div>
                 <div className="mt-2 text-foreground/55">{role.dates}</div>
@@ -225,15 +225,15 @@ function HirePage() {
                 <ul className="mt-4 space-y-2 text-foreground/70 text-[14px] leading-relaxed">
                   {role.bullets.slice(0, 3).map((b) => (
                     <li key={b} className="flex gap-3">
-                      <span aria-hidden className="text-ember mt-1.5">·</span>
+                      <span aria-hidden className="text-ember mt-1.5">
+                        ·
+                      </span>
                       <span>{b}</span>
                     </li>
                   ))}
                 </ul>
                 {role.tech && (
-                  <div className="mt-4 font-mono text-[11px] text-foreground/45">
-                    {role.tech}
-                  </div>
+                  <div className="mt-4 font-mono text-[11px] text-foreground/45">{role.tech}</div>
                 )}
               </div>
             </li>
@@ -261,58 +261,60 @@ function HirePage() {
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-24">
         <SectionHeader index="03" label="Selected Projects" caption="Shipped & shelved" />
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {projects.filter((p) => p.featured).map((p) => (
-            <article
-              key={p.title}
-              className="group relative overflow-hidden rounded-2xl border border-foreground/10 bg-ink-soft/40 p-7 hover:border-ember/40 transition-colors"
-            >
-              <div className="flex items-center justify-between">
-                <h3 className="font-display text-xl tracking-tight">{p.title}</h3>
-                {p.status && (
-                  <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/40">
-                    {p.status}
-                  </span>
-                )}
-              </div>
-              <p className="mt-3 text-foreground/65 leading-relaxed text-[14px]">
-                {p.description}
-              </p>
-              {p.tech && (
-                <div className="mt-5 flex flex-wrap gap-1.5">
-                  {p.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-full border border-foreground/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.15em] text-foreground/55"
-                    >
-                      {t}
+          {projects
+            .filter((p) => p.featured)
+            .map((p) => (
+              <article
+                key={p.title}
+                className="group relative overflow-hidden rounded-2xl border border-foreground/10 bg-ink-soft/40 p-7 hover:border-ember/40 transition-colors"
+              >
+                <div className="flex items-center justify-between">
+                  <h3 className="font-display text-xl tracking-tight">{p.title}</h3>
+                  {p.status && (
+                    <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/40">
+                      {p.status}
                     </span>
-                  ))}
+                  )}
                 </div>
-              )}
-              <div className="mt-5 flex gap-4">
-                {p.demo && (
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 font-display text-[11px] uppercase tracking-[0.25em] text-ember hover:text-ember-glow transition-colors"
-                  >
-                    View site →
-                  </a>
+                <p className="mt-3 text-foreground/65 leading-relaxed text-[14px]">
+                  {p.description}
+                </p>
+                {p.tech && (
+                  <div className="mt-5 flex flex-wrap gap-1.5">
+                    {p.tech.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full border border-foreground/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.15em] text-foreground/55"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 )}
-                {p.github && (
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 font-display text-[11px] uppercase tracking-[0.25em] text-foreground/55 hover:text-foreground transition-colors"
-                  >
-                    GitHub →
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
+                <div className="mt-5 flex gap-4">
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 font-display text-[11px] uppercase tracking-[0.25em] text-ember hover:text-ember-glow transition-colors"
+                    >
+                      View site →
+                    </a>
+                  )}
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 font-display text-[11px] uppercase tracking-[0.25em] text-foreground/55 hover:text-foreground transition-colors"
+                    >
+                      GitHub →
+                    </a>
+                  )}
+                </div>
+              </article>
+            ))}
         </div>
       </section>
 
@@ -320,32 +322,40 @@ function HirePage() {
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-32">
         <SectionHeader index="04" label="Testimonials" caption="From peers & leads" />
         <div className="mt-10 columns-1 sm:columns-2 gap-6 [column-fill:_balance]">
-          {[...testimonials].sort(() => Math.random() - 0.5).map((t, i) => (
-            <figure
-              key={i}
-              className="mb-6 break-inside-avoid rounded-2xl border border-foreground/10 bg-ink-soft/40 p-6"
-            >
-              <span aria-hidden className="font-display text-3xl text-ember leading-none">
-                "
-              </span>
-              <blockquote className="mt-2 text-foreground/75 leading-relaxed text-[14px]">
-                {t.quote}
-              </blockquote>
-              <figcaption className="mt-4">
-                <div className="font-display text-[13px] text-foreground/85 inline-flex items-center gap-2">
-                  {t.author}
-                  {t.linkedin && (
-                    <a href={t.linkedin} target="_blank" rel="noreferrer" className="text-foreground/40 hover:text-ember transition-colors" aria-label={`${t.author} on LinkedIn`}>
-                      <Linkedin size={14} />
-                    </a>
-                  )}
-                </div>
-                <div className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/45">
-                  {t.role}
-                </div>
-              </figcaption>
-            </figure>
-          ))}
+          {[...testimonials]
+            .sort(() => Math.random() - 0.5)
+            .map((t, i) => (
+              <figure
+                key={i}
+                className="mb-6 break-inside-avoid rounded-2xl border border-foreground/10 bg-ink-soft/40 p-6"
+              >
+                <span aria-hidden className="font-display text-3xl text-ember leading-none">
+                  "
+                </span>
+                <blockquote className="mt-2 text-foreground/75 leading-relaxed text-[14px]">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-4">
+                  <div className="font-display text-[13px] text-foreground/85 inline-flex items-center gap-2">
+                    {t.author}
+                    {t.linkedin && (
+                      <a
+                        href={t.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-foreground/40 hover:text-ember transition-colors"
+                        aria-label={`${t.author} on LinkedIn`}
+                      >
+                        <Linkedin size={14} />
+                      </a>
+                    )}
+                  </div>
+                  <div className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-foreground/45">
+                    {t.role}
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
         </div>
       </section>
 
@@ -356,8 +366,7 @@ function HirePage() {
             aria-hidden
             className="absolute -top-32 -right-32 h-80 w-80 rounded-full blur-3xl opacity-40"
             style={{
-              background:
-                "radial-gradient(circle, rgba(245,165,36,0.6) 0%, transparent 70%)",
+              background: "radial-gradient(circle, rgba(245,165,36,0.6) 0%, transparent 70%)",
             }}
           />
           <div className="relative flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
@@ -369,8 +378,8 @@ function HirePage() {
                 Let's build something that holds up under load.
               </h3>
               <p className="mt-4 text-foreground/60 leading-relaxed">
-                Always interested in new opportunities, challenging projects, or just
-                connecting with fellow developers.
+                Always interested in new opportunities, challenging projects, or just connecting
+                with fellow developers.
               </p>
             </div>
             <a

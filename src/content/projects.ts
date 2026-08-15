@@ -12,8 +12,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Softly",
-    description:
-      "Life admin tool — one calm place to manage the stuff that quietly piles up.",
+    description: "Life admin tool — one calm place to manage the stuff that quietly piles up.",
     tech: ["Rails", "PostgreSQL", "Tailwind CSS"],
     demo: "https://mysoftly.app",
     image: "/images/projects/softly.png",
@@ -22,8 +21,7 @@ export const projects: Project[] = [
   },
   {
     title: "StaffOS",
-    description:
-      "The trust, review, and documentation layer for AI-assisted engineering work.",
+    description: "The trust, review, and documentation layer for AI-assisted engineering work.",
     tech: ["Ruby", "Rails", "PostgreSQL"],
     demo: "https://staffos.rajgurung.me",
     github: "https://github.com/rajgurung/staffOS",
@@ -33,8 +31,7 @@ export const projects: Project[] = [
   },
   {
     title: "PulseCheck",
-    description:
-      "AI-powered signal monitoring — track what matters, get alerted when it shifts.",
+    description: "AI-powered signal monitoring — track what matters, get alerted when it shifts.",
     tech: ["Next.js", "Tailwind CSS", "Vercel"],
     demo: "https://pulsecheck-landing.vercel.app",
     github: "https://github.com/rajgurung/pulsecheck-landing",
@@ -88,14 +85,12 @@ export const projects: Project[] = [
   },
   {
     title: "Twitter Mood Generator",
-    description:
-      "Sentiment analysis over Twitter trends — public mood, distilled.",
+    description: "Sentiment analysis over Twitter trends — public mood, distilled.",
     tech: ["Python", "Twitter API", "NLP"],
   },
   {
     title: "Alexa Skills",
-    description:
-      "Custom Alexa voice skills for smart home automation and daily productivity.",
+    description: "Custom Alexa voice skills for smart home automation and daily productivity.",
     tech: ["Ruby", "AWS Lambda", "Alexa Skills Kit"],
   },
 ];

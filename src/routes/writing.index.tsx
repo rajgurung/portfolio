@@ -33,8 +33,8 @@ function WritingPage() {
           Writing.
         </h1>
         <p className="mt-6 max-w-[55ch] text-foreground/65 leading-relaxed">
-          Notes from the desk — what I learn shipping software, what AI is doing
-          to the craft, and the in-between of two countries.
+          Notes from the desk — what I learn shipping software, what AI is doing to the craft, and
+          the in-between of two countries.
         </p>
       </section>
 
