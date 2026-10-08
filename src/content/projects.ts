@@ -11,6 +11,28 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Compress",
+    description:
+      "Make PDFs and JPGs smaller right in the browser. Files never leave your device: Ghostscript and mozjpeg run locally in WebAssembly, and it works offline.",
+    tech: ["TypeScript", "WebAssembly", "Ghostscript", "Vite", "Cloudflare Pages"],
+    demo: "https://compress.rajgurung.me",
+    github: "https://github.com/rajgurung/compress",
+    image: "/images/projects/compress.png",
+    featured: true,
+    status: "beta",
+  },
+  {
+    title: "Collab",
+    description:
+      "A calm team workspace: tasks, roadmap, meeting notes and real-time chat in one place. Multi-tenant, with owner approval for new members.",
+    tech: ["Rust", "Loco", "PostgreSQL", "HTMX", "WebSockets", "Tailwind CSS"],
+    demo: "https://collab.rajgurung.me",
+    github: "https://github.com/rajgurung/collaboration_tool",
+    image: "/images/projects/collab.png",
+    featured: true,
+    status: "live",
+  },
+  {
     title: "Softly",
     description: "Life admin tool — one calm place to manage the stuff that quietly piles up.",
     tech: ["Rails", "PostgreSQL", "Tailwind CSS"],
