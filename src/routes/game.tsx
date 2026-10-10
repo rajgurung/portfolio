@@ -88,7 +88,12 @@ function GamePage() {
     e.currentTarget.style.setProperty("--py", "0");
   };
 
+  // Phones get the full page: the game has touch controls, but a 16:9 embed is too small.
   const play = () => {
+    if (!window.matchMedia("(min-width: 768px)").matches) {
+      window.location.assign(GAME_URL);
+      return;
+    }
     setPlaying(true);
     playRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
@@ -243,9 +248,15 @@ function GamePage() {
             Play fullscreen ↗
           </a>
         </p>
-        <p className="rounded-xl border border-foreground/10 bg-ink-soft/40 px-5 py-6 text-center text-sm text-foreground/60 md:hidden">
-          Best played on desktop with a keyboard and mouse.
-        </p>
+        <a
+          href={GAME_URL}
+          className="block rounded-xl border border-foreground/10 bg-ink-soft/40 px-5 py-6 text-center md:hidden"
+        >
+          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-ember">▶ Play fullscreen</span>
+          <span className="mt-2 block text-[11px] uppercase tracking-[0.2em] text-foreground/45">
+            Touch controls · about 16 MB
+          </span>
+        </a>
       </section>
 
       <section className="relative z-10 mx-auto max-w-[1100px] px-6 pb-24">
