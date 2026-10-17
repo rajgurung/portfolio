@@ -171,6 +171,14 @@ function HirePage() {
             </span>
           </a>
           <a
+            href="https://zen-scale.io"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-ember/40 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-ember hover:bg-ember hover:text-ink transition-colors"
+          >
+            My studio, Zen Scale <span aria-hidden>↗</span>
+          </a>
+          <a
             href="/raj-gurung-cv.pdf"
             target="_blank"
             rel="noreferrer"
