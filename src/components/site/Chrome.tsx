@@ -110,6 +110,14 @@ export function Footer() {
         </div>
         <div className="flex gap-5 items-center">
           <a
+            href="https://zen-scale.io"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[11px] uppercase tracking-[0.25em] text-foreground/55 hover:text-ember transition-colors"
+          >
+            Zen Scale <span aria-hidden>↗</span>
+          </a>
+          <a
             href="https://github.com/rajgurung"
             target="_blank"
             rel="noreferrer"
