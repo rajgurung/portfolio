@@ -179,6 +179,14 @@ function HirePage() {
             My studio, Zen Scale <span aria-hidden>↗</span>
           </a>
           <a
+            href="https://cal.com/zenscale/intro"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-ember/40 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-ember hover:bg-ember hover:text-ink transition-colors"
+          >
+            Book a free call <span aria-hidden>↗</span>
+          </a>
+          <a
             href="/raj-gurung-cv.pdf"
             target="_blank"
             rel="noreferrer"
@@ -390,15 +398,25 @@ function HirePage() {
                 with fellow developers.
               </p>
             </div>
-            <a
-              href="mailto:gurungraj26@gmail.com"
-              className="group inline-flex items-center gap-3 self-start rounded-full bg-ember px-7 py-3.5 font-display text-[12px] uppercase tracking-[0.25em] text-ink hover:bg-ember-glow transition-colors"
-            >
-              gurungraj26@gmail.com
-              <span aria-hidden className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </a>
+            <div className="flex flex-wrap gap-3 self-start sm:self-end">
+              <a
+                href="mailto:gurungraj26@gmail.com"
+                className="group inline-flex items-center gap-3 self-start rounded-full bg-ember px-5 sm:px-7 py-3.5 font-display text-[12px] uppercase tracking-[0.12em] sm:tracking-[0.25em] text-ink hover:bg-ember-glow transition-colors"
+              >
+                gurungraj26@gmail.com
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
+              <a
+                href="https://cal.com/zenscale/intro"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 self-start rounded-full border border-ember/40 px-6 py-3.5 font-display text-[12px] uppercase tracking-[0.25em] text-ember hover:bg-ember hover:text-ink transition-colors"
+              >
+                Book a free call <span aria-hidden>↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
