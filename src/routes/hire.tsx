@@ -145,12 +145,12 @@ function HirePage() {
             vertical with SLO-driven monitoring and automated rollbacks, and integrated ML inference
             into production workflows while holding reliability targets. At Hexarad, I led one of
             the UK's first generative-AI report-drafting pipelines into a live NHS clinical
-            workflow: a{" "}
+            workflow, extending the{" "}
             <span className="text-foreground">
-              Consul service mesh spanning AWS and two datacentres
-            </span>
-            , sidecar-routed traffic with explicit ingress and egress controls, and secure
-            cross-account networking between organisations.
+              Consul service mesh across AWS and two datacentres
+            </span>{" "}
+            to carry it: Envoy sidecars on the ML hosts, mesh access rules, and locked-down ingress
+            and egress.
           </p>
           <p className="text-foreground/55 leading-relaxed text-[14px] border-l border-ember/40 pl-5">
             I care about pragmatic architecture, production observability, and teams that own their
