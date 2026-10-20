@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Shell, SectionHeader } from "@/components/site/Chrome";
 import { cv } from "@/content/cv";
 import { projects } from "@/content/projects";
-import { Linkedin } from "lucide-react";
+import { Download, Github, Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/hire")({
   head: () => ({
@@ -176,7 +176,7 @@ function HirePage() {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-ember/40 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-ember hover:bg-ember hover:text-ink transition-colors"
           >
-            My studio, Zen Scale <span aria-hidden>↗</span>
+            Zen Scale <span aria-hidden>↗</span>
           </a>
           <a
             href="https://cal.com/zenscale/intro"
@@ -186,35 +186,43 @@ function HirePage() {
           >
             Book a free call <span aria-hidden>↗</span>
           </a>
-          <a
-            href="/raj-gurung-cv.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-foreground/75 hover:border-ember/50 hover:text-ember transition-colors"
-          >
-            Download CV
-          </a>
-          <Link
-            to="/cv"
-            className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-foreground/75 hover:border-ember/50 hover:text-ember transition-colors"
-          >
-            View on-site CV
-          </Link>
+          <div className="inline-flex items-center rounded-full border border-foreground/15 font-display text-[12px] uppercase tracking-[0.25em] text-foreground/75">
+            <Link
+              to="/cv"
+              className="rounded-l-full py-3 pl-5 pr-4 hover:text-ember transition-colors"
+            >
+              CV
+            </Link>
+            <a
+              href="/raj-gurung-cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Download CV (PDF)"
+              title="Download CV (PDF)"
+              className="self-stretch inline-flex items-center rounded-r-full border-l border-foreground/15 pl-3.5 pr-4 hover:text-ember transition-colors"
+            >
+              <Download size={15} />
+            </a>
+          </div>
           <a
             href="https://github.com/rajgurung"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-foreground/10 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-foreground/55 hover:text-foreground transition-colors"
+            aria-label="GitHub"
+            title="GitHub"
+            className="inline-flex size-[48px] items-center justify-center rounded-full border border-foreground/10 text-foreground/55 hover:border-ember/50 hover:text-ember transition-colors"
           >
-            GitHub
+            <Github size={16} />
           </a>
           <a
             href="https://www.linkedin.com/in/raj---gurung/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-foreground/10 px-5 py-3 font-display text-[12px] uppercase tracking-[0.25em] text-foreground/55 hover:text-foreground transition-colors"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            className="inline-flex size-[48px] items-center justify-center rounded-full border border-foreground/10 text-foreground/55 hover:border-ember/50 hover:text-ember transition-colors"
           >
-            LinkedIn
+            <Linkedin size={16} />
           </a>
         </div>
       </section>
