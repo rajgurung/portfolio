@@ -3,6 +3,7 @@ import { Shell, SectionHeader } from "@/components/site/Chrome";
 import { cv } from "@/content/cv";
 import { projects } from "@/content/projects";
 import { Download, Github, Linkedin } from "lucide-react";
+import { GitLabLogo } from "@/components/site/GitLabLogo";
 
 export const Route = createFileRoute("/hire")({
   head: () => ({
@@ -11,7 +12,7 @@ export const Route = createFileRoute("/hire")({
       {
         name: "description",
         content:
-          "Currently at Hexarad. 15 years building systems at scale — distributed architectures, performance, observability, and AI-assisted dev workflows.",
+          "Senior Software Engineer at GitLab. 15 years building systems at scale — distributed architectures, performance, observability, and AI-assisted dev workflows.",
       },
       { property: "og:title", content: "Work with Raj Gurung — Senior / Staff Engineering" },
       {
@@ -119,7 +120,9 @@ function HirePage() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-ember opacity-70" />
             <span className="relative inline-flex size-2 rounded-full bg-ember" />
           </span>
-          Currently at Hexarad
+          <span className="inline-flex items-center gap-1.5">
+            Currently at <GitLabLogo className="size-3.5" /> GitLab
+          </span>
           <span className="size-1 rounded-full bg-foreground/25" />
           <span>London, UK · GMT</span>
           <span className="hidden sm:inline size-1 rounded-full bg-foreground/25" />

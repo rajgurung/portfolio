@@ -15,12 +15,20 @@ export const cv = {
   linkedin: "https://www.linkedin.com/in/raj---gurung",
   github: "https://github.com/rajgurung",
   summary:
-    "Senior Software Engineer and Technical Lead with 15 years designing, building, and operating large-scale distributed systems. Currently technical lead for one of the UK's first generative-AI report-drafting pipelines running inside a live NHS clinical workflow, taken from architecture to production go-live in five months. Previously led ML integration, platform reliability, and performance at Indeed on systems handling millions of requests daily. Known for end-to-end ownership, driving alignment through RFCs and design reviews, and raising the bar through mentorship and operational excellence.",
+    "Senior Software Engineer and Technical Lead with 15 years designing, building, and operating large-scale distributed systems. Now a Senior Software Engineer at GitLab. Most recently technical lead for one of the UK's first generative-AI report-drafting pipelines running inside a live NHS clinical workflow, taken from architecture to production go-live in five months. Previously led ML integration, platform reliability, and performance at Indeed on systems handling millions of requests daily. Known for end-to-end ownership, driving alignment through RFCs and design reviews, and raising the bar through mentorship and operational excellence.",
   experience: [
+    {
+      company: "GitLab",
+      title: "Senior Software Engineer",
+      dates: "Nov 2026 — Present",
+      location: "Remote (London)",
+      description: "The DevSecOps platform for software teams.",
+      bullets: [],
+    },
     {
       company: "Hexarad",
       title: "Senior Software Engineer / Technical Lead",
-      dates: "Mar 2026 — Present",
+      dates: "Mar 2026 — Nov 2026",
       location: "Remote (London)",
       description:
         "Physician-founded UK teleradiology company helping the NHS address imaging capacity and reporting backlogs.",

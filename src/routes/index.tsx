@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { Shell, SectionHeader } from "@/components/site/Chrome";
 import { posts } from "@/content/posts";
 import { projects } from "@/content/projects";
+import { GitLabLogo } from "@/components/site/GitLabLogo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -281,7 +282,8 @@ function HireBlock() {
               Currently
             </span>
             <h3 className="mt-3 font-display text-3xl sm:text-4xl font-medium tracking-tight text-balance">
-              Engineering at Hexarad — Senior / Staff.
+              <GitLabLogo className="mr-3 inline-block size-[0.9em] -translate-y-[0.06em]" />
+              Senior Software Engineer at GitLab.
             </h3>
             <p className="mt-4 text-foreground/60 leading-relaxed">
               Distributed systems, Rails platforms, observability rollouts, and AI-assisted dev
