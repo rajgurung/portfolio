@@ -53,7 +53,13 @@ function Hero() {
           <span className="absolute inline-flex h-full w-full rounded-full bg-ember opacity-75 animate-ping" />
           <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-ember" />
         </span>
-        Senior Software Engineer · London, UK
+        <span className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-1">
+          Senior Software Engineer at
+          <span className="inline-flex items-center gap-1.5">
+            <GitLabLogo className="size-3.5" /> GitLab
+          </span>
+          · London, UK
+        </span>
       </div>
 
       <h1 className="font-display font-medium leading-[0.86] tracking-[-0.04em] text-[clamp(4.5rem,16vw,12rem)]">
