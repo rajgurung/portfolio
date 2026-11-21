@@ -23,7 +23,7 @@ const META: Record<string, Omit<PostMeta, "slug">> = {
     iso: "2026-11-21",
     excerpt:
       "Too many things going on in one Claude Code session, and more windows only made it worse. So I built a board that shows every piece of work and what needs me.",
-    readingTime: "4 min",
+    readingTime: "5 min",
     location: "London",
   },
   "being-just-dangerous-enough": {

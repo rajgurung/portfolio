@@ -85,6 +85,43 @@ There is nothing to set up. The plugin teaches Claude two habits, and the board 
 
 That's it. You can also write or edit a loop file yourself, and the board shows whatever is there.
 
+## 🧑‍💼 The main window is the manager
+
+This is the part I didn't expect. The board changed how long my main session lasts.
+
+Think of it like a small team:
+
+- 🧑‍💼 The main window is the manager. It holds the plan, the decisions, and what each thread is for.
+- 👩‍💻 The agents are the developers. Each one gets a brief, goes off and does the work, and comes back with a short report.
+
+```
+          ┌──────────────────────────────┐
+          │    Main window (manager)     │
+          │  plans · decisions · status  │
+          └──┬────────▲─────────┬─────▲──┘
+       brief │ report │   brief │     │ report
+             ▼        │         ▼     │
+          ┌───────────┴──┐   ┌────────┴─────┐
+          │    Agent     │   │    Agent     │
+          │ reads files  │   │  runs tests  │
+          │ writes code  │   │  fixes bugs  │
+          └──────────────┘   └──────────────┘
+            own context        own context
+```
+
+Every Claude session has a context window. That's how much it can hold before it has to compact, which means squashing the older conversation into a summary. Compaction keeps things going, but detail gets lost.
+
+When I did everything in one window, it filled up fast. Every file Claude read and every test output landed there. Compaction came often, and each time the plan got a little blurrier.
+
+Now the heavy reading happens in each agent's own window. My main window only gets the brief going out and the report coming back.
+
+- 🧠 The main window lasts much longer before it compacts
+- 📌 Plans and decisions stay in full detail, not summarised
+- 🧭 I can steer several threads without losing track of why each one exists
+- 🧹 A messy thread stays in its own window. It doesn't clutter mine.
+
+It's easier to manage well when you're not also doing all the typing.
+
 ## 📈 What changed for me
 
 - 🪟 One window again. No more hopping between sessions to check on things.
@@ -98,6 +135,7 @@ I spend less time asking "where was I?" and more time on the parts that need a h
 
 - 🔢 Token totals look huge. Most of it is prompt cache reads, which are cheap. The board shows the cache share next to the total so it doesn't scare you.
 - 🧵 Tokens from my main conversation aren't split between threads, because one chat often covers several of them. They show as their own line in the sidebar.
+- 💸 Agents aren't free. Every agent's tokens still count toward my plan's usage, even though my main window stays light.
 - 📝 The board is only as current as the loop files. Claude keeps them up to date, and when one drifts I can fix it by hand.
 
 ## 🚀 Try it
